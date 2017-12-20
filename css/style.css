@@ -14,13 +14,14 @@ main {
   flex: 1;
 }
 
-.logo {
-  height: 5px;
-  width: 5px;
+/*header*/
+header{
+	background-color: lightblue;
+	width: 100%;
 }
-
-p {
-  width: auto;
+.logo {
+  height: 150px;
+  width: 150px;
 }
 
 /*# sourceMappingURL=style.css.map */
