@@ -1,6 +1,12 @@
-//Falsos mitos
+$padding-page: 4%;
+$font-fam: 'Arial';
+
+//False myths
+
 .icons {
-  padding: 3%;
-  display: flex;
-  justify-content: space-between;
+  padding: $padding-page;
+}
+
+img, p {
+  display: inline;
 }

@@ -1,3 +1,25 @@
+/* Components */
+@import 'components/buttons';
+@import 'components/forms';
+@import 'components/news';
+@import 'components/typography';
+
+/* Core */
+@import 'core/functions';
+@import 'core/mixins';
+@import 'core/variables';
+
+/* Layout */
+@import 'layout/footer';
+@import 'layout/grid';
+@import 'layout/header';
+
+/* Pages */
+@import 'pages/action';
+@import 'pages/faq';
+@import 'pages/home';
+@import 'pages/news';
+
 * {
 	box-sizing: border-box;
 }
