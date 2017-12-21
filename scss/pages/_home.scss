@@ -5,8 +5,20 @@
 }
 .marketing h2 {
   font-weight: 400;
+  padding: 3%;
 }
 .marketing .col-lg-4 p {
   margin-right: .75rem;
   margin-left: .75rem;
+}
+
+.myths {
+  margin-top: $mrg-top-sct-mv;
+  @media all and (min-width: 600px){
+    margin-top: $mrg-top-sct-tb;
+  }
+  @media all and (min-width: 1025px){
+    margin-top: $mrg-top-sct-dk;
+  }
+
 }
