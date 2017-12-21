@@ -1,13 +1,16 @@
-/* Components */
-@import 'components/buttons';
-@import 'components/forms';
-@import 'components/news';
-@import 'components/typography';
+/*Bootstrap*/
+@import 'layout/_bootstrap.min.scss';
 
 /* Core */
 @import 'core/functions';
 @import 'core/mixins';
 @import 'core/variables';
+
+/* Components */
+@import 'components/buttons';
+@import 'components/forms';
+@import 'components/news';
+@import 'components/typography';
 
 /* Layout */
 @import 'layout/footer';
