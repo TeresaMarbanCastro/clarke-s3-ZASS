@@ -6716,31 +6716,18 @@ a.text-dark:focus, a.text-dark:hover {
 /* Core */
 /* Components */
 /* Layout */
-/* Pages */
-.icons {
-  padding: 4%; }
-
-img, p {
-  display: inline; }
-
-* {
-  box-sizing: border-box; }
-
-body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  height: 100vh; }
-
-main {
-  flex: 1; }
-
 .logo {
   height: 5px;
   width: 5px; }
 
 p {
   width: auto; }
+
+/* Pages */
+.icons {
+  padding: 4%; }
+
+img, p {
+  display: inline; }
 
 /*# sourceMappingURL=style.css.map */

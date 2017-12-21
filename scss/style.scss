@@ -22,25 +22,3 @@
 @import 'pages/faq';
 @import 'pages/home';
 @import 'pages/news';
-
-* {
-	box-sizing: border-box;
-}
-body {
-margin: 0;
-padding: 0;
-display: flex;
-flex-direction: column;
-height: 100vh;
-}
-main {
-	flex: 1;
-}
-//Header
-.logo{
-	height: 5px;
-	width: 5px;
-}
-p{
-	width:auto;
-}
