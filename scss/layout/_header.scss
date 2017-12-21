@@ -1,9 +1,30 @@
 
 //Header
-.logo{
-	height: 5px;
-	width: 5px;
+header{
+	background-color: $lightsecondarycolour;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 }
-p{
-	width:auto;
+
+.logo{
+	height: 50px;
+	width: 50px;
+}
+.burger{
+	height: 25px;
+	width: 25px;
+	align-self: center;
+}
+
+header ul{
+	list-style-type: none;
+	font-size: 12px;
+	color: white;
+}
+.hiddenmenu{
+	display: none;
+}
+.showmenu{
+	display: block;
 }
