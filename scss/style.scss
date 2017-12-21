@@ -1,22 +1,24 @@
-* {
-	box-sizing: border-box;
-}
-body {
-	margin: 0;
-	padding: 0;
-	display: flex;
-	flex-direction: column;
-	height: 100vh;
-}
-main {
-	flex: 1;
-}
+/*Bootstrap*/
+@import 'layout/_bootstrap.min.scss';
 
-//Header
-.logo{
-	height: 5px;
-	width: 5px;
-}
-p{
-	width:auto;
-}
+/* Core */
+@import 'core/functions';
+@import 'core/mixins';
+@import 'core/variables';
+
+/* Components */
+@import 'components/buttons';
+@import 'components/forms';
+@import 'components/news';
+@import 'components/typography';
+
+/* Layout */
+@import 'layout/footer';
+@import 'layout/grid';
+@import 'layout/header';
+
+/* Pages */
+@import 'pages/action';
+@import 'pages/faq';
+@import 'pages/home';
+@import 'pages/news';
