@@ -6164,8 +6164,23 @@ header ul {
   text-align: center; }
 
 .marketing h2 {
-  font-weight: 400; }
+  font-weight: 400;
+  padding: 3%; }
 
 .marketing .col-lg-4 p {
   margin-right: .75rem;
   margin-left: .75rem; }
+<<<<<<< HEAD
+=======
+
+.myths {
+  margin-top: 20%; }
+  @media all and (min-width: 600px) {
+    .myths {
+      margin-top: 15%; } }
+  @media all and (min-width: 1025px) {
+    .myths {
+      margin-top: 5%; } }
+
+/*# sourceMappingURL=style.css.map */
+>>>>>>> 367220fedc30e0728fb117a2f4fde714d4e623ed
