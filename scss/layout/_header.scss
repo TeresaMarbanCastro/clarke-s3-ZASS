@@ -5,6 +5,7 @@ header{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	align-items: center;
 }
 
 .logo{
@@ -15,16 +16,4 @@ header{
 	height: 25px;
 	width: 25px;
 	align-self: center;
-}
-
-header ul{
-	list-style-type: none;
-	font-size: 12px;
-	color: white;
-}
-.hiddenmenu{
-	display: none;
-}
-.showmenu{
-	display: block;
 }
