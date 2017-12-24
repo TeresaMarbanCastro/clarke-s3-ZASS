@@ -18,7 +18,17 @@
   "homepage": "https://github.com/Adalab/clarke-s3-ZASS#readme",
   "dependencies": {},
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-sass": "*"
+    "browser-sync": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-clean-css": "*",
+    "gulp-combine-mq": "*",
+    "gulp-concat": "*",
+    "gulp-notify": "*",
+    "gulp-plumber": "*",
+    "gulp-sass": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-uglify": "*",
+    "gulp-util": "*",
+    "gulp": "*"
   }
 }
