@@ -5330,7 +5330,85 @@ a.text-dark:focus,a.text-dark:hover {
   width: 25px;
   -ms-flex-item-align: center;
   align-self: center;
-}/* Pages */.marketing .col-lg-4 {
+}/* Pages *//* ------- DO NOT EDIT BELOW --------- */.chart-three {
+  width: 100px;
+  height: 100px;
+  margin: 0;
+  position: relative;
+}
+
+.chart-three.animate svg .circle-women {
+  -webkit-animation: offset 2s ease-in-out forwards;
+  animation: offset 2s ease-in-out forwards;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.chart-three.animate figcaption:after {
+  -webkit-animation: chart-three-label 2s steps(75) forwards;
+  animation: chart-three-label 2s steps(75) forwards;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.chart-three svg {
+  width: 100%;
+  height: 100%;
+}
+
+.chart-three svg .circle-background,.chart-three svg .circle-women,.chart-three svg .circle-men {
+  r: 45px;
+  cx: 50%;
+  cy: 50%;
+  fill: none;
+  stroke: #305556;
+  stroke-width: 10px;
+}
+
+.chart-three svg .circle-women {
+  stroke: #389967;
+  stroke-dasharray: 211.95px 282.6px;
+  stroke-dashoffset: 211.95px;
+  stroke-linecap: round;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.chart-three svg .circle-men {
+  stroke: #d0f09e;
+  stroke-dasharray: 211.95px 282.6px;
+  stroke-dashoffset: 211.95px;
+  stroke-linecap: round;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.chart-three figcaption {
+  display: inline-block;
+  width: 100%;
+  height: 1.5rem;
+  overflow: hidden;
+  text-align: center;
+  color: black;
+  position: absolute;
+  top: calc(50% - 0.75rem);
+  left: 0;
+  font-size: 0;
+}
+
+.chart-three figcaption:after {
+  display: inline-block;
+  content: "0%\a 1%\a 2%\a 3%\a 4%\a 5%\a 6%\a 7%\a 8%\a 9%\a 10%\a 11%\a 12%\a 13%\a 14%\a 15%\a 16%\a 17%\a 18%\a 19%\a 20%\a 21%\a 22%\a 23%\a 24%\a 25%\a 26%\a 27%\a 28%\a 29%\a 30%\a 31%\a 32%\a 33%\a 34%\a 35%\a 36%\a 37%\a 38%\a 39%\a 40%\a 41%\a 42%\a 43%\a 44%\a 45%\a 46%\a 47%\a 48%\a 49%\a 50%\a 51%\a 52%\a 53%\a 54%\a 55%\a 56%\a 57%\a 58%\a 59%\a 60%\a 61%\a 62%\a 63%\a 64%\a 65%\a 66%\a 67%\a 68%\a 69%\a 70%\a 71%\a 72%\a 73%\a 74%\a 75%\a 76%\a 77%\a 78%\a 79%\a 80%\a 81%\a 82%\a 83%\a 84%\a 85%\a 86%\a 87%\a 88%\a 89%\a 90%\a 91%\a 92%\a 93%\a 94%\a 95%\a 96%\a 97%\a 98%\a 99%\a 100%\a";
+  white-space: pre;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.marketing .col-lg-4 .statistics h3 {
   margin-bottom: 1.5rem;
   text-align: center;
 }
@@ -8835,6 +8913,32 @@ a.text-dark:focus,a.text-dark:hover {
 
   to {
     background-position: 0 0;
+  }
+}
+
+@-webkit-keyframes chart-three-label {
+  100% {
+    -webkit-transform: translateY(-112.5rem);
+    transform: translateY(-112.5rem);
+  }
+}
+
+@keyframes chart-three-label {
+  100% {
+    -webkit-transform: translateY(-112.5rem);
+    transform: translateY(-112.5rem);
+  }
+}
+
+@-webkit-keyframes offset {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes offset {
+  100% {
+    stroke-dashoffset: 0;
   }
 }
 
