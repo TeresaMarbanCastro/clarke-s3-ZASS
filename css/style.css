@@ -1425,8 +1425,8 @@ a.btn.disabled,fieldset[disabled] a.btn {
 
 .btn-secondary:not([disabled]):not(.disabled).active,.btn-secondary:not([disabled]):not(.disabled):active,.show > .btn-secondary.dropdown-toggle {
   color: #fff;
-  background-color: $lightsecondarycolour;
- border-color: $lightsecondarycolour;
+  background-color: #6c757d;
+  border-color: #666e76;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(134, 142, 150, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(134, 142, 150, 0.5);
 }
@@ -1651,8 +1651,8 @@ a.btn.disabled,fieldset[disabled] a.btn {
 
 .btn-outline-secondary:hover {
   color: #fff;
-  background-color: $lightsecondarycolour;
-  border-color: $lightsecondarycolour;
+  background-color: #868e96;
+  border-color: #868e96;
 }
 
 .btn-outline-secondary.focus,.btn-outline-secondary:focus {
@@ -1667,8 +1667,8 @@ a.btn.disabled,fieldset[disabled] a.btn {
 
 .btn-outline-secondary:not([disabled]):not(.disabled).active,.btn-outline-secondary:not([disabled]):not(.disabled):active,.show > .btn-outline-secondary.dropdown-toggle {
   color: #fff;
-  background-color: $lightsecondarycolour;
-  border-color: $lightsecondarycolour;
+  background-color: #868e96;
+  border-color: #868e96;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(134, 142, 150, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(134, 142, 150, 0.5);
 }
