@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
@@ -10,12 +10,23 @@
 </head>
 <body>
 	<header>
-		<div><img src="images/zass-logo.png" class="logo">
-		<div><img src="" class="burger" </div>
-		</div>
+		<img src="images/zass-logo.png" class="logo">
+
+
+			<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/menu.png" class="burger">
+
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Home</a>
+    <a class="dropdown-item" href="#">Noticias y Antinoticias</a>
+    <a class="dropdown-item" href="#">FAQ</a>
+		<a class="dropdown-item" href="#">Actúa</a>
+  </div>
+</div>
 	</header>
 	<main>
-		<section class="total-slider" id="total-slider">
+		<!-- <section class="total-slider" id="total-slider">
 			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 <ol class="carousel-indicators">
 	<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -40,7 +51,7 @@
 <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
 	<span class="carousel-control-next-icon" aria-hidden="true"></span>
 	<span class="sr-only">Next</span>
-</a>
+</a> -->
 </div>
 		</section>
 		<section class="introduction">
@@ -52,41 +63,43 @@
 		</section>
 
 		<!--False myths-->
-		<div class="container marketing">
-
-			<!-- Three columns of text below the carousel -->
-			<div class="row">
-				<div class="col-lg-4">
-					<img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-					<h2>Heading</h2>
-					<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-					<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-				</div><!-- /.col-lg-4 -->
-				<div class="col-lg-4">
-					<img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-					<h2>Heading</h2>
-					<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-					<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-				</div><!-- /.col-lg-4 -->
-				<div class="col-lg-4">
-					<img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-					<h2>Heading</h2>
-					<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-					<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-				</div><!-- /.col-lg-4 -->
-			</div><!-- /.row -->
-
 		<section class="myths">
+			<div class="container marketing">
+			<!-- Three columns of icons -->
+				<div class="row">
+					<div class="col-lg-4">
+						<img class="rounded-circle" src="images/arm-icon.png" alt="Generic placeholder image" width="140" height="140">
+						<h2>Primer mito</h2>
+						<p class="text">La actividad deportiva y/o atlética masculiniza a las mujeres. Socialmente se les ha estigmatizado de tener actitudes masculinas.</p>
+					</div><!-- /.col-lg-4 -->
+					<div class="col-lg-4">
+						<img class="rounded-circle" src="images/tampax-icon.png" alt="Generic placeholder image" width="140" height="140">
+						<h2>Segundo mito</h2>
+						<p class="text">La práctica deportiva es peligrosa para la salud de las mujeres. Se sustenta en que el grado de intensidad de la actividad física puede alterar el ciclo menstrual, dañar los órganos reproductores y los senos.</p>
+					</div><!-- /.col-lg-4 -->
+					<div class="col-lg-4">
+						<img class="rounded-circle" src="images/man-icon.png" alt="Generic placeholder image" width="140" height="140">
+						<h2>Tercer mito</h2>
+						<p class="text">El deporte es exclusivo para hombres. Se refiere a que las mujeres no están interesadas en el deporte y que cuando lo ejecutan no lo hacen bien.</p>
+					</div><!-- /.col-lg-4 -->
+					<div class="col-lg-4">
+						<img class="rounded-circle" src="images/woman-icon.png" alt="Generic placeholder image" width="140" height="140">
+						<h2>Cuarto mito</h2>
+						<p class="text">Una mujer que opine de deportes es ante los ojos de ciertos hombres una invasora de su espacio. Cualquier cosa que ellos escuchen venida de la boca de una mujer no la sienten veraz y la encuentran un tanto viciada.</p>
+					</div><!-- /.col-lg-4 -->
+				</div><!-- /.row -->
+			</div><!--div container-->
+		</section>
 		<section class="links">
 		</section>
 		<footer>
+			<div><img src="images/zass-logo.png"class="footerlogo"></div>
+			<div><img src="images/letter.png" class="contact"><a href=""</div>
 		</footer>
 	</main>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>
-
-
 </body>
 </html>

@@ -1,9 +1,19 @@
 
 //Header
-.logo{
-	height: 5px;
-	width: 5px;
+header{
+	background-color: $lightsecondarycolour;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
 }
-p{
-	width:auto;
+
+.logo{
+	height: 50px;
+	width: 50px;
+}
+.burger{
+	height: 25px;
+	width: 25px;
+	align-self: center;
 }
