@@ -1,0 +1,17 @@
+{
+	"scss": {
+		"src": "scss/**/*.scss",
+		"dest": "css/"
+	},
+	"js": {
+		"src": [
+			"https://code.jquery.com/jquery-3.2.1.min.js",
+			"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js",
+			"js/bootstrap.min.js",
+			"js/main.js"
+		],
+		"dest": "js/"
+	},
+	"images": "images/**/*.{gif,jpg,png,svg}",
+	"html": "**/*.html"
+}
