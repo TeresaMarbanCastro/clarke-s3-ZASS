@@ -8,10 +8,22 @@
 	<link rel="shortcut icon" href="images/favicon.ico"/>
   <title>Noticias</title>
 </head>
-<body class="newspage">
+<body class="site newspage">
   <header>
-  </header>
-  <main>
+		<img src="images/zass-logo.png" class="logo">
+		<div class="dropdown">
+			<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/menu.png" class="burger">
+
+			</button>
+			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				<a class="dropdown-item" href="#">Home</a>
+				<a class="dropdown-item" href="#">Noticias y Antinoticias</a>
+				<a class="dropdown-item" href="#">FAQ</a>
+				<a class="dropdown-item" href="#">Actúa</a>
+			</div>
+		</div>
+	</header>
+  <main class="wrapper">
     <section class="section news">
       <div></div>
       <div></div>
@@ -42,8 +54,15 @@
       </form>
     </section>
   </main>
-  <script type="text/javascript" href="js/news.js"></script>
+
   <footer>
+  	<div><img src="images/zass-logo.png"class="footerlogo"></div>
+  	<div><img src="images/letter.png" class="contact"><a href=""</div>
   </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
