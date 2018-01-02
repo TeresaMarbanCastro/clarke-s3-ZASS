@@ -14,15 +14,12 @@
   margin-left: .75rem;
 }
 
-.myths {
+.myths, .links {
   margin-top: $mrg-top-sct-mv;
   @media all and (min-width: 600px){
     margin-top: $mrg-top-sct-tb;
-    font-size: 2em;
-
   }
   @media all and (min-width: 1025px){
     margin-top: $mrg-top-sct-dk;
-  
   }
 }
