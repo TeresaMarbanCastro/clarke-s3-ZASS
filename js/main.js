@@ -6,3 +6,10 @@ function showMenu (){
 }
 
 $('.carousel').carousel();
+
+var show = document.querySelector('.burger');
+var list = document.querySelector('.dropdown-list');
+function showMenu (){
+	 list.classList.toggle('show');
+}
+show.addEventListener('click', showMenu);
