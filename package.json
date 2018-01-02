@@ -19,6 +19,7 @@
   "dependencies": {},
   "devDependencies": {
     "browser-sync": "*",
+    "gulp": "^3.9.1",
     "gulp-autoprefixer": "*",
     "gulp-clean-css": "*",
     "gulp-combine-mq": "*",
@@ -28,7 +29,6 @@
     "gulp-sass": "*",
     "gulp-sourcemaps": "*",
     "gulp-uglify": "*",
-    "gulp-util": "*",
-    "gulp": "*"
+    "gulp-util": "*"
   }
 }
