@@ -5309,22 +5309,40 @@ a.text-dark:focus,a.text-dark:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  height: 60px;
+}
+
+.footer-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 60px;
 }
 
 .footerlogo {
   width: 50px;
   height: 50px;
+  grid-column: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .contact {
   width: 50px;
   height: 50px;
+  grid-column: 5;
 }
 
 header {
@@ -5392,14 +5410,73 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 main {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-}/* Pages */.marketing .col-lg-4 {
+}/* Pages */* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+main {
+  margin: 20px;
+  text-align: justify;
+}
+
+body {
+  min-height: 100vh;
+}
+
+main h3 {
+  color: #5E0B75;
+}
+
+.questions-listed {
+  display: grid;
+  grid-gap: 1em;
+  margin-bottom: 10px;
+}
+
+.questions-listed select {
+  border-radius: 0.5em;
+  border: solid #5E0B75 1px;
+}
+
+.contactForm textarea {
+  margin-top: 20px;
+  border: solid #5E0B75 1px;
+  border-radius: 0.5em;
+  text-align: center;
+}
+
+.emailSend {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 0.5em;
+  margin: 0;
+  padding: 0px;
+  width: 100%;
+}
+
+.emailSend #email {
+  grid-column: 1 / 5;
+  border-radius: 0.5em;
+  border: solid #5E0B75 1px;
+}
+
+.emailSend #submit {
+  grid-column: 5;
+  border-radius: 10px;
+  background-color: #BD86D8;
+  color: white;
+  border: 0;
+}
+
+.marketing .col-lg-4 {
   margin-bottom: 1.5rem;
   text-align: center;
 }
