@@ -55,9 +55,13 @@ main h3{
 	border: solid  $primaryColour 1px;
 }
 .arrow-down{
-	width: 25px;
-	height: 25px;
+	width: 18px;
+	height: 18px;
+	padding-left: 5px;
 }
-// .arrow-down-hover:hover{
-// 	background-color: white;
-// }
+.questions-listed-answer{
+	display: none;
+}
+.show{
+	display: block;
+}
