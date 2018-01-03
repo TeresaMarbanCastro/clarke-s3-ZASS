@@ -47,3 +47,17 @@ main h3{
 	padding: 0px;
 	width: 100%;
 }
+.questions-listed button{
+	font-size: 14px;
+	color: $primaryColour;
+	background-color: $softcolour;
+	border-radius: 0.5em;
+	border: solid  $primaryColour 1px;
+}
+.arrow-down{
+	width: 25px;
+	height: 25px;
+}
+// .arrow-down-hover:hover{
+// 	background-color: white;
+// }

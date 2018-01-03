@@ -5476,6 +5476,19 @@ main h3 {
   border: 0;
 }
 
+.questions-listed button {
+  font-size: 14px;
+  color: #5E0B75;
+  background-color: #BED8D5;
+  border-radius: 0.5em;
+  border: solid #5E0B75 1px;
+}
+
+.arrow-down {
+  width: 25px;
+  height: 25px;
+}
+
 .marketing .col-lg-4 {
   margin-bottom: 1.5rem;
   text-align: center;
