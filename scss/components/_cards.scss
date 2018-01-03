@@ -1,0 +1,17 @@
+.card{
+  display: -webkit-flex;
+     display: flex;
+
+  .news-photo{
+    background-size: cover;
+    @include aspect-ratio(16,9);
+  }
+  h3{
+    padding: 50px 30px;
+  }
+}
+
+.section-news {
+  display: flex;
+ flex-wrap: wrap;
+}
