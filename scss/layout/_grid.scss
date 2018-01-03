@@ -1,8 +1,8 @@
-.background {
+.grid {
     margin-bottom: 30px;
 }
 
-/* Make sure images don't get too big */
-img {
+.news-photo {
+  background-image: url('..images/img1.jpg');
   max-width: 100%;
 }
