@@ -1,11 +1,21 @@
 .card {
   display: flex;
+  border: 5px solid hsla(0,0%,100%,.1);
   .news-photo {
     background-size: cover;
     @include aspect-ratio(16,9);
   }
-  h3 {
-    padding: 50px 30px;
+  .title-news,
+  .title-antinews {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 30px;
+    color: $primaryColour;
+    a {
+      text-decoration: none;
+      color: $primaryColour;
+    }
   }
 }
 
