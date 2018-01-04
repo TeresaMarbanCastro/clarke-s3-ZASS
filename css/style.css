@@ -5377,6 +5377,9 @@ header {
 
 .dropdown-list {
   display: none;
+  opacity: 0;
+  -webkit-transition: opacity ease 1s 0.5s;
+  transition: opacity ease 1s 0.5s;
 }
 
 .dropdown-list .dropdown-item {
@@ -5385,6 +5388,8 @@ header {
 
 .show {
   display: block;
+  background-color: green;
+  opacity: 0;
 }
 
 .logo {
