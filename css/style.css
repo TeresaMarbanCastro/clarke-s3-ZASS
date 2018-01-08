@@ -5330,7 +5330,11 @@ a.text-dark:focus,a.text-dark:hover {
   width: 25px;
   -ms-flex-item-align: center;
   align-self: center;
-}/* Pages */.marketing .col-lg-4 {
+}/* Pages */.text-qt {
+  color: #ffffff;
+}
+
+.marketing .col-lg-4 {
   margin-bottom: 1.5rem;
   text-align: center;
 }
