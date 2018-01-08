@@ -1,23 +1,64 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-	<link rel="shortcut icon" href="images/favicon.ico"/>
-	<title>FAQ section</title>
+	<!DOCTYPE html>
+	<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+		<link rel="shortcut icon" href="images/favicon.ico"/>
+		<title>FAQ section</title>
 </head>
-
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
 <body>
-	<header>
-		<div><img src="images/zass-logo.png" class="logo">
-		</div>
-	</header>
+<div></div>
 </body>
-</html>
+<header>
+	<div class="withinHeader">
+		<img src="images/zass-logo2.png" class="logo">
+		<div class="dropdown"><a href="#"><img src="images/menu.png" class="burger"></a>
+		</div>
+	</div>
+	<div class="dropdown-list">
+		<a class="dropdown-item" href="#">Home</a>
+		<a class="dropdown-item" href="#">Noticias y Antinoticias</a>
+		<a class="dropdown-item" href="#">FAQ</a>
+		<a class="dropdown-item" href="#">Actúa</a>
+</div>
+</header>
+<main>
+	<div class="questions">
+			<h3>Preguntas frecuentes (FAQ)</h3>
+			<p>Damos respuesta a las dudas que se nos plantean con mayor frecuencia, si tu pregunta no es tratada, por favor rellena el formulario del final de la página.</p>
+			<div class="questions-listed">
+				<button id="questions-listed1">¿Es peor que en otros países la situación del deporte femenino en España?<span><img src='images/down-arrow-black.png' class="arrow-down"></span></button>
+				<span class="questions-listed-answer"><p>La situación de la mujer es precaria en el mundo entero. En unos países más que en otros.<br>Según datos de la organización Transparencia Internacional, España ha pasado de estar en la posición 28 en 2008 a la 41 en 2016 en los índices de percepción de la corrupción mundial, pero si solo nos fijamos en los 28 Estados miembro de la UE, España ocupa el puesto 17.<br>Como bien sabes, la corrupción y la desigualdad se refuerzan mutuamente, creando un círculo vicioso entre corrupción, reparto desigual del poder en la sociedad y desigualdad en la distribución de la riqueza.  Ahí está la mujer, en ese círculo vicioso de desigualdad, no solo en el deporte sino todos los ámbitos.</p></span>
+				<button id="questions-listed2">¿Existe el abuso sexual en el deporte?<span><img src='images/down-arrow-black.png' class="arrow-down"></span></button>
+				<span class="questions-listed-answer"></span>
+				<button id="questions-listed3">¿Cómo puedo reclamar mis derechos?<span><img src='images/down-arrow-black.png' class="arrow-down"></span></button>
+				<span class="questions-listed-answer"></span>
+				<button id="questions-listed4">¿Hasta cuándo pueden jugar juntos/as niños y niñas?<span><img src='images/down-arrow-black.png' class="arrow-down"></span></button>
+				<span class="questions-listed-answer"></span>
+			</div>
+	</div>
+	<div class="contactForm">
+		Tratamos de dar respuesta a una gran cantidad de preguntas que recibimos. Si no has encontrado lo que buscabas en la sección de FAQ (Preguntas frecuentes), puedes escribirnos para que intentemos solucionártelas, quizás haya más gente con la misma duda y podamos añadirla a la seccción.
+		<textarea name="ask" cols="29" rows="10" placeholder="Escribe aquí tu pregunta e ¡intentaremos ayudarte!" required="required"></textarea>
+		<div class="emailSend">
+		<input type="email" placeholder="  email o alias" id="email">
+		<button type="submit" id="submit">Enviar</button>
+		</div>
+	</div>
+</main>
+<footer>
+	<div class="footer-items">
+		<img src="images/zass-logo2.png"class="footerlogo">
+		<img src="images/letter.png" class="contact"><a href="">
+	</div>
+</footer>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+		</body>
+	</html>
