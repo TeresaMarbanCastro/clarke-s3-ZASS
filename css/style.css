@@ -5304,6 +5304,7 @@ a.text-dark:focus,a.text-dark:hover {
 
 .invisible {
   visibility: hidden !important;
+<<<<<<< HEAD
 }/*# sourceMappingURL=bootstrap.min.css.map *//* Core *//* Components */.card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5377,6 +5378,50 @@ a.text-dark:focus,a.text-dark:hover {
   width: 50px;
   height: 50px;
 }/* Layout */header {
+=======
+}/*# sourceMappingURL=bootstrap.min.css.map *//* Core *//* Components *//* Layout */footer {
+  background-color: #5E0B75;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  height: 60px;
+}
+
+.footer-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.footerlogo {
+  width: 50px;
+  height: 50px;
+  grid-column: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.contact {
+  width: 50px;
+  height: 50px;
+  grid-column: 5;
+}
+
+header {
+>>>>>>> cd53eadafd486a08a509926b81bba5a7e3a7bf05
   background-color: #BD86D8;
 }
 
@@ -5408,6 +5453,12 @@ a.text-dark:focus,a.text-dark:hover {
 
 .dropdown-list {
   display: none;
+<<<<<<< HEAD
+=======
+  opacity: 0;
+  -webkit-transition: opacity ease 1s 0.5s;
+  transition: opacity ease 1s 0.5s;
+>>>>>>> cd53eadafd486a08a509926b81bba5a7e3a7bf05
 }
 
 .dropdown-list .dropdown-item {
@@ -5416,6 +5467,11 @@ a.text-dark:focus,a.text-dark:hover {
 
 .show {
   display: block;
+<<<<<<< HEAD
+=======
+  background-color: green;
+  opacity: 0;
+>>>>>>> cd53eadafd486a08a509926b81bba5a7e3a7bf05
 }
 
 .logo {
@@ -5448,6 +5504,7 @@ main {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
+<<<<<<< HEAD
 }
 
 footer {
@@ -5489,6 +5546,8 @@ footer {
   width: 50px;
   height: 50px;
   grid-column: 5;
+=======
+>>>>>>> cd53eadafd486a08a509926b81bba5a7e3a7bf05
 }/* Pages */* {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
