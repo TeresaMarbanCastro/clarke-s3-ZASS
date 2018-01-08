@@ -1,0 +1,25 @@
+.card {
+  display: flex;
+  border: 5px solid hsla(0,0%,100%,.1);
+  .news-photo {
+    background-size: cover;
+    @include aspect-ratio(16,9);
+  }
+  .title-news,
+  .title-antinews {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 30px;
+    color: $primaryColour;
+    a {
+      text-decoration: none;
+      color: $primaryColour;
+    }
+  }
+}
+
+.section-news {
+  display: flex;
+  flex-wrap: wrap;
+}

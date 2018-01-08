@@ -26,10 +26,7 @@
     "gulp-concat": "*",
     "gulp-notify": "*",
     "gulp-plumber": "*",
-<<<<<<< HEAD
     "gulp-rename": "*",
-=======
->>>>>>> 60e6b6d87a43f66e05c300245c759c5e1a36eaff
     "gulp-sass": "*",
     "gulp-sourcemaps": "*",
     "gulp-uglify": "*",
@@ -37,13 +34,15 @@
     "gulp-util": "*"
 =======
     "gulp-util": "*",
-<<<<<<< HEAD
     "gulp": "*",
     "run-sequence": "*",
     "gulp-zip": "*"
+<<<<<<< HEAD
 =======
     "gulp": "*"
 >>>>>>> 60e6b6d87a43f66e05c300245c759c5e1a36eaff
 >>>>>>> 20efa8ce718eb137de0337427ae4299f51bf9657
+=======
+>>>>>>> news
   }
 }
