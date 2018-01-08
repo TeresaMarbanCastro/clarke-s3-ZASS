@@ -1,5 +1,5 @@
 /*Bootstrap*/
-@import 'layout/_bootstrap.min.scss';
+@import 'layout/bootstrap.min';
 
 /* Core */
 @import 'core/functions';
@@ -7,6 +7,7 @@
 @import 'core/variables';
 
 /* Components */
+@import 'components/arrows';
 @import 'components/buttons';
 @import 'components/forms';
 @import 'components/news';
