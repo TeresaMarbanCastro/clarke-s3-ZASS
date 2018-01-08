@@ -1,5 +1,5 @@
 /*Bootstrap*/
-@import 'layout/_bootstrap.min.scss';
+@import 'layout/bootstrap.min';
 
 /* Core */
 @import 'core/functions';
@@ -7,7 +7,11 @@
 @import 'core/variables';
 
 /* Components */
+<<<<<<< HEAD
 @import 'components/typography';
+=======
+@import 'components/arrows';
+>>>>>>> slider-stats
 @import 'components/buttons';
 @import 'components/cards';
 @import 'components/forms';
