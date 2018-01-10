@@ -1,5 +1,13 @@
+.header-news,
+.header-anti-news {
+  margin: 30px auto 30px;
+}
+
+// CARD NEWS AND ANTI-NEWS
+
 .card {
   display: flex;
+  flex-direction: column;
   border: 5px solid hsla(0,0%,100%,.1);
   .news-photo {
     background-size: cover;
@@ -19,7 +27,28 @@
   }
 }
 
-.section-news {
+
+// CARD TOP-5
+
+.card-top {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  border: 5px solid hsla(0,0%,100%,.1);
+  .top5-photo {
+    background-size: cover;
+    @include aspect-ratio(16,9);
+  }
+  .title-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 30px;
+    color: $primaryColour;
+    a {
+      text-decoration: none;
+      color: $primaryColour;
+    }
+  }
 }
+
+// FORM-NEWS
