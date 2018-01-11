@@ -1,10 +1,8 @@
-function animatedIcons() {
-  let arm = document.getElementById('arm');
-  arm.innerHTML = '<img class="rounded-circle" src="images/arm-icon.png" alt="Generic placeholder image" width="140" height="140">';
-  // arm.appendChild('<img class="rounded-circle" src="images/arm-icon.png" alt="Generic placeholder image" width="140" height="140">');
+
+function animatedIcons(selector, img1, img2) {
+    img1 = 'images';
+    img2 = 'images';
   setTimeout(function() {
-    arm.innerHTML = '<img class="rounded-circle" src="images/arm-icon-light.png" alt="Generic placeholder image" width="140" height="140">';
-    // arm.appendChild('<img class="rounded-circle" src="images/arm-icon-light.png" alt="Generic placeholder image" width="140" height="140">');
   }, 1000);
 }
 
