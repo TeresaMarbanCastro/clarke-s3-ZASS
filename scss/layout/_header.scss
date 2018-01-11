@@ -68,12 +68,21 @@ z-index: 1;
 	display: flex;
 	align-content: center;
 	padding: 10px;
+	cursor: pointer;
+	@media all and (min-width: 500px){
+		justify-content: center;
+		align-content: center;
+	}
 }
 .burger{
 	height: 25px;
 	width: 25px;
 	justify-content: center;
 	align-self: center;
+	@media all and (min-width: 500px){
+		width: 50px;
+		height: 50px;
+	}
 }
 //Logo
 .logo{
@@ -81,4 +90,9 @@ z-index: 1;
 	width: 80%;
 	grid-column: 5;
 	align-self: center;
+	cursor: pointer;
+	@media all and (min-width: 500px){
+		height: 75px;
+		width: 75px;
+	}
 }

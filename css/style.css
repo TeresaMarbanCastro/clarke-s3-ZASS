@@ -5304,7 +5304,13 @@ a.text-dark:focus,a.text-dark:hover {
 
 .invisible {
   visibility: hidden !important;
-}/*# sourceMappingURL=bootstrap.min.css.map *//* Core *//* Components *//* Layout */footer {
+}/*# sourceMappingURL=bootstrap.min.css.map *//* Core *//* Components */button {
+  cursor: pointer;
+}
+
+a {
+  cursor: pointer;
+}/* Layout */footer {
   background-color: #5E0B75;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5427,6 +5433,7 @@ header {
   -ms-flex-line-pack: center;
   align-content: center;
   padding: 10px;
+  cursor: pointer;
 }
 
 .burger {
@@ -5445,6 +5452,7 @@ header {
   grid-column: 5;
   -ms-flex-item-align: center;
   align-self: center;
+  cursor: pointer;
 }
 
 * {
@@ -5503,6 +5511,7 @@ main h3 {
   border: solid #5E0B75 1px;
   border-radius: 0.5em;
   text-align: center;
+  width: 100%;
 }
 
 .emailSend {
@@ -5567,6 +5576,26 @@ main h3 {
 
 .myths,.links {
   margin-top: 20%;
+}
+
+@media all and (min-width: 500px) {
+  .dropdown {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+  }
+
+  .burger {
+    width: 50px;
+    height: 50px;
+  }
+
+  .logo {
+    height: 75px;
+    width: 75px;
+  }
 }
 
 @media (min-width: 576px) {
