@@ -1,6 +1,15 @@
+.header-news,
+.header-anti-news {
+  margin: 30px auto 30px;
+}
+
+// CARD NEWS AND ANTI-NEWS
+
 .card {
   display: flex;
-  border: 5px solid hsla(0,0%,100%,.1);
+  flex-direction: column;
+  border: 5px solid #fff;
+  box-shadow: 0 0 5px #aaa;
   .news-photo {
     background-size: cover;
     @include aspect-ratio(16,9);
@@ -19,7 +28,73 @@
   }
 }
 
-.section-news {
+
+// CARD TOP-5
+.top-5 {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.flipper {
+  border: 5px solid #fff;
+  box-shadow: 0 0 5px #aaa;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all ease 1s;
+  height: auto;
+  cursor: pointer;
+  @include aspect-ratio(4,3);
+  &.active {
+    transform: rotateY(-180deg);
+  }
+  .top5-photo  {
+    position: relative;
+    background-size: cover;
+    @include aspect-ratio(4,3);
+    width: 100%;
+  }
+  .front,
+  .back {
+    top:0;
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  .back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(-180deg);
+    background-color: $colorbackground;
+    width: 100%;
+    height: 100%;
+    .title-nametop {
+      color: $darkcolour;
+      font-weight: bold;
+      font-size: 33px;
+      line-height: 45px;
+    }
+    .title-top {
+      font-size: 23px;
+
+      color: $lightcolour;
+    }
+  }
+}
+
+
+// FORM-NEWS
+.form {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.form-news {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
 }
