@@ -5304,7 +5304,30 @@ a.text-dark:focus,a.text-dark:hover {
 
 .invisible {
   visibility: hidden !important;
-}/*# sourceMappingURL=bootstrap.min.css.map *//* Core *//* Components *//* Layout */header {
+}/*# sourceMappingURL=bootstrap.min.css.map *//* Core *//* Components *//* Layout */footer {
+  background-color: #5E0B75;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 60px;
+}
+
+.footerlogo {
+  width: 50px;
+  height: 50px;
+}
+
+.contact {
+  width: 50px;
+  height: 50px;
+}
+
+header {
   background-color: #BD86D8;
   display: -webkit-box;
   display: -ms-flexbox;
