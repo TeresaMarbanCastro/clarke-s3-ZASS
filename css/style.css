@@ -5611,7 +5611,7 @@ footer {
   box-sizing: border-box;
 }
 
-main {
+.faq {
   margin: 20px;
   text-align: justify;
 }
@@ -5620,7 +5620,7 @@ body {
   min-height: 100vh;
 }
 
-main h3 {
+.faq h3 {
   color: #5E0B75;
 }
 
@@ -5687,7 +5687,91 @@ main h3 {
   display: block;
 }
 
-.marketing .col-lg-4 {
+.introduction {
+  margin-top: 35px;
+}
+
+.progress {
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  background: white;
+  margin: 0 auto;
+  position: relative;
+}
+
+.progress > span {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 7px;
+  border-style: solid;
+  position: absolute;
+  top: 0;
+}
+
+.progress-left .progress-bar {
+  left: 100%;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-left: 0;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+  -webkit-animation: izquierda 1.5s linear forwards 1.8s;
+  animation: izquierda 1.5s linear forwards 1.8s;
+}
+
+.progress-right {
+  right: 0;
+}
+
+.progress-right .progress-bar {
+  left: -100%;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-right: 0;
+  -webkit-transform-origin: center right;
+  transform-origin: center right;
+  -webkit-animation: derecha 1.8s linear forwards;
+  animation: derecha 1.8s linear forwards;
+}
+
+.progress-value {
+  width: 85%;
+  height: 85%;
+  border-radius: 50%;
+  border: 5px solid #ebebeb;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 125px;
+  text-align: center;
+  position: absolute;
+  top: 7.5%;
+  left: 7.5%;
+  color: grey;
+}
+
+.progress-bar {
+  border-color: #5E0B75;
+}
+
+.value-text {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.marketing .col-lg-4 .statistics h3 {
   margin-bottom: 1.5rem;
   text-align: center;
 }
@@ -5702,7 +5786,7 @@ main h3 {
   margin-left: .75rem;
 }
 
-.myths,.links {
+.myths,.progress,.links {
   margin-top: 20%;
 }
 
@@ -6719,7 +6803,7 @@ main h3 {
 }
 
 @media all and (min-width: 600px) {
-  .myths,.links {
+  .myths,.progress,.links {
     margin-top: 15%;
   }
 }
@@ -8273,7 +8357,7 @@ main h3 {
 }
 
 @media all and (min-width: 1025px) {
-  .myths,.links {
+  .myths,.progress,.links {
     margin-top: 5%;
   }
 }
@@ -9221,6 +9305,54 @@ main h3 {
 
   to {
     background-position: 0 0;
+  }
+}
+
+@-webkit-keyframes derecha {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes derecha {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
+@-webkit-keyframes izquierda {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes izquierda {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
   }
 }
 
