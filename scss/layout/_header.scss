@@ -45,16 +45,13 @@ z-index: 1;
 	a:hover{
 		color: purple;
 	}
+	@media all and (min-width: 500px){
+		display: flex;
+		height: 15%;
+		align-items: center;
+	}
 }
-.menu-close{
-	position: absolute;
-	top: 0;
-	background-color: $lightsecondarycolour;
-	border: 1px solid white;
-	border-radius: 10px;
-	margin: 10px;
-	color: white;
-}
+
 .dropdown-list{
 	list-style: none;
 	.dropdown-item{

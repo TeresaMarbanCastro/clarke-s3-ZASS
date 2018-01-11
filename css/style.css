@@ -5312,6 +5312,13 @@ a {
   cursor: pointer;
 }
 
+.menu-close {
+  top: 0;
+  background-color: transparent;
+  border: 0;
+  margin: 10px;
+}
+
 .header-news,.header-anti-news {
   margin: 30px auto 30px;
 }
@@ -5553,16 +5560,6 @@ a {
 
 .showCompleteMenu a:hover {
   color: purple;
-}
-
-.menu-close {
-  position: absolute;
-  top: 0;
-  background-color: #BD86D8;
-  border: 1px solid white;
-  border-radius: 10px;
-  margin: 10px;
-  color: white;
 }
 
 .dropdown-list {
@@ -5878,6 +5875,16 @@ body {
 }
 
 @media all and (min-width: 500px) {
+  .showCompleteMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 15%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
   .dropdown {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
