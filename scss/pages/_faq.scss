@@ -1,14 +1,14 @@
 *{
 	box-sizing: border-box;
 }
-main{
+.faq{
 	margin: 20px;
 	text-align: justify;
 }
 body{
 	min-height: 100vh;
 }
-main h3{
+.faq h3{
 	color: $primaryColour;
 }
 .questions-listed{

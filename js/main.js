@@ -1,3 +1,12 @@
+//Header
+var menu = document.querySelector('.showMenu');
+function showMenu (){
+	menu.classList.add(showmenu)
+}
+
+$('.carousel').carousel();
+
+
 
 //Menu
 var showBtn = document.querySelector('.burger');
@@ -32,3 +41,17 @@ hideMenu.addEventListener('click', closeMenu);
 // }
 //
 // showFaq.addEventListener('click', showAnswer);
+
+
+
+// TOP-5
+
+var selectFlipper = document.querySelectorAll('.flipper');
+
+function flipTop5(event) {
+	event.currentTarget.classList.toggle('active');
+}
+
+for (var i = 0; i < selectFlipper.length; i++) {
+	selectFlipper[i].addEventListener('click', flipTop5);
+}

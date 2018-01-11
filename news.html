@@ -2,10 +2,10 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
-	<link rel="shortcut icon" href="images/favicon.ico"/>
+  <link rel="shortcut icon" href="images/favicon.ico"/>
   <title>Noticias</title>
 </head>
 <body class="newspage">
@@ -29,30 +29,101 @@
 			</div>
 		</nav>
 	</header>
+  <main class="wrapper">
+    <section class="news">
+      <div class="container section-news">
+        <h2 class="header-news">NOTICIAS</h2>
+        <div class="row">
+          <div class="col-xs-12 col-md-6 col-lg-4 edge">
+            <div class="card">
+              <div class="news-photo photo1"></div>
+              <h3 class="title-news"><a href="#"><span>Titular de la noticia</span></a></h3>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-4 edge">
+            <div class="card">
+              <div class="news-photo photo2"></div>
+              <h3 class="title-news"><a href="#"><span>Titular de la noticia</span></a></h3>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-4 edge">
+            <div class="card">
+              <div class="news-photo photo3"></div>
+              <h3 class="title-news"><a href="#"><span>Titular de la noticia</span></a></h3>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-4 edge">
+            <div class="card">
+              <div class="news-photo photo4"></div>
+              <h3 class="title-news"><a href="#"><span>Titular de la noticia</span></a></h3>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-4 edge">
+            <div class="card">
+              <div class="news-photo photo5"></div>
+              <h3 class="title-news"><a href="#"><span>Titular de la noticia</span></a></h3>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-4 edge">
+            <div class="card">
+              <div class="news-photo photo6"></div>
+              <h3 class="title-news"><a href="#"><span>Titular de la noticia</span></a></h3>
+            </div>
+          </div>
+        </div>
+      </div>
 
-  <main>
-    <section class="section news">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
     </section>
-    <section class="section anti-news">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+    <section class="anti-news">
+      <div class="container section-antinews">
+        <h2 class="header-anti-news">ANTI-NOTICIAS</h2>
+        <div class="row">
+          <div class="col-xs-12 col-md-6 col-lg-4 edge">
+            <div class="card">
+              <div class="news-photo photo1"></div>
+              <h3 class="title-antinews"><a href="#"><span>Titular de la noticia</span></a></h3>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-4 edge">
+            <div class="card">
+              <div class="news-photo photo2"></div>
+              <h3 class="title-antinews"><a href="#"><span>Titular de la noticia</span></a></h3>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-4 edge">
+            <div class="card">
+              <div class="news-photo photo3"></div>
+              <h3 class="title-antinews"><a href="#"><span>Titular de la noticia</span></a></h3>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-4 edge">
+            <div class="card">
+              <div class="news-photo photo4"></div>
+              <h3 class="title-antinews"><a href="#"><span>Titular de la noticia</span></a></h3>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-4 edge">
+            <div class="card">
+              <div class="news-photo photo5"></div>
+              <h3 class="title-antinews"><a href="#"><span>Titular de la noticia</span></a></h3>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-4 edge">
+            <div class="card">
+              <div class="news-photo photo6"></div>
+              <h3 class="title-antinews"><a href="#"><span>Titular de la noticia</span></a></h3>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="section form">
+    <section class="form">
+      <h3 class="send-news">Envíanos tu noticia</h3>
       <form class="form-news" action="#" method="post">
         <label for="title">Título</label>
-        <input type="text" id="title" name="title">
+        <input type="text" id="title" name="title" required>
         <label for="description">Descripción de la noticia</label>
-        <input type="text" id="description" name="description">
+        <input type="text" id="description" name="description" required>
         <label for="img">Imagen de la noticia</label>
         <input type="file" id="img" name="img">
         <label for="url">Fuente (URL externo)</label>
@@ -62,7 +133,15 @@
     </section>
   </main>
   <script type="text/javascript" href="js/news.js"></script>
-  <footer>
-  </footer>
+	<footer>
+		<div class="footer-items">
+			<img src="images/zass-logo2.png"class="footerlogo">
+			<img src="images/letter.png" class="contact"><a href="">
+		</div>
+	</footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
