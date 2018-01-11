@@ -5304,7 +5304,22 @@ a.text-dark:focus,a.text-dark:hover {
 
 .invisible {
   visibility: hidden !important;
-}/*# sourceMappingURL=bootstrap.min.css.map *//* Core *//* Components */.header-news,.header-anti-news {
+}/*# sourceMappingURL=bootstrap.min.css.map *//* Core *//* Components */button {
+  cursor: pointer;
+}
+
+a {
+  cursor: pointer;
+}
+
+.menu-close {
+  top: 0;
+  background-color: transparent;
+  border: 0;
+  margin: 10px;
+}
+
+.header-news,.header-anti-news {
   margin: 30px auto 30px;
 }
 
@@ -5489,12 +5504,66 @@ a.text-dark:focus,a.text-dark:hover {
   width: 50px;
   height: 50px;
 }/* Layout */header {
+  position: relative;
   background-color: #BD86D8;
 }
 
 .withinHeader {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.navigation {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  -webkit-transform: translateY(-150%);
+  transform: translateY(-150%);
+  z-index: 1;
+  top: 0;
+  left: 0;
+  -webkit-transition: background ease 0.5s, -webkit-transform ease 1s 0.5s;
+  transition: background ease 0.5s, -webkit-transform ease 1s 0.5s;
+  transition: transform ease 1s 0.5s, background ease 0.5s;
+  transition: transform ease 1s 0.5s, background ease 0.5s, -webkit-transform ease 1s 0.5s;
+}
+
+.navigation.show {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: background ease 0.8s 0.9s, -webkit-transform ease 0.8s;
+  transition: background ease 0.8s 0.9s, -webkit-transform ease 0.8s;
+  transition: transform ease 0.8s, background ease 0.8s 0.9s;
+  transition: transform ease 0.8s, background ease 0.8s 0.9s, -webkit-transform ease 0.8s;
+}
+
+.containerBack {
+  background-color: transparent;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.showCompleteMenu {
+  list-style: none;
+  width: 100%;
+  background-color: #5E0B75;
+}
+
+.showCompleteMenu a {
+  text-decoration: none;
+  color: #F7F9F9;
+  display: block;
+}
+
+.showCompleteMenu a:hover {
+  color: purple;
+}
+
+.dropdown-list {
+  list-style: none;
 }
 
 .dropdown {
@@ -5506,6 +5575,7 @@ a.text-dark:focus,a.text-dark:hover {
   -ms-flex-line-pack: center;
   align-content: center;
   padding: 10px;
+  cursor: pointer;
 }
 
 .burger {
@@ -5518,29 +5588,13 @@ a.text-dark:focus,a.text-dark:hover {
   align-self: center;
 }
 
-.dropdown-list {
-  display: none;
-  opacity: 0;
-  -webkit-transition: opacity ease 1s 0.5s;
-  transition: opacity ease 1s 0.5s;
-}
-
-.dropdown-list .dropdown-item {
-  color: white;
-}
-
-.show {
-  display: block;
-  background-color: green;
-  opacity: 0;
-}
-
 .logo {
   height: 80%;
   width: 80%;
   grid-column: 5;
   -ms-flex-item-align: center;
   align-self: center;
+  cursor: pointer;
 }
 
 * {
@@ -5577,7 +5631,7 @@ footer {
   justify-content: center;
   -ms-flex-line-pack: center;
   align-content: center;
-  height: 60px;
+  width: 100%;
 }
 
 .footer-items {
@@ -5644,6 +5698,7 @@ body {
   border: solid #5E0B75 1px;
   border-radius: 0.5em;
   text-align: center;
+  width: 100%;
 }
 
 .emailSend {
@@ -5829,6 +5884,36 @@ body {
 .phototop5 {
   background-image: url("../images/Lydia-valentin.jpg");
   max-width: 100%;
+}
+
+@media all and (min-width: 500px) {
+  .showCompleteMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 15%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .dropdown {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+  }
+
+  .burger {
+    width: 50px;
+    height: 50px;
+  }
+
+  .logo {
+    height: 75px;
+    width: 75px;
+  }
 }
 
 @media (min-width: 576px) {

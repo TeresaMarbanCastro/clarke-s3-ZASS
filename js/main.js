@@ -1,49 +1,48 @@
+//Header
+var menu = document.querySelector('.showMenu');
+function showMenu (){
+	menu.classList.add(showmenu)
+}
 
-// //Header
-// var menu = document.querySelector('.showMenu');
-// function showMenu (){
-// 	menu.classList.add(showmenu)
-// }
-//
-// $('.carousel').carousel();
-//
-// //Menu
-// var show = document.querySelector('.burger');
-// var list = document.querySelector('.dropdown-list');
-// function showMenu (){
-// 	 list.classList.toggle('show');
-// 	//  setTimeout(function(){list.classList.toggle('showOpacity')},2000);
-// 	if (list.classList.contains('show')){
-// 		list.style.opacity = 1;
-// 	} else {
-// 		list.style.opacity = 0;
-// 	}
-// }
-// show.addEventListener('click', showMenu);
-//
+$('.carousel').carousel();
+
+
+
+//Menu
+var showBtn = document.querySelector('.burger');
+// var body = document.querySelector('body');
+var showMenu = document.querySelector('.navigation')
+var hideMenu = document.querySelector('.menu-close');
+var links = document.querySelectorAll('.dropdown-item');
+
+for (var i = 0; i < links.length; i++) {
+	links[i].addEventListener('click', closeMenu);
+}
+function openMenu(){
+	showMenu.classList.add('show');
+}
+showBtn.addEventListener('click', openMenu);
+
+//Hide Menu
+function closeMenu(){
+	showMenu.classList.remove('show');
+}
+hideMenu.addEventListener('click', closeMenu);
+
+
 // //Desplegables FAQ
 // var showFaq = document.querySelectorAll('.questions-listed button');
 //
-// var listFaq = document.querySelector('.questions-listed-answer');
+// var listFaq = document.querySelectorAll('.questions-listed-answer span');
 //
-// function showAnswer(event){
-// 	listFaq.classList.toggle('show')event.currentTarget.innerHTML);
+// function showAnswer(){
+// 	listFaq.classList.toggle('show');
+// 	showFaq.event.currentTarget.innerHTML;
 // }
 //
-// show.addEventListener('click', showAnswer);
-//
-//
-//
-//
-//
-//
-//
-// function showFaq (){
-// 	 list.classList.toggle('show');
-// }
-// show.addEventListener('click', showFaq);
-//
-//
+// showFaq.addEventListener('click', showAnswer);
+
+
 
 // TOP-5
 
