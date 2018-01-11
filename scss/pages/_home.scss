@@ -23,3 +23,29 @@
     margin-top: $mrg-top-sct-dk;
   }
 }
+
+// Top-5
+
+.edge {
+  margin-bottom: 30px;
+}
+.phototop1 {
+  background-image: url($pathImages + 'Mireia-belmonte.jpg');
+  max-width: 100%;
+}
+.phototop2 {
+  background-image: url($pathImages + 'Carmen-martin.jpg');
+  max-width: 100%;
+}
+.phototop3 {
+  background-image: url($pathImages + 'Carolina-marin.jpg');
+  max-width: 100%;
+}
+.phototop4 {
+  background-image: url($pathImages + 'Garbine-muguruza.jpg');
+  max-width: 100%;
+}
+.phototop5 {
+  background-image: url($pathImages + 'Lydia-valentin.jpg');
+  max-width: 100%;
+}
