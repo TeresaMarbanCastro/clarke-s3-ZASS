@@ -1,11 +1,3 @@
-//Header
-// var menu = document.querySelector('.showMenu');
-// function showMenu (){
-// 	menu.classList.add(showmenu)
-// }
-//
-// $('.carousel').carousel();
-//
 
 //Menu
 var showBtn = document.querySelector('.burger');
@@ -27,13 +19,6 @@ function closeMenu(){
 	showMenu.classList.remove('show');
 }
 hideMenu.addEventListener('click', closeMenu);
-
-
-
-
-
-
-
 
 
 // //Desplegables FAQ
