@@ -50,9 +50,33 @@
 var selectFlipper = document.querySelectorAll('.flipper');
 
 function flipTop5(event) {
-	event.currentTarget.classList.toggle('active');
+	if (event.currentTarget.classList.contains('active')) {
+		event.currentTarget.classList.remove('active');
+	}else {
+		for (var i = 0; i < selectFlipper.length; i++) {
+			selectFlipper[i].classList.remove('active');
+		}
+		event.currentTarget.classList.add('active');
+	}
 }
 
 for (var i = 0; i < selectFlipper.length; i++) {
 	selectFlipper[i].addEventListener('click', flipTop5);
+}
+
+// DESPLEGAR news
+
+var cardNews = document.querySelectorAll('.card');
+function showNew(event) {
+	if (event.currentTarget.classList.contains('show-card')) {
+		event.currentTarget.classList.remove('show-card');
+	}else {
+		for (var i = 0; i < cardNews.length; i++) {
+			cardNews[i].classList.remove('show-card');
+		}
+		event.currentTarget.classList.toggle('show-card');
+	}
+}
+for (var i = 0; i < cardNews.length; i++) {
+	cardNews[i].addEventListener('click', showNew);
 }

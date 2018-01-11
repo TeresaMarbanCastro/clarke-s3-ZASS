@@ -5316,9 +5316,7 @@ a.text-dark:focus,a.text-dark:hover {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  border: 5px solid #fff;
-  -webkit-box-shadow: 0 0 5px #aaa;
-  box-shadow: 0 0 5px #aaa;
+  border: 0;
 }
 
 .card .news-photo {
@@ -5340,16 +5338,14 @@ a.text-dark:focus,a.text-dark:hover {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 30px 30px;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  padding: 15px;
   color: #5E0B75;
-}
-
-.card .title-news a,.card .title-antinews a {
-  text-decoration: none;
-  color: #5E0B75;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
 }
 
 .top-5 {
@@ -5470,6 +5466,52 @@ a.text-dark:focus,a.text-dark:hover {
   margin-bottom: 30px;
 }
 
+.card-title {
+  margin-bottom: 0;
+}
+
+.card-flap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 15px;
+  position: absolute;
+  top: 100%;
+  background-color: #fff;
+  height: auto;
+  z-index: 2;
+  padding-bottom: 30px;
+}
+
+.card-flap .card-description {
+  padding: 0 15px 15px;
+  text-align: justify;
+}
+
+.card-flap .card-description p {
+  margin-bottom: 0;
+}
+
+.card .card-flap {
+  display: none;
+}
+
+.card.show-card .card-flap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .photo1,.photo4 {
   background-image: url("../images/img1.jpg");
   max-width: 100%;
@@ -5483,6 +5525,29 @@ a.text-dark:focus,a.text-dark:hover {
 .photo3,.photo6 {
   background-image: url("../images/img3.jpg");
   max-width: 100%;
+}
+
+.btn-read {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #0096a0;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  padding: 6px 30px 8px;
+  position: relative;
+  text-decoration: none;
+  -webkit-transition: all 0.1s 0s ease-out;
+  transition: all 0.1s 0s ease-out;
+}
+
+.no-visibility {
+  display: none;
 }
 
 .arrow-down {
