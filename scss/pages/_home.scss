@@ -92,23 +92,27 @@
     }
 }
 //False Myths
-.marketing .col-lg-4 .statistics h3{
+.col-lg-4 {
   margin-bottom: 1.5rem;
   text-align: center;
 }
 
-.marketing h2 {
-  font-weight: 400;
-  padding: 3%;
+.statistics h3{
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
-.marketing .col-lg-4 p {
+.col-lg-4 > h2 {
+  padding-top: 7%;
+}
+
+.col-lg-4 > p {
   margin-right: .75rem;
   margin-left: .75rem;
 }
 
 
-.myths, .progress, .links {
+.myths, .progress, .links, .testimonials {
   margin-top: $mrg-top-sct-mv;
   @media all and (min-width: 600px){
     margin-top: $mrg-top-sct-tb;
