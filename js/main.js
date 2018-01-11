@@ -1,44 +1,49 @@
-
 //Header
-var menu = document.querySelector('.showMenu');
-function showMenu (){
-	menu.classList.add(showmenu)
-}
-
-$('.carousel').carousel();
+// var menu = document.querySelector('.showMenu');
+// function showMenu (){
+// 	menu.classList.add(showmenu)
+// }
+//
+// $('.carousel').carousel();
+//
 
 //Menu
-var show = document.querySelector('.burger');
-var list = document.querySelector('.dropdown-list');
-function showMenu (){
-	 list.classList.toggle('show');
-	//  setTimeout(function(){list.classList.toggle('showOpacity')},2000);
-	if (list.classList.contains('show')){
-		list.style.opacity = 1;
-	} else {
-		list.style.opacity = 0;
-	}
+var showBtn = document.querySelector('.burger');
+// var body = document.querySelector('body');
+var showMenu = document.querySelector('.navigation')
+var hideMenu = document.querySelector('.menu-close');
+var links = document.querySelectorAll('.dropdown-item');
+
+for (var i = 0; i < links.length; i++) {
+	links[i].addEventListener('click', closeMenu);
 }
-show.addEventListener('click', showMenu);
-
-//Desplegables FAQ
-var showFaq = document.querySelectorAll('.questions-listed button');
-
-var listFaq = document.querySelector('.questions-listed-answer');
-
-function showAnswer(event){
-	listFaq.classList.toggle('show')event.currentTarget.innerHTML);
+function openMenu(){
+	showMenu.classList.add('show');
 }
+showBtn.addEventListener('click', openMenu);
 
-show.addEventListener('click', showAnswer);
-
-
-
-
-
-
-
-function showFaq (){
-	 list.classList.toggle('show');
+//Hide Menu
+function closeMenu(){
+	showMenu.classList.remove('show');
 }
-show.addEventListener('click', showFaq);
+hideMenu.addEventListener('click', closeMenu);
+
+
+
+
+
+
+
+
+
+// //Desplegables FAQ
+// var showFaq = document.querySelectorAll('.questions-listed button');
+//
+// var listFaq = document.querySelectorAll('.questions-listed-answer span');
+//
+// function showAnswer(){
+// 	listFaq.classList.toggle('show');
+// 	showFaq.event.currentTarget.innerHTML;
+// }
+//
+// showFaq.addEventListener('click', showAnswer);
