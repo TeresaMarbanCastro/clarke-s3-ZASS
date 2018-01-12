@@ -5317,6 +5317,7 @@ a {
   background-color: transparent;
   border: 0;
   margin: 10px;
+  text-align: left;
 }
 
 .header-news,.header-anti-news {
@@ -5509,7 +5510,6 @@ a {
   background-color: #BD86D8;
   width: 45px;
   height: 45px;
-  border-radius: 5px;
 }
 
 .withinHeader {
@@ -5551,9 +5551,16 @@ a {
 }
 
 .showCompleteMenu {
-  list-style: none;
   width: 100%;
   background-color: #5E0B75;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0;
 }
 
 .showCompleteMenu a {
@@ -5566,8 +5573,9 @@ a {
   color: purple;
 }
 
-.dropdown-list {
+.showCompleteMenu .dropdown-list {
   list-style: none;
+  margin: 0;
 }
 
 .dropdown {
@@ -5883,14 +5891,28 @@ body {
 }
 
 @media all and (min-width: 500px) {
+  header {
+    margin: 5px;
+    border-radius: 5px;
+  }
+
   .showCompleteMenu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0;
+    height: 15%;
+  }
+
+  .showCompleteMenu .dropdown-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     height: 15%;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
   }
 
   .dropdown {
