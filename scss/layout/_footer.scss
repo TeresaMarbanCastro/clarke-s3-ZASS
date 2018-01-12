@@ -1,29 +1,38 @@
-footer{
+.footer-common{
 	background-color: $primaryColour;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	// height: 60px;
 	width: 100%;
-
+}
+.footer-quote-title{
+	background-color: $softcolour;
+	height: 30%;
+	color: $colorbackground;
+	text-align: center;
+	padding: 5px;
+	@include fontHand();
+	.igualdad{
+		color: $intensecolour;
+	}
+	.sumate{
+		color: $intensecolour;
+	}
 }
 .footer-items{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	height: 70%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 	align-items: center;
+	margin-left: 20%;
+	margin-right: 20%;
 }
 .footerlogo{
 	width: 50px;
 	height: 50px;
 	grid-column: 1;
-	display: flex;
-	align-self: center;
-	justify-content: center;
 }
 .contact{
 	width: 50px;
 	height: 50px;
-	grid-column: 5;
 }
 
 @media all and (min-width: 700px){
