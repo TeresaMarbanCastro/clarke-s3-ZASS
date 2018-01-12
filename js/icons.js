@@ -16,8 +16,9 @@ AnimatedIcons.prototype.render = function(){
         this.state = 1;
     }
 }
+
 var icons = [
-    new AnimatedIcons('#arm', 'images/arm-icon.png','images/arm-icon-light.png')
+    new AnimatedIcons('#arm', 'images/arm-icon.png','images/arm-icon-light.png'), new AnimatedIcons('#tampax', 'images/tampax-icon.png','images/tampax-icon-without.png'),
 ];
 
 setInterval(function() {
