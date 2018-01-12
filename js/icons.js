@@ -21,7 +21,6 @@ var icons = [
     new AnimatedIcons('#arm', 'images/arm-icon.png','images/arm-icon-light.png'),
     new AnimatedIcons('#tampax', 'images/tampax-icon.png','images/tampax-icon-without.png'),
     new AnimatedIcons('#man', 'images/man-icon.png','images/man-icon-foot.png'),
-    new AnimatedIcons('#man', 'images/man-icon.png','images/man-icon-foot.png'),
     new AnimatedIcons('#woman', 'images/woman-icon.png','images/woman-icon-camera.png'),
     new AnimatedIcons('#strong', 'images/strong-icon.png','images/stronger-icon.png'),
 ];
