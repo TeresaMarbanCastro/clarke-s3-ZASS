@@ -1,34 +1,97 @@
-.header-news,
-.header-anti-news {
-  margin: 30px auto 30px;
-}
-
 // CARD NEWS AND ANTI-NEWS
+
+.header-news {
+  margin: 80px auto 40px;
+}
+.header-anti-news {
+  margin: 50px auto 40px;
+}
+.edge {
+  margin-bottom: 30px;
+}
+.news {
+  background-color: $softcolour;
+}
 
 .card-news {
   position: relative;
   display: flex;
   flex-direction: column;
-  // box-shadow: 0 0 5px #aaa;
+  background-color: $colorwhite;
   .news-photo {
     background-size: cover;
     @include aspect-ratio(16,9);
+    &.photo1,
+    &.photo2,
+    &.photo3,
+    &.photo4,
+    &.photo5,
+    &.photo6,
+    &.photo7,
+    &.photo8,
+    &.photo9,
+    &.photo10,
+    &.photo11,
+    &.photo12 {
+      background-image: url('../images/img1.jpg');
+      max-width: 100%;
+    }
   }
   .title-news,
   .title-antinews {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 15px;
+    padding: 25px 20px;
     color: $primaryColour;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
-    margin: 0;
+  }
+}
+.card-news {
+  .card-flap {
+    display: none;
+  }
+  &.show-card {
+    .card-flap {
+      display: flex;
+    }
+  }
+}
+.card-flap {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+  background-color: $colorwhite;
+  top: 100%;
+  height: auto;
+  z-index: 2;
+
+  .card-description {
+    padding: 0 20px 15px;
+    text-align: justify;
   }
 }
 
+.btn-read {
+  background: $intensecolour;
+  border-radius: 4px;
+  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
+  color: $colorwhite;
+  padding: 6px 30px 8px;
+  position: relative;
+  transition: all 0.1s 0s ease-out;
+  &:hover{
+    text-decoration: none;
+    color: $colorwhite;
+  }
+}
 
 // TOP-5
+
 .top-5 {
   margin-bottom: 40px;
   margin-top: 40px;
@@ -51,6 +114,26 @@
     background-size: cover;
     @include aspect-ratio(4,3);
     width: 100%;
+    &.phototop1 {
+      background-image: url($pathImages + 'Mireia-belmonte.jpg');
+      max-width: 100%;
+    }
+    &.phototop2 {
+      background-image: url($pathImages + 'Carmen-martin.jpg');
+      max-width: 100%;
+    }
+    &.phototop3 {
+      background-image: url($pathImages + 'Carolina-marin.jpg');
+      max-width: 100%;
+    }
+    &.phototop4 {
+      background-image: url($pathImages + 'Garbine-muguruza.jpg');
+      max-width: 100%;
+    }
+    &.phototop5 {
+      background-image: url($pathImages + 'Lydia-valentin.jpg');
+      max-width: 100%;
+    }
   }
   .front,
   .back {

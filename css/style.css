@@ -5326,8 +5326,20 @@ a {
   padding-left: 5px;
 }
 
-.header-news,.header-anti-news {
-  margin: 30px auto 30px;
+.header-news {
+  margin: 80px auto 40px;
+}
+
+.header-anti-news {
+  margin: 50px auto 40px;
+}
+
+.edge {
+  margin-bottom: 30px;
+}
+
+.news {
+  background-color: #BED8D5;
 }
 
 .card-news {
@@ -5339,6 +5351,7 @@ a {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  background-color: #fff;
 }
 
 .card-news .news-photo {
@@ -5353,6 +5366,11 @@ a {
   padding-top: 56.25%;
 }
 
+.card-news .news-photo.photo1,.card-news .news-photo.photo2,.card-news .news-photo.photo3,.card-news .news-photo.photo4,.card-news .news-photo.photo5,.card-news .news-photo.photo6,.card-news .news-photo.photo7,.card-news .news-photo.photo8,.card-news .news-photo.photo9,.card-news .news-photo.photo10,.card-news .news-photo.photo11,.card-news .news-photo.photo12 {
+  background-image: url("../images/img1.jpg");
+  max-width: 100%;
+}
+
 .card-news .title-news,.card-news .title-antinews {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5363,11 +5381,64 @@ a {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  padding: 15px;
+  padding: 25px 20px;
   color: #5E0B75;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
-  margin: 0;
+}
+
+.card-news .card-flap {
+  display: none;
+}
+
+.card-news.show-card .card-flap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card-flap {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 30px;
+  background-color: #fff;
+  top: 100%;
+  height: auto;
+  z-index: 2;
+}
+
+.card-flap .card-description {
+  padding: 0 20px 15px;
+  text-align: justify;
+}
+
+.btn-read {
+  background: #218380;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
+  color: #fff;
+  padding: 6px 30px 8px;
+  position: relative;
+  -webkit-transition: all 0.1s 0s ease-out;
+  transition: all 0.1s 0s ease-out;
+}
+
+.btn-read:hover {
+  text-decoration: none;
+  color: #fff;
 }
 
 .top-5 {
@@ -5413,6 +5484,31 @@ a {
   content: '';
   width: 100%;
   padding-top: 75%;
+}
+
+.flipper .top5-photo.phototop1 {
+  background-image: url("../images/Mireia-belmonte.jpg");
+  max-width: 100%;
+}
+
+.flipper .top5-photo.phototop2 {
+  background-image: url("../images/Carmen-martin.jpg");
+  max-width: 100%;
+}
+
+.flipper .top5-photo.phototop3 {
+  background-image: url("../images/Carolina-marin.jpg");
+  max-width: 100%;
+}
+
+.flipper .top5-photo.phototop4 {
+  background-image: url("../images/Garbine-muguruza.jpg");
+  max-width: 100%;
+}
+
+.flipper .top5-photo.phototop5 {
+  background-image: url("../images/Lydia-valentin.jpg");
+  max-width: 100%;
 }
 
 .flipper .front,.flipper .back {
@@ -5482,82 +5578,6 @@ a {
   -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
-}
-
-.edge {
-  margin-bottom: 30px;
-}
-
-.card-flap {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-bottom: 15px;
-  padding-bottom: 30px;
-  background-color: #fff;
-  top: 100%;
-  height: auto;
-  z-index: 2;
-}
-
-.card-flap .card-description {
-  padding: 0 15px 15px;
-  text-align: justify;
-}
-
-.card-news .card-flap {
-  display: none;
-}
-
-.card-news.show-card .card-flap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.photo1,.photo4 {
-  background-image: url("../images/img1.jpg");
-  max-width: 100%;
-}
-
-.photo2,.photo5 {
-  background-image: url("../images/img2.jpg");
-  max-width: 100%;
-}
-
-.photo3,.photo6 {
-  background-image: url("../images/img3.jpg");
-  max-width: 100%;
-}
-
-.btn-read {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background: #218380;
-  border-radius: 4px;
-  -webkit-box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
-  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
-  color: #fff;
-  padding: 6px 30px 8px;
-  position: relative;
-  text-decoration: none;
-  -webkit-transition: all 0.1s 0s ease-out;
-  transition: all 0.1s 0s ease-out;
 }
 
 .arrow-down {
@@ -5936,35 +5956,6 @@ body {
 
 .list-element:hover {
   background-color: #BED8D5;
-}
-
-.edge {
-  margin-bottom: 30px;
-}
-
-.phototop1 {
-  background-image: url("../images/Mireia-belmonte.jpg");
-  max-width: 100%;
-}
-
-.phototop2 {
-  background-image: url("../images/Carmen-martin.jpg");
-  max-width: 100%;
-}
-
-.phototop3 {
-  background-image: url("../images/Carolina-marin.jpg");
-  max-width: 100%;
-}
-
-.phototop4 {
-  background-image: url("../images/Garbine-muguruza.jpg");
-  max-width: 100%;
-}
-
-.phototop5 {
-  background-image: url("../images/Lydia-valentin.jpg");
-  max-width: 100%;
 }
 
 @media all and (min-width: 500px) {
