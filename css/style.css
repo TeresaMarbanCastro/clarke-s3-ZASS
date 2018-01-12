@@ -1,4 +1,4 @@
-/*Bootstrap*//*!
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700,900);/*Bootstrap*//*!
  * Bootstrap v4.0.0-beta.2 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
  * Copyright 2011-2017 Twitter, Inc.
@@ -5330,7 +5330,8 @@ a {
   margin: 30px auto 30px;
 }
 
-.card {
+.card-news {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5338,40 +5339,35 @@ a {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  border: 5px solid #fff;
-  -webkit-box-shadow: 0 0 5px #aaa;
-  box-shadow: 0 0 5px #aaa;
 }
 
-.card .news-photo {
+.card-news .news-photo {
   background-size: cover;
   position: relative;
 }
 
-.card .news-photo:before {
+.card-news .news-photo:before {
   display: block;
   content: '';
   width: 100%;
   padding-top: 56.25%;
 }
 
-.card .title-news,.card .title-antinews {
+.card-news .title-news,.card-news .title-antinews {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 30px 30px;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  padding: 15px;
   color: #5E0B75;
-}
-
-.card .title-news a,.card .title-antinews a {
-  text-decoration: none;
-  color: #5E0B75;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
 }
 
 .top-5 {
@@ -5380,9 +5376,9 @@ a {
 }
 
 .flipper {
-  border: 5px solid #fff;
-  -webkit-box-shadow: 0 0 5px #aaa;
-  box-shadow: 0 0 5px #aaa;
+  border: 5px solid #F7F9F9;
+  -webkit-box-shadow: 0 0 5px #aaaaaa;
+  box-shadow: 0 0 5px #aaaaaa;
   position: relative;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
@@ -5456,7 +5452,7 @@ a {
 
 .flipper .back .title-top {
   font-size: 23px;
-  color: #F7F9F9;
+  color: #fff;
 }
 
 .form {
@@ -5492,6 +5488,44 @@ a {
   margin-bottom: 30px;
 }
 
+.card-flap {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 30px;
+  background-color: #fff;
+  top: 100%;
+  height: auto;
+  z-index: 2;
+}
+
+.card-flap .card-description {
+  padding: 0 15px 15px;
+  text-align: justify;
+}
+
+.card-news .card-flap {
+  display: none;
+}
+
+.card-news.show-card .card-flap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .photo1,.photo4 {
   background-image: url("../images/img1.jpg");
   max-width: 100%;
@@ -5505,6 +5539,25 @@ a {
 .photo3,.photo6 {
   background-image: url("../images/img3.jpg");
   max-width: 100%;
+}
+
+.btn-read {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #218380;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
+  color: #fff;
+  padding: 6px 30px 8px;
+  position: relative;
+  text-decoration: none;
+  -webkit-transition: all 0.1s 0s ease-out;
+  transition: all 0.1s 0s ease-out;
 }
 
 .arrow-down {
@@ -5625,6 +5678,8 @@ a {
 }
 
 body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
   margin: 0;
   padding: 0;
   display: -webkit-box;

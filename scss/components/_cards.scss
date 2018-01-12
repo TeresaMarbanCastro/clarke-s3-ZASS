@@ -5,11 +5,11 @@
 
 // CARD NEWS AND ANTI-NEWS
 
-.card {
+.card-news {
+  position: relative;
   display: flex;
   flex-direction: column;
-  border: 5px solid #fff;
-  box-shadow: 0 0 5px #aaa;
+  // box-shadow: 0 0 5px #aaa;
   .news-photo {
     background-size: cover;
     @include aspect-ratio(16,9);
@@ -18,26 +18,25 @@
   .title-antinews {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 30px 30px;
+    justify-content: flex-start;
+    padding: 15px;
     color: $primaryColour;
-    a {
-      text-decoration: none;
-      color: $primaryColour;
-    }
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
   }
 }
 
 
-// CARD TOP-5
+// TOP-5
 .top-5 {
   margin-bottom: 40px;
   margin-top: 40px;
 }
 
 .flipper {
-  border: 5px solid #fff;
-  box-shadow: 0 0 5px #aaa;
+  border: 5px solid $lightcolour;
+  box-shadow: 0 0 5px $colorshadow;
   position: relative;
   transform-style: preserve-3d;
   transition: all ease 1s;
@@ -55,7 +54,7 @@
   }
   .front,
   .back {
-    top:0;
+    top: 0;
     position: absolute;
     backface-visibility: hidden;
   }
@@ -76,25 +75,7 @@
     }
     .title-top {
       font-size: 23px;
-
-      color: $lightcolour;
+      color: $colorwhite;
     }
   }
-}
-
-
-// FORM-NEWS
-.form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 500px;
-  margin: 0 auto;
-}
-.form-news {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-
 }
