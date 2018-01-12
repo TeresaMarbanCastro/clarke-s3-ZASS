@@ -5676,7 +5676,27 @@ footer {
   width: 50px;
   height: 50px;
   grid-column: 5;
-}/* Pages */* {
+}/* Pages */.fade-bckg {
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-top: 0;
+}
+
+#quote-bckg {
+  background: url("../images/yoga.jpg") no-repeat;
+  background-size: cover;
+  background-position: center top;
+  min-height: 100vh;
+}
+
+.header-hero {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 50vh;
+}
+
+* {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -5842,23 +5862,31 @@ body {
   margin-bottom: 1rem;
 }
 
-.marketing .col-lg-4 .statistics h3 {
+.col-lg-4 {
   margin-bottom: 1.5rem;
   text-align: center;
 }
 
-.marketing h2 {
-  font-weight: 400;
-  padding: 3%;
+.statistics h3 {
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
-.marketing .col-lg-4 p {
+.col-lg-4 > h2 {
+  padding-top: 7%;
+}
+
+.col-lg-4 > p {
   margin-right: .75rem;
   margin-left: .75rem;
 }
 
-.myths,.progress,.links {
+.myths,.progress,.links,.testimonials {
   margin-top: 20%;
+}
+
+.list-element:hover {
+  background-color: #BED8D5;
 }
 
 .edge {
@@ -6913,7 +6941,7 @@ body {
 }
 
 @media all and (min-width: 600px) {
-  .myths,.progress,.links {
+  .myths,.progress,.links,.testimonials {
     margin-top: 15%;
   }
 }
@@ -8467,7 +8495,7 @@ body {
 }
 
 @media all and (min-width: 1025px) {
-  .myths,.progress,.links {
+  .myths,.progress,.links,.testimonials {
     margin-top: 5%;
   }
 }
