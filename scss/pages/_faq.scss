@@ -8,8 +8,10 @@
 body{
 	min-height: 100vh;
 }
-.faq h3{
+.faq-title{
 	color: $primaryColour;
+	margin-left: 50px;
+	text-align: left;
 }
 .questions-listed{
 	display: grid;
