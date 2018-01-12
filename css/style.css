@@ -5308,7 +5308,8 @@ a.text-dark:focus,a.text-dark:hover {
   margin: 30px auto 30px;
 }
 
-.card {
+.card-news {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5316,22 +5317,21 @@ a.text-dark:focus,a.text-dark:hover {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  border: 0;
 }
 
-.card .news-photo {
+.card-news .news-photo {
   background-size: cover;
   position: relative;
 }
 
-.card .news-photo:before {
+.card-news .news-photo:before {
   display: block;
   content: '';
   width: 100%;
   padding-top: 56.25%;
 }
 
-.card .title-news,.card .title-antinews {
+.card-news .title-news,.card-news .title-antinews {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5354,9 +5354,9 @@ a.text-dark:focus,a.text-dark:hover {
 }
 
 .flipper {
-  border: 5px solid #fff;
-  -webkit-box-shadow: 0 0 5px #aaa;
-  box-shadow: 0 0 5px #aaa;
+  border: 5px solid #F7F9F9;
+  -webkit-box-shadow: 0 0 5px #aaaaaa;
+  box-shadow: 0 0 5px #aaaaaa;
   position: relative;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
@@ -5430,7 +5430,7 @@ a.text-dark:focus,a.text-dark:hover {
 
 .flipper .back .title-top {
   font-size: 23px;
-  color: #F7F9F9;
+  color: #fff;
 }
 
 .form {
@@ -5466,11 +5466,8 @@ a.text-dark:focus,a.text-dark:hover {
   margin-bottom: 30px;
 }
 
-.card-title {
-  margin-bottom: 0;
-}
-
 .card-flap {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5485,12 +5482,11 @@ a.text-dark:focus,a.text-dark:hover {
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: 15px;
-  position: absolute;
-  top: 100%;
+  padding-bottom: 30px;
   background-color: #fff;
+  top: 100%;
   height: auto;
   z-index: 2;
-  padding-bottom: 30px;
 }
 
 .card-flap .card-description {
@@ -5498,15 +5494,11 @@ a.text-dark:focus,a.text-dark:hover {
   text-align: justify;
 }
 
-.card-flap .card-description p {
-  margin-bottom: 0;
-}
-
-.card .card-flap {
+.card-news .card-flap {
   display: none;
 }
 
-.card.show-card .card-flap {
+.card-news.show-card .card-flap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5534,11 +5526,11 @@ a.text-dark:focus,a.text-dark:hover {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background: #0096a0;
+  background: #218380;
   border-radius: 4px;
   -webkit-box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
   box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
-  color: #ffffff;
+  color: #fff;
   padding: 6px 30px 8px;
   position: relative;
   text-decoration: none;

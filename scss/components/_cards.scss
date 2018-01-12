@@ -5,11 +5,11 @@
 
 // CARD NEWS AND ANTI-NEWS
 
-.card {
+.card-news {
+  position: relative;
   display: flex;
   flex-direction: column;
   // box-shadow: 0 0 5px #aaa;
-  border:0;
   .news-photo {
     background-size: cover;
     @include aspect-ratio(16,9);
@@ -35,8 +35,8 @@
 }
 
 .flipper {
-  border: 5px solid #fff;
-  box-shadow: 0 0 5px #aaa;
+  border: 5px solid $lightcolour;
+  box-shadow: 0 0 5px $colorshadow;
   position: relative;
   transform-style: preserve-3d;
   transition: all ease 1s;
@@ -75,8 +75,7 @@
     }
     .title-top {
       font-size: 23px;
-
-      color: $lightcolour;
+      color: $colorwhite;
     }
   }
 }
