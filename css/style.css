@@ -5504,8 +5504,12 @@ a {
   width: 50px;
   height: 50px;
 }/* Layout */header {
-  position: relative;
+  position: fixed;
+  z-index: 1;
   background-color: #BD86D8;
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
 }
 
 .withinHeader {
@@ -5586,6 +5590,10 @@ a {
   justify-content: center;
   -ms-flex-item-align: center;
   align-self: center;
+}
+
+.burger a {
+  display: block;
 }
 
 .logo {
@@ -5924,11 +5932,6 @@ body {
     justify-content: center;
     -ms-flex-line-pack: center;
     align-content: center;
-  }
-
-  .burger {
-    width: 50px;
-    height: 50px;
   }
 
   .logo {

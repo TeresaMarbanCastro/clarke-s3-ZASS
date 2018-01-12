@@ -1,7 +1,15 @@
 //Header
 header{
-	position: relative;
+	position: fixed;
+	z-index: 1;
 	background-color: $lightsecondarycolour;
+	width: 45px;
+	height: 45px;
+	border-radius: 5px;
+	// @media all and (min-width: 500px){
+	// 	width: 80px;
+	// 	height: 80px;
+	// }
 }
 .withinHeader{
 	display: grid;
@@ -76,9 +84,8 @@ z-index: 1;
 	width: 25px;
 	justify-content: center;
 	align-self: center;
-	@media all and (min-width: 500px){
-		width: 50px;
-		height: 50px;
+	a{
+		display: block;
 	}
 }
 //Logo
