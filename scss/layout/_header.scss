@@ -1,51 +1,102 @@
-
 //Header
 header{
+	position: fixed;
+	z-index: 1;
 	background-color: $lightsecondarycolour;
+	width: 45px;
+	height: 45px;
+	border-radius: 5px;
+	// @media all and (min-width: 500px){
+	// 	width: 80px;
+	// 	height: 80px;
+	// }
 }
 .withinHeader{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-
 }
 
+.navigation{
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	transform: translateY(-150%);
+	z-index: 1;
+	top: 0;
+	left: 0;
+	transition: transform ease 1s 0.5s, background ease 0.5s;
+	//salida
+	&.show {
+		transform: translateY(0);
+		background-color: rgba(0, 0, 0, 0.5);
+		transition: transform ease 0.8s,
+		background ease 0.8s 0.9s; //entrada
+	}
+}
+.containerBack{
+background-color: rgba(0, 0, 0, 0);
+margin: 0;
+width: 100%;
+height: 100%;
+z-index: 1;
+}
+
+.showCompleteMenu{
+	list-style: none;
+	width: 100%;
+	background-color: $primaryColour;
+	a{
+		text-decoration: none;
+		color: $lightcolour;
+		display: block;
+	}
+	a:hover{
+		color: purple;
+	}
+	@media all and (min-width: 500px){
+		display: flex;
+		height: 15%;
+		align-items: center;
+	}
+}
+
+.dropdown-list{
+	list-style: none;
+	.dropdown-item{
+}
+}
+
+//Burger icon
 .dropdown{
 	grid-column: 1;
 	grid-row: 1;
 	display: flex;
 	align-content: center;
 	padding: 10px;
+	cursor: pointer;
+	@media all and (min-width: 500px){
+		justify-content: center;
+		align-content: center;
+	}
 }
 .burger{
 	height: 25px;
 	width: 25px;
 	justify-content: center;
 	align-self: center;
-}
-
-.dropdown-list{
-	display: none;
-	opacity: 0;
-	transition: opacity ease 1s 0.5s;
-	.dropdown-item{
-		color: white;
+	a{
+		display: block;
 	}
-
 }
-.show{
-	display: block;
-	background-color: green;
-	opacity: 0;
-
-}
-// .showOpacity{
-// 	opacity: 1;
-// }
-
+//Logo
 .logo{
 	height: 80%;
 	width: 80%;
 	grid-column: 5;
 	align-self: center;
-
+	cursor: pointer;
+	@media all and (min-width: 500px){
+		height: 75px;
+		width: 75px;
+	}
 }
