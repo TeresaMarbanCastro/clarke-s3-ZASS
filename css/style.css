@@ -5320,6 +5320,12 @@ a {
   text-align: left;
 }
 
+.arrow-down {
+  width: 18px;
+  height: 18px;
+  padding-left: 5px;
+}
+
 .header-news,.header-anti-news {
   margin: 30px auto 30px;
 }
@@ -5692,45 +5698,57 @@ main {
   flex: 1;
 }
 
-footer {
+.footer-common {
   background-color: #5E0B75;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
   width: 100%;
 }
 
+.footer-quote-title {
+  background-color: #BED8D5;
+  height: 30%;
+  color: #424242;
+  text-align: center;
+  padding: 5px;
+  font-size: 36px;
+  font-family: "Neucha", cursive;
+}
+
+.footer-quote-title .igualdad {
+  color: #218380;
+}
+
+.footer-quote-title .sumate {
+  color: #218380;
+}
+
 .footer-items {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .footerlogo {
   width: 50px;
   height: 50px;
   grid-column: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: center;
-  align-self: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
 }
 
 .contact {
   width: 50px;
   height: 50px;
-  grid-column: 5;
 }/* Pages */.fade-bckg {
   min-height: 100vh;
   width: 100%;
@@ -5763,6 +5781,7 @@ footer {
 
 body {
   min-height: 100vh;
+  font-family: inherit;
 }
 
 .faq-title {
@@ -5771,15 +5790,10 @@ body {
   text-align: left;
 }
 
-.questions-listed {
-  display: grid;
-  grid-gap: 1em;
-  margin-bottom: 10px;
-}
-
-.questions-listed select {
+.contactForm {
+  background-color: lightgrey;
+  padding: 5px;
   border-radius: 0.5em;
-  border: solid #5E0B75 1px;
 }
 
 .contactForm textarea {
@@ -5811,28 +5825,6 @@ body {
   background-color: #BD86D8;
   color: white;
   border: 0;
-}
-
-.questions-listed button {
-  font-size: 14px;
-  color: #5E0B75;
-  background-color: #BED8D5;
-  border-radius: 0.5em;
-  border: solid #5E0B75 1px;
-}
-
-.arrow-down {
-  width: 18px;
-  height: 18px;
-  padding-left: 5px;
-}
-
-.questions-listed-answer {
-  display: none;
-}
-
-.show {
-  display: block;
 }
 
 .introduction {
