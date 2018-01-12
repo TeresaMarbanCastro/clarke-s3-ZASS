@@ -5781,6 +5781,7 @@ main {
 
 body {
   min-height: 100vh;
+  font-family: inherit;
 }
 
 .faq-title {
