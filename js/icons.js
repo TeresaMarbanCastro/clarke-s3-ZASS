@@ -16,6 +16,7 @@ AnimatedIcons.prototype.render = function(){
         this.state = 1;
     }
 }
+<<<<<<< HEAD
 
 var icons = [
     new AnimatedIcons('#arm', 'images/arm-icon.png','images/arm-icon-light.png'),
@@ -24,6 +25,10 @@ var icons = [
     new AnimatedIcons('#man', 'images/man-icon.png','images/man-icon-foot.png'),
     new AnimatedIcons('#woman', 'images/woman-icon.png','images/woman-icon-camera.png'),
     new AnimatedIcons('#strong', 'images/strong-icon.png','images/stronger-icon.png'),
+=======
+var icons = [
+    new AnimatedIcons('#arm', 'images/arm-icon.png','images/arm-icon-light.png')
+>>>>>>> b123b7caa8530581daf3d3f5f143bb75a617e6e3
 ];
 
 setInterval(function() {
