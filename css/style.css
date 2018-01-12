@@ -5649,6 +5649,10 @@ a {
   cursor: pointer;
 }
 
+.dropdown a {
+  display: block;
+}
+
 .burger {
   height: 25px;
   width: 25px;
@@ -5657,10 +5661,6 @@ a {
   justify-content: center;
   -ms-flex-item-align: center;
   align-self: center;
-}
-
-.burger a {
-  display: block;
 }
 
 .logo {
