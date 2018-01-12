@@ -5710,8 +5710,10 @@ body {
   min-height: 100vh;
 }
 
-.faq h3 {
+.faq-title {
   color: #5E0B75;
+  margin-left: 50px;
+  text-align: left;
 }
 
 .questions-listed {
