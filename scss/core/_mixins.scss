@@ -7,3 +7,18 @@
     padding-top: ($height / $width) * 100%;
   }
 }
+
+@mixin mrg-sections-mv() {
+    padding-top: $mrg-top-sct-mv;
+    padding-bottom: $mrg-btm-sct-mv;
+}
+
+@mixin mrg-sections-tb() {
+    padding-top: $mrg-top-sct-tb;
+    padding-bottom: $mrg-btm-sct-tb;
+}
+
+@mixin mrg-sections-dk() {
+    padding-top: $mrg-top-sct-dk;
+    padding-bottom: $mrg-btm-sct-dk;
+}

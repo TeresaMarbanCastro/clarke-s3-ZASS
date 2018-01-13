@@ -5326,6 +5326,23 @@ a {
   padding-left: 5px;
 }
 
+.up-button {
+  position: fixed;
+  background-color: #5E0B75;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  margin-right: 2%;
+  z-index: 100;
+}
+
+.arrow {
+  width: 20px;
+  height: 20px;
+  -webkit-transform: rotate(0.5turn);
+  transform: rotate(0.5turn);
+}
+
 .header-news {
   margin: 80px auto 40px;
 }
@@ -5768,6 +5785,13 @@ main {
   flex: 1;
 }
 
+.top5,.introduction,.stastistics,.myths,.testimonials,.links {
+  width: 100vw;
+  height: 100%;
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+
 .footer-common {
   background-color: #5E0B75;
   width: 100%;
@@ -5902,10 +5926,6 @@ body {
   border: 0;
 }
 
-.introduction {
-  margin-top: 35px;
-}
-
 .progress {
   width: 150px;
   height: 150px;
@@ -5913,6 +5933,7 @@ body {
   background: white;
   margin: 0 auto;
   position: relative;
+  background-color: #F7F9F9;
 }
 
 .progress > span {
@@ -6005,12 +6026,42 @@ body {
   margin-left: .75rem;
 }
 
-.myths,.progress,.links,.testimonials {
-  margin-top: 20%;
+.myths,.progress,.links,.testimonials,.introduction {
+  padding-top: 15%;
 }
 
 .list-element:hover {
   background-color: #BED8D5;
+}
+
+.introduction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  background-color: rgba(189, 134, 216, 0.2);
+}
+
+.stastistics {
+  background-color: #F7F9F9;
+}
+
+.top5 {
+  background-color: rgba(94, 11, 117, 0.4);
+}
+
+.myths {
+  background-color: #F7F9F9;
+}
+
+.testimonials {
+  background-color: rgba(189, 134, 216, 0.2);
+}
+
+.links {
+  background-color: #F7F9F9;
 }
 
 @media all and (min-width: 500px) {
@@ -7036,8 +7087,13 @@ body {
 }
 
 @media all and (min-width: 600px) {
-  .myths,.progress,.links,.testimonials {
-    margin-top: 15%;
+  .top5,.introduction,.stastistics,.myths,.testimonials,.links {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  .myths,.progress,.links,.testimonials,.introduction {
+    padding-top: 10%;
   }
 }
 
@@ -8590,8 +8646,8 @@ body {
 }
 
 @media all and (min-width: 1025px) {
-  .myths,.progress,.links,.testimonials {
-    margin-top: 5%;
+  .myths,.progress,.links,.testimonials,.introduction {
+    padding-top: 3%;
   }
 }
 
@@ -9364,6 +9420,13 @@ body {
 
   .text-xl-center {
     text-align: center !important;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .top5,.introduction,.stastistics,.myths,.testimonials,.links {
+    padding-top: 3%;
+    padding-bottom: 3%;
   }
 }
 
