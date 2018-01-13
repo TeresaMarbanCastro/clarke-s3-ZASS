@@ -8,6 +8,8 @@
 }
 .edge {
   margin-bottom: 30px;
+  display: flex;
+  // flex: 1;
 }
 .news {
   background-color: $softcolour;
@@ -16,6 +18,7 @@
 .card-news {
   position: relative;
   display: flex;
+  flex: 1;
   flex-direction: column;
   background-color: $colorwhite;
   .news-photo {
