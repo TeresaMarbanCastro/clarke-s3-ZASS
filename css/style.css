@@ -5362,6 +5362,7 @@ a {
 
 .card-news .news-photo {
   background-size: cover;
+  max-width: 100%;
   position: relative;
 }
 
@@ -5372,9 +5373,52 @@ a {
   padding-top: 56.25%;
 }
 
-.card-news .news-photo.photo1,.card-news .news-photo.photo2,.card-news .news-photo.photo3,.card-news .news-photo.photo4,.card-news .news-photo.photo5,.card-news .news-photo.photo6,.card-news .news-photo.photo7,.card-news .news-photo.photo8,.card-news .news-photo.photo9,.card-news .news-photo.photo10,.card-news .news-photo.photo11,.card-news .news-photo.photo12 {
-  background-image: url("../images/img1.jpg");
-  max-width: 100%;
+.card-news .news-photo.photo1 {
+  background-image: url("../images/noruega.jpg");
+}
+
+.card-news .news-photo.photo2 {
+  background-image: url("../images/lidiaoro.jpg");
+}
+
+.card-news .news-photo.photo3 {
+  background-image: url("../images/alhambra.jpg");
+}
+
+.card-news .news-photo.photo4 {
+  background-image: url("../images/retos.jpg");
+}
+
+.card-news .news-photo.photo5 {
+  background-image: url("../images/embarazada.jpg");
+}
+
+.card-news .news-photo.photo6 {
+  background-image: url("../images/paralimpicas.jpg");
+}
+
+.card-news .news-photo.photo7 {
+  background-image: url("../images/play-football.jpg");
+}
+
+.card-news .news-photo.photo8 {
+  background-image: url("../images/fucsia.jpg");
+}
+
+.card-news .news-photo.photo9 {
+  background-image: url("../images/cover-sexismo.jpg");
+}
+
+.card-news .news-photo.photo10 {
+  background-image: url("../images/Gala-Leon.jpg");
+}
+
+.card-news .news-photo.photo11 {
+  background-image: url("../images/stopviolencia.jpg");
+}
+
+.card-news .news-photo.photo12 {
+  background-image: url("../images/falda.jpg");
 }
 
 .card-news .title-news,.card-news .title-antinews {
@@ -5485,6 +5529,7 @@ a {
 .flipper .top5-photo {
   position: relative;
   background-size: cover;
+  max-width: 100%;
   position: relative;
   width: 100%;
 }
@@ -5498,27 +5543,22 @@ a {
 
 .flipper .top5-photo.phototop1 {
   background-image: url("../images/Mireia-belmonte.jpg");
-  max-width: 100%;
 }
 
 .flipper .top5-photo.phototop2 {
   background-image: url("../images/Carmen-martin.jpg");
-  max-width: 100%;
 }
 
 .flipper .top5-photo.phototop3 {
   background-image: url("../images/Carolina-marin.jpg");
-  max-width: 100%;
 }
 
 .flipper .top5-photo.phototop4 {
   background-image: url("../images/Garbine-muguruza.jpg");
-  max-width: 100%;
 }
 
 .flipper .top5-photo.phototop5 {
   background-image: url("../images/Lydia-valentin.jpg");
-  max-width: 100%;
 }
 
 .flipper .front,.flipper .back {
