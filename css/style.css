@@ -5343,6 +5343,26 @@ a {
   transform: rotate(0.5turn);
 }
 
+.down-btn-action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  background-color: #5E0B75;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  margin-left: 50%;
+  margin-top: 25em;
+}
+
+.arrow-action {
+  margin: auto;
+  width: 20px;
+  height: 20px;
+}
+
 .header-news {
   margin: 80px auto 40px;
 }
@@ -5861,7 +5881,7 @@ main {
 .header-hero {
   position: absolute;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 1.7em;
   color: #ffffff;
   margin-top: 40vh;
   padding-left: 10%;
