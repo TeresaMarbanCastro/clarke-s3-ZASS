@@ -106,3 +106,9 @@ function showNew() {
 for (var i = 0; i < cardNews.length; i++) {
 	cardNews[i].addEventListener('click', showNew);
 }
+
+//button up
+document.querySelector('.up-button').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector('.total-slider').scrollIntoView({ behavior: 'smooth' });
+});
