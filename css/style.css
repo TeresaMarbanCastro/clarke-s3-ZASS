@@ -5710,17 +5710,17 @@ body {
   z-index: 1;
 }
 
-.progress-bar {
+.progress-bar,.progress-bar2,.progress-bar3 {
   width: 100%;
   height: 100%;
   background: none;
-  border-width: 7px;
+  border-width: 28px;
   border-style: solid;
   position: absolute;
   top: 0;
 }
 
-.progress-left .progress-bar {
+.progress-left .progress-bar,.progress-left2 .progress-bar2,.progress-left3 .progress-bar3 {
   left: 100%;
   border-top-right-radius: 80px;
   border-bottom-right-radius: 80px;
@@ -5729,11 +5729,11 @@ body {
   transform-origin: center left;
 }
 
-.progress-right {
+.progress-right,.progress-right2,.progress-right3 {
   right: 0;
 }
 
-.progress-right .progress-bar {
+.progress-right .progress-bar,.progress-right2 .progress-bar2,.progress-right3 .progress-bar3 {
   left: -100%;
   border-top-left-radius: 80px;
   border-bottom-left-radius: 80px;
@@ -5742,9 +5742,24 @@ body {
   transform-origin: center right;
 }
 
+.animacion1 {
+  -webkit-animation: derecha 1.1s linear forwards .5s;
+  animation: derecha 1.1s linear forwards .5s;
+}
+
 .animacion2 {
-  -webkit-animation: derecha 1.5s linear forwards .5s;
-  animation: derecha 1.5s linear forwards .5s;
+  -webkit-animation: derecha2 1.08s linear forwards .5s;
+  animation: derecha2 1.08s linear forwards .5s;
+}
+
+.animacion3 {
+  -webkit-animation: izquierda2 .15s linear forwards 1.58s;
+  animation: izquierda2 .15s linear forwards 1.58s;
+}
+
+.animacion4 {
+  -webkit-animation: derecha3 1.1s linear forwards .5s;
+  animation: derecha3 1.1s linear forwards .5s;
 }
 
 .progress-value {
@@ -5752,7 +5767,7 @@ body {
   height: 85%;
   border-radius: 50%;
   border: 5px solid #ebebeb;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: bold;
   line-height: 125px;
   text-align: center;
@@ -5764,6 +5779,14 @@ body {
 
 .progress-bar {
   border-color: #5E0B75;
+}
+
+.progress-bar2 {
+  border-color: #218380;
+}
+
+.progress-bar3 {
+  border-color: #424242;
 }
 
 .value-text {
@@ -9331,6 +9354,78 @@ body {
   100% {
     -webkit-transform: rotate(162deg);
     transform: rotate(162deg);
+  }
+}
+
+@-webkit-keyframes izquierda2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(18deg);
+    transform: rotate(18deg);
+  }
+}
+
+@keyframes izquierda2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(18deg);
+    transform: rotate(18deg);
+  }
+}
+
+@-webkit-keyframes derecha2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes derecha2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
+@-webkit-keyframes derecha3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(122deg);
+    transform: rotate(122deg);
+  }
+}
+
+@keyframes derecha3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(122deg);
+    transform: rotate(122deg);
   }
 }
 
