@@ -32,3 +32,9 @@ hr {
   transform: translateX(-50%);
   width: 200px;
 }
+.was-validated{
+  .invalid-feedback {
+    padding: 0 15px 0 60px;
+    display: block;
+  }
+}
