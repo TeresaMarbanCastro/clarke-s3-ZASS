@@ -1,4 +1,4 @@
-/*Bootstrap*//*!
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700,900);/*Bootstrap*//*!
  * Bootstrap v4.0.0-beta.2 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
  * Copyright 2011-2017 Twitter, Inc.
@@ -5317,13 +5317,94 @@ a {
   background-color: transparent;
   border: 0;
   margin: 10px;
+  text-align: left;
 }
 
-.header-news,.header-anti-news {
-  margin: 30px auto 30px;
+.arrow-down {
+  width: 18px;
+  height: 18px;
+  padding-left: 5px;
 }
 
-.card {
+.header-news {
+  margin: 80px auto 40px;
+}
+
+.header-anti-news {
+  margin: 50px auto 40px;
+}
+
+.edge {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.news {
+  background-color: #BED8D5;
+}
+
+.card-news {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.card-news .news-photo {
+  background-size: cover;
+  position: relative;
+}
+
+.card-news .news-photo:before {
+  display: block;
+  content: '';
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.card-news .news-photo.photo1,.card-news .news-photo.photo2,.card-news .news-photo.photo3,.card-news .news-photo.photo4,.card-news .news-photo.photo5,.card-news .news-photo.photo6,.card-news .news-photo.photo7,.card-news .news-photo.photo8,.card-news .news-photo.photo9,.card-news .news-photo.photo10,.card-news .news-photo.photo11,.card-news .news-photo.photo12 {
+  background-image: url("../images/img1.jpg");
+  max-width: 100%;
+}
+
+.card-news .title-news,.card-news .title-antinews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  padding: 25px 20px;
+  color: #5E0B75;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card-news .card-flap {
+  display: none;
+}
+
+.card-news.show-card .card-flap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card-flap {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5331,40 +5412,39 @@ a {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  border: 5px solid #fff;
-  -webkit-box-shadow: 0 0 5px #aaa;
-  box-shadow: 0 0 5px #aaa;
-}
-
-.card .news-photo {
-  background-size: cover;
-  position: relative;
-}
-
-.card .news-photo:before {
-  display: block;
-  content: '';
-  width: 100%;
-  padding-top: 56.25%;
-}
-
-.card .title-news,.card .title-antinews {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 30px 30px;
-  color: #5E0B75;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 30px;
+  background-color: #fff;
+  top: 100%;
+  height: auto;
+  z-index: 2;
 }
 
-.card .title-news a,.card .title-antinews a {
+.card-flap .card-description {
+  padding: 0 20px 15px;
+  text-align: justify;
+}
+
+.btn-read {
+  background: #218380;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
+  color: #fff;
+  padding: 6px 30px 8px;
+  position: relative;
+  -webkit-transition: all 0.1s 0s ease-out;
+  transition: all 0.1s 0s ease-out;
+}
+
+.btn-read:hover {
   text-decoration: none;
-  color: #5E0B75;
+  color: #fff;
 }
 
 .top-5 {
@@ -5372,10 +5452,14 @@ a {
   margin-top: 40px;
 }
 
+.gap-top {
+  margin-bottom: 30px;
+}
+
 .flipper {
-  border: 5px solid #fff;
-  -webkit-box-shadow: 0 0 5px #aaa;
-  box-shadow: 0 0 5px #aaa;
+  border: 5px solid #F7F9F9;
+  -webkit-box-shadow: 0 0 5px #aaaaaa;
+  box-shadow: 0 0 5px #aaaaaa;
   position: relative;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
@@ -5410,6 +5494,31 @@ a {
   content: '';
   width: 100%;
   padding-top: 75%;
+}
+
+.flipper .top5-photo.phototop1 {
+  background-image: url("../images/Mireia-belmonte.jpg");
+  max-width: 100%;
+}
+
+.flipper .top5-photo.phototop2 {
+  background-image: url("../images/Carmen-martin.jpg");
+  max-width: 100%;
+}
+
+.flipper .top5-photo.phototop3 {
+  background-image: url("../images/Carolina-marin.jpg");
+  max-width: 100%;
+}
+
+.flipper .top5-photo.phototop4 {
+  background-image: url("../images/Garbine-muguruza.jpg");
+  max-width: 100%;
+}
+
+.flipper .top5-photo.phototop5 {
+  background-image: url("../images/Lydia-valentin.jpg");
+  max-width: 100%;
 }
 
 .flipper .front,.flipper .back {
@@ -5449,7 +5558,7 @@ a {
 
 .flipper .back .title-top {
   font-size: 23px;
-  color: #F7F9F9;
+  color: #fff;
 }
 
 .form {
@@ -5481,25 +5590,6 @@ a {
   width: 100%;
 }
 
-.edge {
-  margin-bottom: 30px;
-}
-
-.photo1,.photo4 {
-  background-image: url("../images/img1.jpg");
-  max-width: 100%;
-}
-
-.photo2,.photo5 {
-  background-image: url("../images/img2.jpg");
-  max-width: 100%;
-}
-
-.photo3,.photo6 {
-  background-image: url("../images/img3.jpg");
-  max-width: 100%;
-}
-
 .arrow-down {
   width: 50px;
   height: 50px;
@@ -5509,7 +5599,6 @@ a {
   background-color: #BD86D8;
   width: 45px;
   height: 45px;
-  border-radius: 5px;
 }
 
 .withinHeader {
@@ -5551,9 +5640,16 @@ a {
 }
 
 .showCompleteMenu {
-  list-style: none;
   width: 100%;
   background-color: #5E0B75;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0;
 }
 
 .showCompleteMenu a {
@@ -5566,8 +5662,9 @@ a {
   color: purple;
 }
 
-.dropdown-list {
+.showCompleteMenu .dropdown-list {
   list-style: none;
+  margin: 0;
 }
 
 .dropdown {
@@ -5582,6 +5679,10 @@ a {
   cursor: pointer;
 }
 
+.dropdown a {
+  display: block;
+}
+
 .burger {
   height: 25px;
   width: 25px;
@@ -5590,10 +5691,6 @@ a {
   justify-content: center;
   -ms-flex-item-align: center;
   align-self: center;
-}
-
-.burger a {
-  display: block;
 }
 
 .logo {
@@ -5611,6 +5708,8 @@ a {
 }
 
 body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
   margin: 0;
   padding: 0;
   display: -webkit-box;
@@ -5629,45 +5728,57 @@ main {
   flex: 1;
 }
 
-footer {
+.footer-common {
   background-color: #5E0B75;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
   width: 100%;
 }
 
+.footer-quote-title {
+  background-color: #BED8D5;
+  height: 30%;
+  color: #424242;
+  text-align: center;
+  padding: 5px;
+  font-size: 36px;
+  font-family: "Neucha", cursive;
+}
+
+.footer-quote-title .igualdad {
+  color: #218380;
+}
+
+.footer-quote-title .sumate {
+  color: #218380;
+}
+
 .footer-items {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .footerlogo {
   width: 50px;
   height: 50px;
   grid-column: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: center;
-  align-self: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
 }
 
 .contact {
   width: 50px;
   height: 50px;
-  grid-column: 5;
 }/* Pages */#quote-section {
   background: url("/images/training.jpg") no-repeat;
   background-size: cover;
@@ -5693,21 +5804,19 @@ footer {
 
 body {
   min-height: 100vh;
+  font-family: inherit;
 }
 
-.faq h3 {
+.faq-title {
   color: #5E0B75;
+  margin-left: 50px;
+  text-align: left;
 }
 
-.questions-listed {
-  display: grid;
-  grid-gap: 1em;
-  margin-bottom: 10px;
-}
-
-.questions-listed select {
+.contactForm {
+  background-color: lightgrey;
+  padding: 5px;
   border-radius: 0.5em;
-  border: solid #5E0B75 1px;
 }
 
 .contactForm textarea {
@@ -5739,28 +5848,6 @@ body {
   background-color: #BD86D8;
   color: white;
   border: 0;
-}
-
-.questions-listed button {
-  font-size: 14px;
-  color: #5E0B75;
-  background-color: #BED8D5;
-  border-radius: 0.5em;
-  border: solid #5E0B75 1px;
-}
-
-.arrow-down {
-  width: 18px;
-  height: 18px;
-  padding-left: 5px;
-}
-
-.questions-listed-answer {
-  display: none;
-}
-
-.show {
-  display: block;
 }
 
 .introduction {
@@ -5874,44 +5961,29 @@ body {
   background-color: #BED8D5;
 }
 
-.edge {
-  margin-bottom: 30px;
-}
-
-.phototop1 {
-  background-image: url("../images/Mireia-belmonte.jpg");
-  max-width: 100%;
-}
-
-.phototop2 {
-  background-image: url("../images/Carmen-martin.jpg");
-  max-width: 100%;
-}
-
-.phototop3 {
-  background-image: url("../images/Carolina-marin.jpg");
-  max-width: 100%;
-}
-
-.phototop4 {
-  background-image: url("../images/Garbine-muguruza.jpg");
-  max-width: 100%;
-}
-
-.phototop5 {
-  background-image: url("../images/Lydia-valentin.jpg");
-  max-width: 100%;
-}
-
 @media all and (min-width: 500px) {
+  header {
+    margin: 5px;
+    border-radius: 5px;
+  }
+
   .showCompleteMenu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0;
+    height: 15%;
+  }
+
+  .showCompleteMenu .dropdown-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     height: 15%;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
   }
 
   .dropdown {

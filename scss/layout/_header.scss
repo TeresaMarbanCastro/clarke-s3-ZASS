@@ -5,11 +5,10 @@ header{
 	background-color: $lightsecondarycolour;
 	width: 45px;
 	height: 45px;
-	border-radius: 5px;
-	// @media all and (min-width: 500px){
-	// 	width: 80px;
-	// 	height: 80px;
-	// }
+	@media all and (min-width: 500px){
+		margin: 5px;
+		border-radius: 5px;
+	}
 }
 .withinHeader{
 	display: grid;
@@ -42,9 +41,17 @@ z-index: 1;
 }
 
 .showCompleteMenu{
-	list-style: none;
 	width: 100%;
 	background-color: $primaryColour;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	@media all and (min-width: 500px){
+		flex-direction: row;
+		align-items: center;
+		margin: 0;
+		height: 15%;
+	}
 	a{
 		text-decoration: none;
 		color: $lightcolour;
@@ -53,17 +60,14 @@ z-index: 1;
 	a:hover{
 		color: purple;
 	}
+	.dropdown-list{
+		list-style: none;
+		margin: 0;
 	@media all and (min-width: 500px){
 		display: flex;
 		height: 15%;
-		align-items: center;
 	}
-}
-
-.dropdown-list{
-	list-style: none;
-	.dropdown-item{
-}
+	}
 }
 
 //Burger icon
@@ -74,6 +78,9 @@ z-index: 1;
 	align-content: center;
 	padding: 10px;
 	cursor: pointer;
+	a{
+		display: block;
+	}
 	@media all and (min-width: 500px){
 		justify-content: center;
 		align-content: center;
@@ -84,9 +91,6 @@ z-index: 1;
 	width: 25px;
 	justify-content: center;
 	align-self: center;
-	a{
-		display: block;
-	}
 }
 //Logo
 .logo{

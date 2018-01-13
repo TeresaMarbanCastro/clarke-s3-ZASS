@@ -48,10 +48,33 @@ hideMenu.addEventListener('click', closeMenu);
 
 var selectFlipper = document.querySelectorAll('.flipper');
 
-function flipTop5(event) {
-	event.currentTarget.classList.toggle('active');
+function flipTop5() {
+	if (this.classList.contains('active')) {
+		this.classList.remove('active');
+	} else {
+		for (var i = 0; i < selectFlipper.length; i++) {
+			selectFlipper[i].classList.remove('active');
+		}
+		this.classList.add('active');
+	}
 }
-
 for (var i = 0; i < selectFlipper.length; i++) {
 	selectFlipper[i].addEventListener('click', flipTop5);
+}
+
+// DESPLEGAR NEWS
+
+var cardNews = document.querySelectorAll('.card-news');
+function showNew() {
+	if (this.classList.contains('show-card')) {
+		this.classList.remove('show-card');
+	} else {
+		for (var i = 0; i < cardNews.length; i++) {
+			cardNews[i].classList.remove('show-card');
+		}
+		this.classList.toggle('show-card');
+	}
+}
+for (var i = 0; i < cardNews.length; i++) {
+	cardNews[i].addEventListener('click', showNew);
 }
