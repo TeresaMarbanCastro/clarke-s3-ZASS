@@ -5326,8 +5326,18 @@ a {
   padding-left: 5px;
 }
 
-.header-news {
+.newspage {
+  background-color: #f1f2f3;
+}
+
+.header-news,.header-anti-news {
+  background-color: #555555;
+  padding: 15px 40px;
   margin: 80px auto 40px;
+  color: #fff;
+  font-size: 30px;
+  -webkit-box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.25);
 }
 
 .header-anti-news {
@@ -5339,10 +5349,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.news {
-  background-color: #BED8D5;
 }
 
 .card-news {
@@ -5358,6 +5364,7 @@ a {
   -ms-flex-direction: column;
   flex-direction: column;
   background-color: #fff;
+  margin: 0;
 }
 
 .card-news .news-photo {
@@ -5421,7 +5428,7 @@ a {
   background-image: url("../images/falda.jpg");
 }
 
-.card-news .title-news,.card-news .title-antinews {
+.card-news .title-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5431,10 +5438,14 @@ a {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  padding: 25px 20px;
+}
+
+.card-news .title-news,.card-news .title-antinews {
+  padding: 12px 20px;
   color: #5E0B75;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
+  text-align: justify;
 }
 
 .card-news .card-flap {
@@ -5474,6 +5485,10 @@ a {
   text-align: justify;
 }
 
+.card-flap .card-description p {
+  font-size: 18px;
+}
+
 .btn-read {
   background: #218380;
   border-radius: 4px;
@@ -5484,6 +5499,7 @@ a {
   position: relative;
   -webkit-transition: all 0.1s 0s ease-out;
   transition: all 0.1s 0s ease-out;
+  font-size: 18px;
 }
 
 .btn-read:hover {
@@ -5601,33 +5617,36 @@ a {
   color: #fff;
 }
 
-.form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  max-width: 500px;
-  margin: 0 auto;
+.send-news {
+  background-color: #555555;
+  text-align: center;
+  padding: 15px 40px;
+  margin: 35px auto;
+  color: #fff;
+  -webkit-box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.25);
 }
 
 .form-news {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.form-text {
+  padding: 15px 0;
+  text-align: justify;
+}
+
+hr {
   width: 100%;
+  margin-bottom: 50px;
+}
+
+.enviar {
+  margin-top: 30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 200px;
 }
 
 .arrow-down {
@@ -6011,6 +6030,16 @@ body {
 
 .list-element:hover {
   background-color: #BED8D5;
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+  .header-news,.header-anti-news {
+    font-size: 35px;
+  }
+
+  .send-news {
+    font-size: 30px;
+  }
 }
 
 @media all and (min-width: 500px) {
@@ -7810,6 +7839,16 @@ body {
 
   .text-md-center {
     text-align: center !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .header-news,.header-anti-news {
+    font-size: 45px;
+  }
+
+  .send-news {
+    font-size: 45px;
   }
 }
 

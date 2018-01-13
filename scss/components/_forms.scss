@@ -1,16 +1,34 @@
 // FORM-NEWS
 
-.form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 500px;
-  margin: 0 auto;
+.send-news {
+  background-color: #555555;
+  text-align: center;
+  padding: 15px 40px;
+  margin: 35px auto;
+  color: $colorwhite;
+  box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.25);
+  @media (min-width: 321px) and (max-width: 768px) {
+    font-size: 30px;
+  }
+  @media (min-width: 769px) {
+    font-size: 45px;
+  }
+
 }
 .form-news {
-  display: flex;
-  flex-direction: column;
+  margin-bottom: 50px;
+}
+.form-text {
+  padding: 15px 0;
+  text-align: justify;
+}
+hr {
   width: 100%;
-
+  margin-bottom: 50px;
+}
+.enviar {
+  margin-top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
 }
