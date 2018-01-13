@@ -1,49 +1,31 @@
 
-// //Header
-// var menu = document.querySelector('.showMenu');
-// function showMenu (){
-// 	menu.classList.add(showmenu)
-// }
-//
-// $('.carousel').carousel();
-//
-// //Menu
-// var show = document.querySelector('.burger');
-// var list = document.querySelector('.dropdown-list');
-// function showMenu (){
-// 	 list.classList.toggle('show');
-// 	//  setTimeout(function(){list.classList.toggle('showOpacity')},2000);
-// 	if (list.classList.contains('show')){
-// 		list.style.opacity = 1;
-// 	} else {
-// 		list.style.opacity = 0;
-// 	}
-// }
-// show.addEventListener('click', showMenu);
-//
-// //Desplegables FAQ
-// var showFaq = document.querySelectorAll('.questions-listed button');
-//
-// var listFaq = document.querySelector('.questions-listed-answer');
-//
-// function showAnswer(event){
-// 	listFaq.classList.toggle('show')event.currentTarget.innerHTML);
-// }
-//
-// show.addEventListener('click', showAnswer);
-//
-//
-//
-//
-//
-//
-//
-// function showFaq (){
-// 	 list.classList.toggle('show');
-// }
-// show.addEventListener('click', showFaq);
-//
-//
+
+//CARRUSEL
+$('.carousel').carousel();
+
+//ESTADÍSTICAS
+
+var progress1=document.getElementById("progress1");
+var progress2=document.getElementById("progress2");
+
+//Cuando hacemos scroll se ejecuta esta función
+window.addEventListener ("scroll",function (event) {
+	//Definimos la variable top para saber la distancia a la que ejecutarla
+	var top=this.scrollY;
+	console.log(top);
+	// encontrar la posicion del objeto
+	var elemento = document.getElementById('containerStats');
+	var posicion = elemento.getBoundingClientRect();
+	console.log(posicion.top)
+	//Cuando la distancia del scroll sea mayor o igual que la distancia vertical del objeto, ejecutar la animación
+	if (top>=posicion.top)
+	//Y añadimos las clases que contienen la animación
+	{
+		progress1.classList.add("animacion1")
+		progress2.classList.add("animacion2")
+
+	}
+})
 
 // TOP-5
 
