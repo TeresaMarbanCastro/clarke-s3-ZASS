@@ -1,4 +1,4 @@
-/*Bootstrap*//*!
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700,900);/*Bootstrap*//*!
  * Bootstrap v4.0.0-beta.2 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
  * Copyright 2011-2017 Twitter, Inc.
@@ -5304,11 +5304,151 @@ a.text-dark:focus,a.text-dark:hover {
 
 .invisible {
   visibility: hidden !important;
-}/*# sourceMappingURL=bootstrap.min.css.map *//* Core *//* Components */.header-news,.header-anti-news {
-  margin: 30px auto 30px;
+}/*# sourceMappingURL=bootstrap.min.css.map *//* Core *//* Components */button {
+  cursor: pointer;
 }
 
-.card {
+a {
+  cursor: pointer;
+}
+
+.menu-close {
+  top: 0;
+  background-color: transparent;
+  border: 0;
+  margin: 10px;
+  text-align: left;
+}
+
+.arrow-down {
+  width: 18px;
+  height: 18px;
+  padding-left: 5px;
+}
+
+.header-news {
+  margin: 80px auto 40px;
+}
+
+.header-anti-news {
+  margin: 50px auto 40px;
+}
+
+.edge {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.news {
+  background-color: #BED8D5;
+}
+
+.card-news {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.card-news .news-photo {
+  background-size: cover;
+  max-width: 100%;
+  position: relative;
+}
+
+.card-news .news-photo:before {
+  display: block;
+  content: '';
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.card-news .news-photo.photo1 {
+  background-image: url("../images/noruega.jpg");
+}
+
+.card-news .news-photo.photo2 {
+  background-image: url("../images/lidiaoro.jpg");
+}
+
+.card-news .news-photo.photo3 {
+  background-image: url("../images/alhambra.jpg");
+}
+
+.card-news .news-photo.photo4 {
+  background-image: url("../images/retos.jpg");
+}
+
+.card-news .news-photo.photo5 {
+  background-image: url("../images/embarazada.jpg");
+}
+
+.card-news .news-photo.photo6 {
+  background-image: url("../images/paralimpicas.jpg");
+}
+
+.card-news .news-photo.photo7 {
+  background-image: url("../images/play-football.jpg");
+}
+
+.card-news .news-photo.photo8 {
+  background-image: url("../images/fucsia.jpg");
+}
+
+.card-news .news-photo.photo9 {
+  background-image: url("../images/cover-sexismo.jpg");
+}
+
+.card-news .news-photo.photo10 {
+  background-image: url("../images/Gala-Leon.jpg");
+}
+
+.card-news .news-photo.photo11 {
+  background-image: url("../images/stopviolencia.jpg");
+}
+
+.card-news .news-photo.photo12 {
+  background-image: url("../images/falda.jpg");
+}
+
+.card-news .title-news,.card-news .title-antinews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  padding: 25px 20px;
+  color: #5E0B75;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card-news .card-flap {
+  display: none;
+}
+
+.card-news.show-card .card-flap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card-flap {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5316,40 +5456,39 @@ a.text-dark:focus,a.text-dark:hover {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  border: 5px solid #fff;
-  -webkit-box-shadow: 0 0 5px #aaa;
-  box-shadow: 0 0 5px #aaa;
-}
-
-.card .news-photo {
-  background-size: cover;
-  position: relative;
-}
-
-.card .news-photo:before {
-  display: block;
-  content: '';
-  width: 100%;
-  padding-top: 56.25%;
-}
-
-.card .title-news,.card .title-antinews {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 30px 30px;
-  color: #5E0B75;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 30px;
+  background-color: #fff;
+  top: 100%;
+  height: auto;
+  z-index: 2;
 }
 
-.card .title-news a,.card .title-antinews a {
+.card-flap .card-description {
+  padding: 0 20px 15px;
+  text-align: justify;
+}
+
+.btn-read {
+  background: #218380;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
+  color: #fff;
+  padding: 6px 30px 8px;
+  position: relative;
+  -webkit-transition: all 0.1s 0s ease-out;
+  transition: all 0.1s 0s ease-out;
+}
+
+.btn-read:hover {
   text-decoration: none;
-  color: #5E0B75;
+  color: #fff;
 }
 
 .top-5 {
@@ -5357,10 +5496,14 @@ a.text-dark:focus,a.text-dark:hover {
   margin-top: 40px;
 }
 
+.gap-top {
+  margin-bottom: 30px;
+}
+
 .flipper {
-  border: 5px solid #fff;
-  -webkit-box-shadow: 0 0 5px #aaa;
-  box-shadow: 0 0 5px #aaa;
+  border: 5px solid #F7F9F9;
+  -webkit-box-shadow: 0 0 5px #aaaaaa;
+  box-shadow: 0 0 5px #aaaaaa;
   position: relative;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
@@ -5386,6 +5529,7 @@ a.text-dark:focus,a.text-dark:hover {
 .flipper .top5-photo {
   position: relative;
   background-size: cover;
+  max-width: 100%;
   position: relative;
   width: 100%;
 }
@@ -5395,6 +5539,26 @@ a.text-dark:focus,a.text-dark:hover {
   content: '';
   width: 100%;
   padding-top: 75%;
+}
+
+.flipper .top5-photo.phototop1 {
+  background-image: url("../images/Mireia-belmonte.jpg");
+}
+
+.flipper .top5-photo.phototop2 {
+  background-image: url("../images/Carmen-martin.jpg");
+}
+
+.flipper .top5-photo.phototop3 {
+  background-image: url("../images/Carolina-marin.jpg");
+}
+
+.flipper .top5-photo.phototop4 {
+  background-image: url("../images/Garbine-muguruza.jpg");
+}
+
+.flipper .top5-photo.phototop5 {
+  background-image: url("../images/Lydia-valentin.jpg");
 }
 
 .flipper .front,.flipper .back {
@@ -5434,7 +5598,7 @@ a.text-dark:focus,a.text-dark:hover {
 
 .flipper .back .title-top {
   font-size: 23px;
-  color: #F7F9F9;
+  color: #fff;
 }
 
 .form {
@@ -5466,35 +5630,81 @@ a.text-dark:focus,a.text-dark:hover {
   width: 100%;
 }
 
-.edge {
-  margin-bottom: 30px;
-}
-
-.photo1,.photo4 {
-  background-image: url("../images/img1.jpg");
-  max-width: 100%;
-}
-
-.photo2,.photo5 {
-  background-image: url("../images/img2.jpg");
-  max-width: 100%;
-}
-
-.photo3,.photo6 {
-  background-image: url("../images/img3.jpg");
-  max-width: 100%;
-}
-
 .arrow-down {
   width: 50px;
   height: 50px;
 }/* Layout */header {
+  position: fixed;
+  z-index: 1;
   background-color: #BD86D8;
+  width: 45px;
+  height: 45px;
 }
 
 .withinHeader {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.navigation {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  -webkit-transform: translateY(-150%);
+  transform: translateY(-150%);
+  z-index: 1;
+  top: 0;
+  left: 0;
+  -webkit-transition: background ease 0.5s, -webkit-transform ease 1s 0.5s;
+  transition: background ease 0.5s, -webkit-transform ease 1s 0.5s;
+  transition: transform ease 1s 0.5s, background ease 0.5s;
+  transition: transform ease 1s 0.5s, background ease 0.5s, -webkit-transform ease 1s 0.5s;
+}
+
+.navigation.show {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: background ease 0.8s 0.9s, -webkit-transform ease 0.8s;
+  transition: background ease 0.8s 0.9s, -webkit-transform ease 0.8s;
+  transition: transform ease 0.8s, background ease 0.8s 0.9s;
+  transition: transform ease 0.8s, background ease 0.8s 0.9s, -webkit-transform ease 0.8s;
+}
+
+.containerBack {
+  background-color: transparent;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.showCompleteMenu {
+  width: 100%;
+  background-color: #5E0B75;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0;
+}
+
+.showCompleteMenu a {
+  text-decoration: none;
+  color: #F7F9F9;
+  display: block;
+}
+
+.showCompleteMenu a:hover {
+  color: purple;
+}
+
+.showCompleteMenu .dropdown-list {
+  list-style: none;
+  margin: 0;
 }
 
 .dropdown {
@@ -5506,6 +5716,11 @@ a.text-dark:focus,a.text-dark:hover {
   -ms-flex-line-pack: center;
   align-content: center;
   padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown a {
+  display: block;
 }
 
 .burger {
@@ -5518,29 +5733,13 @@ a.text-dark:focus,a.text-dark:hover {
   align-self: center;
 }
 
-.dropdown-list {
-  display: none;
-  opacity: 0;
-  -webkit-transition: opacity ease 1s 0.5s;
-  transition: opacity ease 1s 0.5s;
-}
-
-.dropdown-list .dropdown-item {
-  color: white;
-}
-
-.show {
-  display: block;
-  background-color: green;
-  opacity: 0;
-}
-
 .logo {
   height: 80%;
   width: 80%;
   grid-column: 5;
   -ms-flex-item-align: center;
   align-self: center;
+  cursor: pointer;
 }
 
 * {
@@ -5549,6 +5748,8 @@ a.text-dark:focus,a.text-dark:hover {
 }
 
 body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
   margin: 0;
   padding: 0;
   display: -webkit-box;
@@ -5567,46 +5768,83 @@ main {
   flex: 1;
 }
 
-footer {
+.footer-common {
   background-color: #5E0B75;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  height: 60px;
+  width: 100%;
+}
+
+.footer-quote-title {
+  background-color: #BED8D5;
+  height: 30%;
+  color: #424242;
+  text-align: center;
+  padding: 5px;
+  font-size: 36px;
+  font-family: "Neucha", cursive;
+}
+
+.footer-quote-title .igualdad {
+  color: #218380;
+}
+
+.footer-quote-title .sumate {
+  color: #218380;
 }
 
 .footer-items {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .footerlogo {
   width: 50px;
   height: 50px;
   grid-column: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: center;
-  align-self: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
 }
 
 .contact {
   width: 50px;
   height: 50px;
-  grid-column: 5;
-}/* Pages */* {
+}/* Pages */.fade-bckg {
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-top: 0;
+}
+
+#quote-section {
+  background: url("../images/../images/yoga.jpg") no-repeat;
+  background-size: cover;
+  background-position: center top;
+  min-height: 100vh;
+  opacity: black 0.7;
+}
+
+.header-hero {
+  position: absolute;
+  text-align: center;
+  font-size: 2.5em;
+  color: #ffffff;
+  margin-top: 40vh;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+* {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -5618,21 +5856,19 @@ footer {
 
 body {
   min-height: 100vh;
+  font-family: inherit;
 }
 
-.faq h3 {
+.faq-title {
   color: #5E0B75;
+  margin-left: 50px;
+  text-align: left;
 }
 
-.questions-listed {
-  display: grid;
-  grid-gap: 1em;
-  margin-bottom: 10px;
-}
-
-.questions-listed select {
+.contactForm {
+  background-color: lightgrey;
+  padding: 5px;
   border-radius: 0.5em;
-  border: solid #5E0B75 1px;
 }
 
 .contactForm textarea {
@@ -5640,6 +5876,7 @@ body {
   border: solid #5E0B75 1px;
   border-radius: 0.5em;
   text-align: center;
+  width: 100%;
 }
 
 .emailSend {
@@ -5663,28 +5900,6 @@ body {
   background-color: #BD86D8;
   color: white;
   border: 0;
-}
-
-.questions-listed button {
-  font-size: 14px;
-  color: #5E0B75;
-  background-color: #BED8D5;
-  border-radius: 0.5em;
-  border: solid #5E0B75 1px;
-}
-
-.arrow-down {
-  width: 18px;
-  height: 18px;
-  padding-left: 5px;
-}
-
-.questions-listed-answer {
-  display: none;
-}
-
-.show {
-  display: block;
 }
 
 .introduction,.statistics-title {
@@ -5842,6 +6057,72 @@ body {
 .phototop5 {
   background-image: url("../images/Lydia-valentin.jpg");
   max-width: 100%;
+}
+
+.phototop5 .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.phototop5 .statistics h3 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.phototop5 .col-lg-4 > h2 {
+  padding-top: 7%;
+}
+
+.phototop5 .col-lg-4 > p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+.phototop5 .myths,.phototop5 .progress,.phototop5 .links,.phototop5 .testimonials {
+  margin-top: 20%;
+}
+
+.phototop5 .list-element:hover {
+  background-color: #BED8D5;
+}
+
+@media all and (min-width: 500px) {
+  header {
+    margin: 5px;
+    border-radius: 5px;
+  }
+
+  .showCompleteMenu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0;
+    height: 15%;
+  }
+
+  .showCompleteMenu .dropdown-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 15%;
+  }
+
+  .dropdown {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+  }
+
+  .logo {
+    height: 75px;
+    width: 75px;
+  }
 }
 
 @media (min-width: 576px) {
@@ -6829,6 +7110,10 @@ body {
 
 @media all and (min-width: 600px) {
   .myths,.links {
+    margin-top: 15%;
+  }
+
+  .phototop5 .myths,.phototop5 .progress,.phototop5 .links,.phototop5 .testimonials {
     margin-top: 15%;
   }
 }
@@ -8383,6 +8668,10 @@ body {
 
 @media all and (min-width: 1025px) {
   .myths,.links {
+    margin-top: 5%;
+  }
+
+  .phototop5 .myths,.phototop5 .progress,.phototop5 .links,.phototop5 .testimonials {
     margin-top: 5%;
   }
 }

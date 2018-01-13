@@ -1,43 +1,132 @@
-.header-news,
-.header-anti-news {
-  margin: 30px auto 30px;
-}
-
 // CARD NEWS AND ANTI-NEWS
 
-.card {
+.header-news {
+  margin: 80px auto 40px;
+}
+.header-anti-news {
+  margin: 50px auto 40px;
+}
+.edge {
+  margin-bottom: 30px;
   display: flex;
+}
+.news {
+  background-color: $softcolour;
+}
+
+.card-news {
+  position: relative;
+  display: flex;
+  flex: 1;
   flex-direction: column;
-  border: 5px solid #fff;
-  box-shadow: 0 0 5px #aaa;
+  background-color: $colorwhite;
   .news-photo {
     background-size: cover;
+    max-width: 100%;
     @include aspect-ratio(16,9);
+    &.photo1 {
+      background-image: url('../images/noruega.jpg');
+    }
+    &.photo2 {
+      background-image: url('../images/lidiaoro.jpg');
+    }
+    &.photo3 {
+      background-image: url('../images/alhambra.jpg');
+    }
+    &.photo4 {
+      background-image: url('../images/retos.jpg');
+    }
+    &.photo5 {
+      background-image: url('../images/embarazada.jpg');
+    }
+    &.photo6 {
+      background-image: url('../images/paralimpicas.jpg');
+    }
+    &.photo7 {
+      background-image: url('../images/play-football.jpg');
+    }
+    &.photo8 {
+      background-image: url('../images/fucsia.jpg');
+    }
+    &.photo9 {
+      background-image: url('../images/cover-sexismo.jpg');
+    }
+    &.photo10 {
+      background-image: url('../images/Gala-Leon.jpg');
+    }
+    &.photo11 {
+      background-image: url('../images/stopviolencia.jpg');
+
+    }
+    &.photo12 {
+      background-image: url('../images/falda.jpg');
+    }
   }
   .title-news,
   .title-antinews {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 30px 30px;
+    justify-content: flex-start;
+    padding: 25px 20px;
     color: $primaryColour;
-    a {
-      text-decoration: none;
-      color: $primaryColour;
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
+.card-news {
+  .card-flap {
+    display: none;
+  }
+  &.show-card {
+    .card-flap {
+      display: flex;
     }
   }
 }
+.card-flap {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+  background-color: $colorwhite;
+  top: 100%;
+  height: auto;
+  z-index: 2;
 
+  .card-description {
+    padding: 0 20px 15px;
+    text-align: justify;
+  }
+}
 
-// CARD TOP-5
+.btn-read {
+  background: $intensecolour;
+  border-radius: 4px;
+  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
+  color: $colorwhite;
+  padding: 6px 30px 8px;
+  position: relative;
+  transition: all 0.1s 0s ease-out;
+  &:hover{
+    text-decoration: none;
+    color: $colorwhite;
+  }
+}
+
+// TOP-5
+
 .top-5 {
   margin-bottom: 40px;
   margin-top: 40px;
 }
-
+.gap-top {
+  margin-bottom: 30px;
+}
 .flipper {
-  border: 5px solid #fff;
-  box-shadow: 0 0 5px #aaa;
+  border: 5px solid $lightcolour;
+  box-shadow: 0 0 5px $colorshadow;
   position: relative;
   transform-style: preserve-3d;
   transition: all ease 1s;
@@ -50,12 +139,28 @@
   .top5-photo  {
     position: relative;
     background-size: cover;
+    max-width: 100%;
     @include aspect-ratio(4,3);
     width: 100%;
+    &.phototop1 {
+      background-image: url($pathImages + 'Mireia-belmonte.jpg');
+    }
+    &.phototop2 {
+      background-image: url($pathImages + 'Carmen-martin.jpg');
+    }
+    &.phototop3 {
+      background-image: url($pathImages + 'Carolina-marin.jpg');
+    }
+    &.phototop4 {
+      background-image: url($pathImages + 'Garbine-muguruza.jpg');
+    }
+    &.phototop5 {
+      background-image: url($pathImages + 'Lydia-valentin.jpg');
+    }
   }
   .front,
   .back {
-    top:0;
+    top: 0;
     position: absolute;
     backface-visibility: hidden;
   }
@@ -76,25 +181,7 @@
     }
     .title-top {
       font-size: 23px;
-
-      color: $lightcolour;
+      color: $colorwhite;
     }
   }
-}
-
-
-// FORM-NEWS
-.form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 500px;
-  margin: 0 auto;
-}
-.form-news {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-
 }

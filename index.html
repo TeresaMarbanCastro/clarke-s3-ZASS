@@ -5,22 +5,29 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
 	<link rel="shortcut icon" href="images/favicon.ico"/>
 	<title>Mujeres y deporte</title>
 </head>
 <body>
 	<header>
 		<div class="withinHeader">
-			<img src="images/zass-logo2.png" class="logo">
 			<div class="dropdown"><a href="#"><img src="images/menu.png" class="burger"></a>
 			</div>
 		</div>
-		<div class="dropdown-list">
-			<a class="dropdown-item" href="#">Home</a>
-			<a class="dropdown-item" href="#">Noticias y Antinoticias</a>
-			<a class="dropdown-item" href="#">FAQ</a>
-			<a class="dropdown-item" href="#">Actúa</a>
-		</div>
+		<nav class="navigation">
+			<div class="containerBack">
+				<div class="showCompleteMenu">
+					<button class="menu-close" title="Close"><img src="images/close.png"></button>
+					<ul class="dropdown-list">
+						<li><a class="dropdown-item" href="index.html" target="_blank">Home</a></li>
+						<li><a class="dropdown-item" href="news.html" target="_blank">Noticias y Antinoticias</a></li>
+						<li><a class="dropdown-item" href="faq.html" target="_blank">FAQ</a></li>
+						<li><a class="dropdown-item" href="action.html" target="_blank">Actúa</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 	</header>
 	<main>		<!--Carousel-->
 		<section class="total-slider" id="total-slider">
@@ -78,7 +85,7 @@
 		<section class="introduction container">
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</section>
-<!--Statistics-->
+		<!--Statistics-->
 		<section class="statistics container">
 		<h3 class="card-title statistics-title"> Estadísticas</h3>
 			<div class="container" id="containerStats">
@@ -137,110 +144,239 @@
 			</div>
 			</section>
 <!-- TOP5 -->
-			<section class="top5">
-				<div class="container section-top5">
-					<h2 class="top-5">TOP 5</h2>
-					<div class="row">
-						<div class="col-xs-12 col-md-6 col-lg-4 edge">
+		<section class="top5">
+			<div class="container section-top5">
+				<h2 class="top-5">TOP 5</h2>
+				<div class="row justify-content-center">
+					<div class="col-xs-12 col-md-6 col-lg-4 gap-top">
+						<div class="flipper">
+							<div class="top5-photo front phototop1"></div>
+							<div class="back">
+								<h3 class="title-nametop">Mireia Belmonte</h3>
+								<p class="title-top">Natación</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-6 col-lg-4 gap-top">
+						<div class="flipper">
+							<div class="top5-photo phototop2 front"></div>
+							<div class="back">
+								<h3 class="title-nametop">Carmen Martín</h3>
+								<p class="title-top">Balonmano</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-6 col-lg-4 gap-top">
+						<div class="card-top">
 							<div class="flipper">
-								<div class="top5-photo front phototop1"></div>
+								<div class="top5-photo phototop3 front"></div>
 								<div class="back">
-									<h3 class="title-nametop">Mireia Belmonte</h3>
-									<p class="title-top">Natación</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-12 col-md-6 col-lg-4 edge">
-							<div class="flipper">
-								<div class="top5-photo phototop2 front"></div>
-								<div class="back">
-									<h3 class="title-nametop">Carmen Martín</h3>
-									<p class="title-top">Balonmano</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-12 col-md-6 col-lg-4 edge">
-							<div class="card-top">
-								<div class="flipper">
-									<div class="top5-photo phototop3 front"></div>
-									<div class="back">
-										<h3 class="title-nametop">Carolina Marín</h3>
-										<p class="title-top">Badminton</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-12 col-md-6 col-lg-4 edge">
-							<div class="card-top">
-								<div class="flipper">
-									<div class="top5-photo phototop4 front"></div>
-									<div class="back">
-										<h3 class="title-nametop">Garbiñe Muguruza</h3>
-										<p class="title-top">Tenis</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-12 col-md-6 col-lg-4 edge">
-							<div class="card-top">
-								<div class="flipper">
-									<div class="top5-photo phototop5 front"></div>
-									<div class="back">
-										<h3 class="title-nametop">Lydia Valentín</h3>
-										<p class="title-top">Halterofilia</p>
-									</div>
+									<h3 class="title-nametop">Carolina Marín</h3>
+									<p class="title-top">Badminton</p>
 								</div>
 							</div>
 						</div>
 					</div>
-				</section>
-<!--False myths-->
-<section class="myths">
-	<div class="container marketing">
-		<!-- Three columns of icons -->
-		 <div class="row">
-			<div class="col-lg-4">
-				<img class="rounded-circle" src="images/arm-icon.png" alt="Generic placeholder image" width="140" height="140">
-				<h2>Primer mito</h2>
-				<p class="text">La actividad deportiva y/o atlética masculiniza a las mujeres. Socialmente se les ha estigmatizado de tener actitudes masculinas.</p>
-			</div><!-- /.col-lg-4 -->
-			<div class="col-lg-4">
-				<img class="rounded-circle" src="images/tampax-icon.png" alt="Generic placeholder image" width="140" height="140">
-				<h2>Segundo mito</h2>
-				<p class="text">La práctica deportiva es peligrosa para la salud de las mujeres. Se sustenta en que el grado de intensidad de la actividad física puede alterar el ciclo menstrual, dañar los órganos reproductores y los senos.</p>
-			</div><!-- /.col-lg-4 -->
-			<div class="col-lg-4">
-				<img class="rounded-circle" src="images/man-icon.png" alt="Generic placeholder image" width="140" height="140">
-				<h2>Tercer mito</h2>
-				<p class="text">El deporte es exclusivo para hombres. Se refiere a que las mujeres no están interesadas en el deporte y que cuando lo ejecutan no lo hacen bien.</p>
-			</div><!-- /.col-lg-4 -->
-			<div. class="col-lg-4">
-				<img class="rounded-circle" src="images/woman-icon.png" alt="Generic placeholder image" width="140" height="140">
-				<h2>Cuarto mito</h2>
-				<p class="text">Una mujer que opine de deportes es ante los ojos de ciertos hombres una invasora de su espacio. Cualquier cosa que ellos escuchen venida de la boca de una mujer no la sienten veraz y la encuentran un tanto viciada.</p>
-			</div><!-- /.col-lg-4 -->
-		</div><!-- /.row -->
-	</div><!--div container-->
-</section>
-<section class="links">
-	<div class="list-group">
-		<a href="http://www.inmujer.gob.es/areasTematicas/multiDiscriminacion/mujeresVuln/home.htm" target="_blank" class="list-group-item list-group-item-action active">Instituto de la mujer</a>
-		<a href="http://www.csd.gob.es/csd/estaticos/myd/TRIPTICO_PROTOCOLO.pdf" target="_blank" class="list-group-item list-group-item-action">Consejo superior de deportes</a>
-		<a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
-		<a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-		<a href="#" class="list-group-item list-group-item-action">Vestibulum at eros</a>
-	</div><!--list-group-->
-</section>
-</main>
-	<footer>
+					<div class="col-xs-12 col-md-6 col-lg-4 gap-top">
+						<div class="card-top">
+							<div class="flipper">
+								<div class="top5-photo phototop4 front"></div>
+								<div class="back">
+									<h3 class="title-nametop">Garbiñe Muguruza</h3>
+									<p class="title-top">Tenis</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-6 col-lg-4 gap-top">
+						<div class="card-top">
+							<div class="flipper">
+								<div class="top5-photo phototop5 front"></div>
+								<div class="back">
+									<h3 class="title-nametop">Lydia Valentín</h3>
+									<p class="title-top">Halterofilia</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--False myths-->
+		<section class="myths">
+			<div class="container">
+				<h1 class="card-title">Mitos sobre las mujeres en el deporte</h1>
+				<!-- Three columns of icons -->
+				<div class="row justify-content-center">
+					<div class="col-lg-4 items-center">
+						<img id="arm" class="rounded-circle" src="images/arm-icon.png" alt="Generic placeholde image" width="140" height="140">
+						<h2>Primer mito</h2>
+						<p class="text">La actividad deportiva y/o atlética masculiniza a las mujeres. Socialmente se les ha estigmatizado de tener actitudes masculinas.</p>
+					</div><!-- /.col-lg-4 -->
+					<div class="col-lg-4">
+						<img id="tampax" class="rounded-circle" src="images/tampax-icon.png" alt="Generic placeholder image" width="140" height="140">
+						<h2>Segundo mito</h2>
+						<p class="text">La práctica deportiva es peligrosa para la salud de las mujeres. Se sustenta en que el grado de intensidad de la actividad física puede alterar el ciclo menstrual, dañar los órganos reproductores y los senos.</p>
+					</div><!-- /.col-lg-4 -->
+					<div class="col-lg-4">
+						<img id="man" class="rounded-circle" src="images/man-icon.png" alt="Generic placeholder image" width="140" height="140">
+						<h2>Tercer mito</h2>
+						<p class="text">El deporte es exclusivo para hombres. Se refiere a que las mujeres no están interesadas en el deporte y que cuando lo ejecutan no lo hacen bien.</p>
+					</div><!-- /.col-lg-4 -->
+					<div class="col-lg-4">
+						<img id="woman" class="rounded-circle" src="images/woman-icon.png" alt="Generic placeholder image" width="140" height="140">
+						<h2>Cuarto mito</h2>
+						<p class="text">Una mujer que opine de deportes es ante los ojos de ciertos hombres una invasora de su espacio. Cualquier cosa que ellos escuchen venida de la boca de una mujer no la sienten veraz.</p>
+					</div><!-- /.col-lg-4 -->
+					<div class="col-lg-4">
+						<img id="strong" class="rounded-circle" src="images/strong-icon.png" alt="Generic placeholder image" width="140" height="140">
+						<h2>Quinto mito</h2>
+						<p class="text">El cuerpo de la mujer no está hecho para el deporte actual. Por mucho que se entrenen, no llegarán a tener el mismo nivel que un hombre.</p>
+					</div><!-- /.col-lg-4 -->
+				</div><!-- /.row -->
+			</div><!--div container-->
+		</section>
+		<!--Testimonials-->
+		<section class = "testimonials">
+			<div id="carouselExampleSlidesOnly" class="carousel slide container" data-ride="carousel">
+				<h1 class="card-title">Testimonios</h1>
+  				<div class="carousel-inner">
+    				<div class="carousel-item active">
+						<div class="card">
+  							<div class="card-header">
+    							<h3>Testimonio 1</h3>
+  							</div>
+  							<div class="card-body">
+    							<blockquote class="blockquote mb-0">
+      								<p>“Había sido mi profesor de natación cuando tenía 17 años. Cuando terminé mi licenciatura en educación física, él era el director de un importante club deportivo y fui a pedirle trabajo. Cuando ya me iba, me empujó con brusquedad contra la pared, agarrando mis pechos con sus manos, mientras me decía: siempre me has gustado mucho... Mantuve la calma y le dije: me sueltas o empiezo a gritar. Me soltó y salí corriendo”.</p>
+      								<footer class="blockquote-footer">Deportista </footer>
+    							</blockquote>
+  							</div>
+						</div>
+    				</div>
+    				<div class="carousel-item">
+						<div class="card">
+  							<div class="card-header">
+    							<h3>Testimonio 2</h3>
+  							</div>
+  							<div class="card-body">
+    							<blockquote class="blockquote mb-0">
+      								<p>“Tendríamos quince años... el entrenador nos pegaba un cachete en el culo cuando íbamos a salir al campo a jugar...</p>
+      								<footer class="blockquote-footer">Deportista </footer>
+    							</blockquote>
+  							</div>
+						</div>
+    				</div>
+    				<div class="carousel-item">
+						<div class="card">
+  							<div class="card-header">
+    							<h3>Testimonio 3</h3>
+  							</div>
+  							<div class="card-body">
+    							<blockquote class="blockquote mb-0">
+      								<p>“Cuando tenía catorce años el entrenador me llamaba casi todos los días a casa; ahora, después de tantos años, lo pienso y me digo: eso no era normal”.</p>
+      								<footer class="blockquote-footer">Deportista </footer>
+    							</blockquote>
+  							</div>
+						</div>
+    				</div>
+					<div class="carousel-item">
+						<div class="card">
+  							<div class="card-header">
+    							<h3>Testimonio 4</h3>
+  							</div>
+  							<div class="card-body">
+    							<blockquote class="blockquote mb-0">
+      								<p>“Teníamos que mantener el peso...; sí era necesario, y él tenía derecho a exigirlo. Pero lo decía de forma agresiva, en público, delante de todo el mundo”.</p>
+      								<footer class="blockquote-footer">Deportista </footer>
+    							</blockquote>
+  							</div>
+						</div>
+    				</div>
+					<div class="carousel-item">
+						<div class="card">
+  							<div class="card-header">
+    							<h3>Testimonio 5</h3>
+  							</div>
+  							<div class="card-body">
+    							<blockquote class="blockquote mb-0">
+      								<p>“Creaba una especie de dependencia de él, sentíamos la necesidad de tenerle cerca. Yo he sentido que no le gustaba que fuera autosuficiente”.</p>
+      								<footer class="blockquote-footer">Deportista </footer>
+    							</blockquote>
+  							</div>
+						</div>
+    				</div>
+					<div class="carousel-item">
+						<div class="card">
+  							<div class="card-header">
+    							<h3>Testimonio 6</h3>
+  							</div>
+  							<div class="card-body">
+    							<blockquote class="blockquote mb-0">
+      								<p>“Él (el entrenador) decidía absolutamente todo lo que tenías que hacer; él te planificaba todo, no tenía en cuenta lo que tú querías... yo aguanté, y llegó un momento que decidí: o tengo voz y voto en esto o lo dejo”.</p>
+      								<footer class="blockquote-footer">Deportista </footer>
+    							</blockquote>
+  							</div>
+						</div>
+    				</div>
+					<div class="carousel-item">
+						<div class="card">
+  							<div class="card-header">
+    							<h3>Testimonio 7</h3>
+  							</div>
+  							<div class="card-body">
+    							<blockquote class="blockquote mb-0">
+      								<p>“Él siempre decía que nunca nadie había dejado nuestro deporte por su culpa. Dan ganas de ir y decirle uno a uno los nombres de las que lo dejaron por él”.</p>
+      								<footer class="blockquote-footer">Deportista </footer>
+    							</blockquote>
+  							</div>
+						</div>
+    				</div>
+					<div class="carousel-item">
+						<div class="card">
+  							<div class="card-header">
+    							<h3>Testimonio 8</h3>
+  							</div>
+  							<div class="card-body">
+    							<blockquote class="blockquote mb-0">
+      								<p>Le teníamos miedo; evitábamos encontrarnos con su mirada...Yo lloraba por cómo nos trataba”.</p>
+      								<footer class="blockquote-footer">Deportista </footer>
+    							</blockquote>
+  							</div>
+						</div>
+    				</div>
+  				</div>
+			</div>
+		</section>
+		<!--Enlaces de interés section-->
+		<section>
+			<div class="container links">
+				<div class="list-group">
+					<h1 class="card-title">Enlaces de interés</h1>
+					<a href="http://www.inmujer.gob.es/areasTematicas/multiDiscriminacion/mujeresVuln/home.htm" target="_blank" class="list-group-item list-group-item-action list-element">Instituto de la mujer</a>
+					<a href="http://www.csd.gob.es/csd/estaticos/myd/TRIPTICO_PROTOCOLO.pdf" target="_blank" class="list-group-item list-group-item-action list-element">Consejo superior de deportes</a>
+					<a href="http://mujerydeporte.org/w/" target="_blank" class="list-group-item list-group-item-action list-element">Comisión mujer y deporte</a>
+					<a href="https://www.olympic.org/sha?tab=what-is-sha" target="_blank" class="list-group-item list-group-item-action list-element">Comité Olímpico Internacional</a>
+					<a href="http://ec.europa.eu/assets/eac/sport/events/2013/documents/20131203-gender/final-proposal-1802_en.pdf" target="_blank" class="list-group-item list-group-item-action list-element">Comisión europea del deporte</a>
+					<a href="http://www.endvawnow.org/es/articles/30-acoso-sexual-en-el-deporte.html" target="_blank" class="list-group-item list-group-item-action list-element">ONU Mujeres</a>
+					<a href="https://www.womenssportsfoundation.org/" target="_blank" class="list-group-item list-group-item-action list-element">Women's sports fundation</a>
+				</div><!--list-group-->
+			</div>
+		</section>
+	</main>
+	<footer class="footer-common">
+		<div class="footer-quote">
+			<h4 class="footer-quote-title"><span class="sumate">Súmate</span> a la lucha por la <span class="igualdad">igualdad </span><span class="equal-icon"><img src=images/equality.png></span></h4>
+		</div>
 		<div class="footer-items">
-			<img src="images/zass-logo2.png"class="footerlogo">
-			<img src="images/letter.png" class="contact"><a href="">
+			<img src="images/zass-logo2.png" class="footerlogo">
+			<a href="mailto:mujerydeporte@gmail.com"><img src="images/letter.png" class="contact"></a>
 		</div>
 	</footer>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>
-</body>
+	<script src="js/icons.js"></script>
+	</body>
 </html>

@@ -57,7 +57,6 @@
 	border-right: 0;
 	transform-origin: center right;
 }
-
 .animacion1 {
 	animation: derecha 1.1s linear forwards .5s;
 }
@@ -133,10 +132,8 @@
 			}
 		}
 
-
-
-// }
 //False Myths
+
 .marketing .col-lg-4 {
 	margin-bottom: 1.5rem;
 	text-align: center;
@@ -189,4 +186,39 @@
 .phototop5 {
 	background-image: url($pathImages + 'Lydia-valentin.jpg');
 	max-width: 100%;
+
+.col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.statistics h3{
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.col-lg-4 > h2 {
+  padding-top: 7%;
+}
+
+.col-lg-4 > p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+
+.myths, .progress, .links, .testimonials {
+  margin-top: $mrg-top-sct-mv;
+  @media all and (min-width: 600px){
+    margin-top: $mrg-top-sct-tb;
+  }
+  @media all and (min-width: 1025px){
+    margin-top: $mrg-top-sct-dk;
+  }
+}
+
+//Links Section
+.list-element:hover {
+  background-color: $softcolour;
+}
 }

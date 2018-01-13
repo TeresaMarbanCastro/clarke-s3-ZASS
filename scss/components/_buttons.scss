@@ -1,0 +1,29 @@
+button{
+	cursor: pointer;
+}
+a{
+	cursor: pointer;
+}
+
+//Botón cerrar menú navigation
+.menu-close{
+top: 0;
+background-color: rgba(0,0,0,0);
+border: 0;
+margin: 10px;
+text-align: left;
+}
+
+//Botones faq-title
+// .questions-listed button{
+// 	font-size: 14px;
+// 	color: $primaryColour;
+// 	background-color: $softcolour;
+// 	border-radius: 0.5em;
+// 	border: solid  $primaryColour 1px;
+// }
+.arrow-down{
+	width: 18px;
+	height: 18px;
+	padding-left: 5px;
+}
