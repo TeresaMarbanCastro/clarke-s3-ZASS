@@ -5452,6 +5452,10 @@ a {
   margin-top: 40px;
 }
 
+.gap-top {
+  margin-bottom: 30px;
+}
+
 .flipper {
   border: 5px solid #F7F9F9;
   -webkit-box-shadow: 0 0 5px #aaaaaa;

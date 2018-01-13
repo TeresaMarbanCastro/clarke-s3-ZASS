@@ -9,7 +9,6 @@
 .edge {
   margin-bottom: 30px;
   display: flex;
-  // flex: 1;
 }
 .news {
   background-color: $softcolour;
@@ -99,7 +98,9 @@
   margin-bottom: 40px;
   margin-top: 40px;
 }
-
+.gap-top {
+  margin-bottom: 30px;
+}
 .flipper {
   border: 5px solid $lightcolour;
   box-shadow: 0 0 5px $colorshadow;
