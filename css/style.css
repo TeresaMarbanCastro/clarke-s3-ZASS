@@ -5326,6 +5326,43 @@ a {
   padding-left: 5px;
 }
 
+.up-button {
+  position: fixed;
+  background-color: #5E0B75;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  margin-right: 2%;
+  z-index: 100;
+}
+
+.arrow {
+  width: 20px;
+  height: 20px;
+  -webkit-transform: rotate(0.5turn);
+  transform: rotate(0.5turn);
+}
+
+.down-btn-action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  background-color: #5E0B75;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  margin-left: 50%;
+  margin-top: 25em;
+}
+
+.arrow-action {
+  margin: auto;
+  width: 20px;
+  height: 20px;
+}
+
 .newspage {
   background-color: #f1f2f3;
 }
@@ -5792,6 +5829,13 @@ main {
   flex: 1;
 }
 
+.top5,.introduction,.stastistics,.myths,.testimonials,.links {
+  width: 100vw;
+  height: 100%;
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+
 .footer-common {
   background-color: #5E0B75;
   width: 100%;
@@ -5861,7 +5905,7 @@ main {
 .header-hero {
   position: absolute;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 1.7em;
   color: #ffffff;
   margin-top: 40vh;
   padding-left: 10%;
@@ -5926,8 +5970,9 @@ body {
   border: 0;
 }
 
-.introduction {
-  margin-top: 35px;
+.introduction,.statistics-title {
+  margin: 35px 0;
+  text-align: justify;
 }
 
 .progress {
@@ -5948,40 +5993,56 @@ body {
   z-index: 1;
 }
 
-.progress-bar {
+.progress-bar,.progress-bar2,.progress-bar3 {
   width: 100%;
   height: 100%;
   background: none;
-  border-width: 7px;
+  border-width: 28px;
   border-style: solid;
   position: absolute;
   top: 0;
 }
 
-.progress-left .progress-bar {
+.progress-left .progress-bar,.progress-left2 .progress-bar2,.progress-left3 .progress-bar3 {
   left: 100%;
   border-top-right-radius: 80px;
   border-bottom-right-radius: 80px;
   border-left: 0;
   -webkit-transform-origin: center left;
   transform-origin: center left;
-  -webkit-animation: izquierda 1.5s linear forwards 1.8s;
-  animation: izquierda 1.5s linear forwards 1.8s;
 }
 
-.progress-right {
+.progress-right,.progress-right2,.progress-right3 {
   right: 0;
 }
 
-.progress-right .progress-bar {
+.progress-right .progress-bar,.progress-right2 .progress-bar2,.progress-right3 .progress-bar3 {
   left: -100%;
   border-top-left-radius: 80px;
   border-bottom-left-radius: 80px;
   border-right: 0;
   -webkit-transform-origin: center right;
   transform-origin: center right;
-  -webkit-animation: derecha 1.8s linear forwards;
-  animation: derecha 1.8s linear forwards;
+}
+
+.animacion1 {
+  -webkit-animation: derecha 1.1s linear forwards .5s;
+  animation: derecha 1.1s linear forwards .5s;
+}
+
+.animacion2 {
+  -webkit-animation: derecha2 1.08s linear forwards .5s;
+  animation: derecha2 1.08s linear forwards .5s;
+}
+
+.animacion3 {
+  -webkit-animation: izquierda2 .15s linear forwards 1.58s;
+  animation: izquierda2 .15s linear forwards 1.58s;
+}
+
+.animacion4 {
+  -webkit-animation: derecha3 1.1s linear forwards .5s;
+  animation: derecha3 1.1s linear forwards .5s;
 }
 
 .progress-value {
@@ -5989,7 +6050,7 @@ body {
   height: 85%;
   border-radius: 50%;
   border: 5px solid #ebebeb;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: bold;
   line-height: 125px;
   text-align: center;
@@ -6003,6 +6064,14 @@ body {
   border-color: #5E0B75;
 }
 
+.progress-bar2 {
+  border-color: #218380;
+}
+
+.progress-bar3 {
+  border-color: #424242;
+}
+
 .value-text {
   font-weight: bold;
   text-align: center;
@@ -6010,31 +6079,109 @@ body {
   margin-bottom: 1rem;
 }
 
-.col-lg-4 {
+.marketing .col-lg-4 {
   margin-bottom: 1.5rem;
   text-align: center;
 }
 
-.statistics h3 {
-  margin-bottom: 1.5rem;
-  text-align: center;
+.marketing h2 {
+  font-weight: 400;
+  padding: 3%;
 }
 
-.col-lg-4 > h2 {
-  padding-top: 7%;
-}
-
-.col-lg-4 > p {
+.marketing .col-lg-4 p {
   margin-right: .75rem;
   margin-left: .75rem;
 }
 
-.myths,.progress,.links,.testimonials {
-  margin-top: 20%;
+.myths,.links {
+  margin-top: 15%;
 }
 
-.list-element:hover {
+.edge {
+  margin-bottom: 30px;
+}
+
+.phototop1 {
+  background-image: url("../images/Mireia-belmonte.jpg");
+  max-width: 100%;
+}
+
+.phototop2 {
+  background-image: url("../images/Carmen-martin.jpg");
+  max-width: 100%;
+}
+
+.phototop3 {
+  background-image: url("../images/Carolina-marin.jpg");
+  max-width: 100%;
+}
+
+.phototop4 {
+  background-image: url("../images/Garbine-muguruza.jpg");
+  max-width: 100%;
+}
+
+.phototop5 {
+  background-image: url("../images/Lydia-valentin.jpg");
+  max-width: 100%;
+}
+
+.phototop5 .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.phototop5 .statistics h3 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.phototop5 .col-lg-4 > h2 {
+  padding-top: 7%;
+}
+
+.phototop5 .col-lg-4 > p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+.phototop5 .myths,.phototop5 .progress,.phototop5 .links,.phototop5 .testimonials,.phototop5 .introduction {
+  padding-top: 15%;
+}
+
+.phototop5 .list-element:hover {
   background-color: #BED8D5;
+}
+
+.phototop5 .introduction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  background-color: rgba(189, 134, 216, 0.2);
+}
+
+.phototop5 .stastistics {
+  background-color: #F7F9F9;
+}
+
+.phototop5 .top5 {
+  background-color: rgba(94, 11, 117, 0.4);
+}
+
+.phototop5 .myths {
+  background-color: #F7F9F9;
+}
+
+.phototop5 .testimonials {
+  background-color: rgba(189, 134, 216, 0.2);
+}
+
+.phototop5 .links {
+  background-color: #F7F9F9;
 }
 
 @media (min-width: 321px) and (max-width: 768px) {
@@ -7070,8 +7217,17 @@ body {
 }
 
 @media all and (min-width: 600px) {
-  .myths,.progress,.links,.testimonials {
-    margin-top: 15%;
+  .top5,.introduction,.stastistics,.myths,.testimonials,.links {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  .myths,.links {
+    margin-top: 10%;
+  }
+
+  .phototop5 .myths,.phototop5 .progress,.phototop5 .links,.phototop5 .testimonials,.phototop5 .introduction {
+    padding-top: 10%;
   }
 }
 
@@ -8634,8 +8790,12 @@ body {
 }
 
 @media all and (min-width: 1025px) {
-  .myths,.progress,.links,.testimonials {
-    margin-top: 5%;
+  .myths,.links {
+    margin-top: 3%;
+  }
+
+  .phototop5 .myths,.phototop5 .progress,.phototop5 .links,.phototop5 .testimonials,.phototop5 .introduction {
+    padding-top: 3%;
   }
 }
 
@@ -9411,6 +9571,13 @@ body {
   }
 }
 
+@media all and (min-width: 1280px) {
+  .top5,.introduction,.stastistics,.myths,.testimonials,.links {
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+}
+
 @media (max-width: 1199px) {
   .table-responsive-xl {
     display: block;
@@ -9592,8 +9759,8 @@ body {
   }
 
   100% {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
+    -webkit-transform: rotate(162deg);
+    transform: rotate(162deg);
   }
 }
 
@@ -9604,32 +9771,80 @@ body {
   }
 
   100% {
+    -webkit-transform: rotate(162deg);
+    transform: rotate(162deg);
+  }
+}
+
+@-webkit-keyframes izquierda2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(18deg);
+    transform: rotate(18deg);
+  }
+}
+
+@keyframes izquierda2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(18deg);
+    transform: rotate(18deg);
+  }
+}
+
+@-webkit-keyframes derecha2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
   }
 }
 
-@-webkit-keyframes izquierda {
+@keyframes derecha2 {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
 
   100% {
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
   }
 }
 
-@keyframes izquierda {
+@-webkit-keyframes derecha3 {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
 
   100% {
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
+    -webkit-transform: rotate(122deg);
+    transform: rotate(122deg);
+  }
+}
+
+@keyframes derecha3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(122deg);
+    transform: rotate(122deg);
   }
 }
 
