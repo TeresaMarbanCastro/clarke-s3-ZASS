@@ -1,4 +1,5 @@
 // CARD NEWS AND ANTI-NEWS
+
 .newspage {
   background-color: $colornews;
 }
@@ -31,6 +32,10 @@
   flex-direction: column;
   background-color: $colorwhite;
   margin: 0;
+  &.opacity5{
+    opacity: 0.3;
+    filter: blur(1px);
+  }
   .news-photo {
     background-size: cover;
     max-width: 100%;
@@ -76,24 +81,62 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    position: relative;
   }
   .title-news,
   .title-antinews {
-    padding: 12px 20px;
+    padding: 12px 60px 12px 20px;
     color: $primaryColour;
     font-size: 20px;
+    line-height: 1.4;
     font-weight: bold;
-    text-align: justify;
+    margin:0;
   }
 }
 .card-news {
+  perspective: 600px;
+  transform: scale(1);
+  z-index: 1;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.075);
+  transition: transform .3s ease;
+  cursor: pointer;
+  &.scale{
+    transform: scale(.9);
+  }
   .card-flap {
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.125);
     display: none;
+    z-index: -1;
+    backface-visibility: hidden;
+
   }
   &.show-card {
+    transform: scale(1);
+    .btn-shownews {
+      background-color: $colorbtn;
+      .left{
+        position: absolute;
+        top: 14px;
+        left: 7px;
+        width: 15px;
+        height: 2px;
+        background-color: white;
+        @include rotate(-45deg);
+      }
+      .right{
+        position: absolute;
+        top: 14px;
+        left: 7px;
+        width: 15px;
+        height: 2px;
+        background-color: white;
+        @include rotate(45deg);
+      }
+    }
     .card-flap {
       display: flex;
     }
+    z-index: 2;
   }
 }
 .card-flap {
@@ -116,20 +159,54 @@
   }
 }
 
-.btn-read {
-  background: $intensecolour;
-  border-radius: 4px;
-  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
-  color: $colorwhite;
-  padding: 6px 30px 8px;
-  position: relative;
-  transition: all 0.1s 0s ease-out;
-  font-size: 18px;
-  &:hover{
-    text-decoration: none;
-    color: $colorwhite;
+.btn-shownews{
+  position: absolute;
+  background-color: $intensecolour;
+  right:15px;
+  top: 15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  .left{
+    position:absolute;
+    top: 15px;
+    left: 7px;
+    width: 10px;
+    height: 2px;
+    background-color: white;
+    @include rotate(45deg);
+  }
+  .right{
+    position:absolute;
+    top: 15px;
+    left: 13px;
+    width: 10px;
+    height: 2px;
+    background-color: white;
+    @include rotate(-45deg);
   }
 }
+
+.btn-read {
+  background: $intensecolour;
+  color: $colorwhite;
+  border-radius: 4px;
+  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
+  padding: 6px 30px 8px;
+  position: relative;
+  top:0;
+  transition: all 0.1s 0s ease-out;
+  font-size: 18px;
+  &:hover {
+    text-decoration: none;
+    dispay: block;
+    background: $intensecolourlight;
+    color: $colorwhite;
+    box-shadow: 5px 8px 17px -5px rgba(0,0,0,0.75);
+    top: -3px;
+   }
+}
+
 
 // TOP-5
 

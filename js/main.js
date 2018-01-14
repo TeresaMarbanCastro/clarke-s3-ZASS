@@ -4,10 +4,6 @@ function showMenu (){
 	menu.classList.add(showmenu)
 }
 
-$('.carousel').carousel();
-
-
-
 //Menu
 var showBtn = document.querySelector('.burger');
 // var body = document.querySelector('body');
@@ -58,21 +54,7 @@ window.addEventListener ("scroll",function (event) {
 	}
 })
 
-// //Desplegables FAQ
-// var showFaq = document.querySelectorAll('.questions-listed button');
-//
-// var listFaq = document.querySelectorAll('.questions-listed-answer span');
-//
-// function showAnswer(){
-// 	listFaq.classList.toggle('show');
-// 	showFaq.event.currentTarget.innerHTML;
-// }
-//
-// showFaq.addEventListener('click', showAnswer);
-
-
-
-// TOP-5
+// ROTAR TOP-5 AL HACER CLICK
 
 var selectFlipper = document.querySelectorAll('.flipper');
 
@@ -90,22 +72,17 @@ for (var i = 0; i < selectFlipper.length; i++) {
 	selectFlipper[i].addEventListener('click', flipTop5);
 }
 
-// DESPLEGAR NEWS
-
-var cardNews = document.querySelectorAll('.card-news');
-function showNew() {
-	if (this.classList.contains('show-card')) {
-		this.classList.remove('show-card');
-	} else {
-		for (var i = 0; i < cardNews.length; i++) {
-			cardNews[i].classList.remove('show-card');
-		}
-		this.classList.toggle('show-card');
-	}
-}
-for (var i = 0; i < cardNews.length; i++) {
-	cardNews[i].addEventListener('click', showNew);
-}
+// //Desplegables FAQ
+// var showFaq = document.querySelectorAll('.questions-listed button');
+//
+// var listFaq = document.querySelectorAll('.questions-listed-answer span');
+//
+// function showAnswer(){
+// 	listFaq.classList.toggle('show');
+// 	showFaq.event.currentTarget.innerHTML;
+// }
+//
+// showFaq.addEventListener('click', showAnswer);
 
 //button up
 document.querySelector('.up-button').addEventListener('click', function(e) {
