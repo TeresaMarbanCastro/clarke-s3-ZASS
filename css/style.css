@@ -5792,6 +5792,14 @@ hr {
 .arrow-down {
   width: 50px;
   height: 50px;
+}
+
+.arrow-down-faq {
+  background-color: #5E0B75;
+  width: 25px;
+  height: 25px;
+  border-radius: 1.5em;
+  padding: 3px;
 }/* Layout */header {
   position: fixed;
   z-index: 1;
@@ -6039,9 +6047,19 @@ body {
   text-align: left;
 }
 
+.card a {
+  color: #5E0B75;
+  display: block;
+}
+
+.card a:hover {
+  color: #BD86D8;
+  text-decoration: none;
+}
+
 .contactForm {
   background-color: lightgrey;
-  padding: 5px;
+  padding: 10px;
   border-radius: 0.5em;
 }
 
