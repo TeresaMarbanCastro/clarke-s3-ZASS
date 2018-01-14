@@ -6138,6 +6138,10 @@ body {
   font-weight: 400;
 }
 
+.rounded-circle {
+  margin-bottom: 1em;
+}
+
 @media all and (min-width: 500px) {
   header {
     margin: 5px;
