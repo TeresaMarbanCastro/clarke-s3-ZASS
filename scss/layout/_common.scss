@@ -14,7 +14,7 @@ main {
 	flex: 1;
 }
 
-.introduction, .statistics, .top5, .myths, .testimonials, .links {
+.introduction, .statistics, .top5, .myths, .testimonials, .links, .action-txt {
 	@include mrg-sections-mv;
 
 	@media all and (min-width:600px) {
