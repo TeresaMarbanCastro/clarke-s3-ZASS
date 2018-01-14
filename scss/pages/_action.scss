@@ -17,15 +17,21 @@
     position: absolute;
     text-align: center;
     font-size: 1.7em;
-    color: #ffffff;
+    color: $colorwhite;
     margin-top: 30vh;
     padding-left: 10%;
     padding-right: 10%;
     font-family: 'Crimson Text', serif;
 	font-weight: 600;
+
+    @media all and (min-width: 600px) {
+        font-size: 2.2em;
+    }
+    @media all and (min-width: 1280px) {
+        font-size: 2.7em;
+    }
 }
 
 .violence-txt {
     text-align: justify;
-    color: $colorwhite;
 }

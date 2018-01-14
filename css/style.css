@@ -5899,7 +5899,7 @@ main {
   position: absolute;
   text-align: center;
   font-size: 1.7em;
-  color: #ffffff;
+  color: #fff;
   margin-top: 30vh;
   padding-left: 10%;
   padding-right: 10%;
@@ -5909,7 +5909,6 @@ main {
 
 .violence-txt {
   text-align: justify;
-  color: #fff;
 }
 
 * {
@@ -7208,6 +7207,10 @@ body {
   .introduction,.statistics,.top5,.myths,.testimonials,.links,.action-txt {
     padding-top: 10%;
     padding-bottom: 10%;
+  }
+
+  .header-hero {
+    font-size: 2.2em;
   }
 }
 
@@ -9545,6 +9548,10 @@ body {
   .introduction,.statistics,.top5,.myths,.testimonials,.links,.action-txt {
     padding-top: 3%;
     padding-bottom: 3%;
+  }
+
+  .header-hero {
+    font-size: 2.7em;
   }
 }
 
