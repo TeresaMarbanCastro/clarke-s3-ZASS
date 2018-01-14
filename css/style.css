@@ -6122,9 +6122,14 @@ body {
 }
 
 .card-title {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.3em;
   font-family: 'Crimson Text', serif;
   font-weight: 600;
+}
+
+.blockquote-footer {
+  font-family: 'Crimson Text', serif;
+  font-weight: 400;
 }
 
 @media all and (min-width: 500px) {

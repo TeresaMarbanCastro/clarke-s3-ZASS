@@ -208,6 +208,7 @@
 
 .testimonials {
 	background-color: rgba($lightsecondarycolour, 0.2);
+
 }
 
 .links {
@@ -215,7 +216,12 @@
 }
 
 .card-title {
-	margin-bottom: 1.5em;
+	margin-bottom: 1.3em;
 	font-family: 'Crimson Text', serif;
 	font-weight: 600;
+}
+
+.blockquote-footer {
+	font-family: 'Crimson Text', serif;
+	font-weight: 400;
 }
