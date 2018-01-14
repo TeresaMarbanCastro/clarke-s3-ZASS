@@ -1,3 +1,23 @@
+// DESPLEGAR NEWS
+
+var cardNews = document.querySelectorAll('.card-news');
+function showNew() {
+	if (this.classList.contains('show-card')) {
+		this.classList.remove('show-card');
+	} else {
+		for (var i = 0; i < cardNews.length; i++) {
+			cardNews[i].classList.remove('show-card');
+		}
+		this.classList.toggle('show-card');
+	}
+}
+for (var i = 0; i < cardNews.length; i++) {
+	cardNews[i].addEventListener('click', showNew);
+}
+
+
+// VALIDACIÓN DE CAMPOS DEL FORMULARIO DE NEWS CON BOOTSTRAP
+
 (function() {
   'use strict';
 

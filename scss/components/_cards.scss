@@ -125,11 +125,23 @@
   position: relative;
   transition: all 0.1s 0s ease-out;
   font-size: 18px;
-  &:hover{
+  &:hover {
     text-decoration: none;
+    dispay: block;
     color: $colorwhite;
-  }
+    background: lighten($intensecolour,2.5);
+    box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
+    transform: translateY(-2px);
+    transition: all 0.25s 0s ease-out;
+   }
+   &:active {
+    background: darken($intensecolour,2.5);
+    box-shadow: 0 1px 0px 0 rgba(255,255,255,0.25);
+    transform: translate3d(0,1px,0);
+    transition: all 0.025s 0s ease-out;
+ }
 }
+
 
 // TOP-5
 
