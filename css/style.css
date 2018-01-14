@@ -6126,6 +6126,10 @@ body {
   background-color: rgba(94, 11, 117, 0.4);
 }
 
+.card-title {
+  margin-bottom: 1.5em;
+}
+
 @media all and (min-width: 500px) {
   header {
     margin: 5px;
