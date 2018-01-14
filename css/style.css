@@ -6128,6 +6128,8 @@ body {
 
 .card-title {
   margin-bottom: 1.5em;
+  font-family: 'Crimson Text', serif;
+  font-weight: 600;
 }
 
 @media all and (min-width: 500px) {
