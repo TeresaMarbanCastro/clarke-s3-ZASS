@@ -6123,7 +6123,7 @@ body {
 }
 
 .links {
-  background-color: #F7F9F9;
+  background-color: rgba(94, 11, 117, 0.4);
 }
 
 @media all and (min-width: 500px) {
