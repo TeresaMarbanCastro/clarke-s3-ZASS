@@ -5354,7 +5354,7 @@ a {
   border-radius: 5px;
   border: none;
   margin-left: 50%;
-  margin-top: 25em;
+  margin-top: 27em;
 }
 
 .arrow-action {
@@ -5647,11 +5647,6 @@ a {
   top: -3px;
 }
 
-.top-5 {
-  margin-bottom: 40px;
-  margin-top: 40px;
-}
-
 .gap-top {
   margin-bottom: 30px;
 }
@@ -5916,7 +5911,7 @@ hr {
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 20px;
+  font-size: 19px;
   margin: 0;
   padding: 0;
   display: -webkit-box;
@@ -5935,9 +5930,7 @@ main {
   flex: 1;
 }
 
-.top5,.introduction,.stastistics,.myths,.testimonials,.links {
-  width: 100vw;
-  height: 100%;
+.introduction,.statistics,.top5,.myths,.testimonials,.links,.action-txt {
   padding-top: 15%;
   padding-bottom: 15%;
 }
@@ -6013,9 +6006,16 @@ main {
   text-align: center;
   font-size: 1.7em;
   color: #ffffff;
-  margin-top: 40vh;
+  margin-top: 30vh;
   padding-left: 10%;
   padding-right: 10%;
+  font-family: 'Crimson Text', serif;
+  font-weight: 600;
+}
+
+.violence-txt {
+  text-align: justify;
+  color: #fff;
 }
 
 * {
@@ -6076,8 +6076,7 @@ body {
   border: 0;
 }
 
-.introduction,.statistics-title {
-  margin: 35px 0;
+.introduction {
   text-align: justify;
 }
 
@@ -6088,6 +6087,7 @@ body {
   background: white;
   margin: 0 auto;
   position: relative;
+  background-color: #F7F9F9;
 }
 
 .progress > span {
@@ -6185,25 +6185,6 @@ body {
   margin-bottom: 1rem;
 }
 
-.marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-
-.marketing h2 {
-  font-weight: 400;
-  padding: 3%;
-}
-
-.marketing .col-lg-4 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
-}
-
-.myths,.links {
-  margin-top: 15%;
-}
-
 .edge {
   margin-bottom: 30px;
 }
@@ -6233,34 +6214,21 @@ body {
   max-width: 100%;
 }
 
-.phototop5 .col-lg-4 {
+.col-lg-4 {
   margin-bottom: 1.5rem;
   text-align: center;
 }
 
-.phototop5 .statistics h3 {
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-
-.phototop5 .col-lg-4 > h2 {
-  padding-top: 7%;
-}
-
-.phototop5 .col-lg-4 > p {
+.col-lg-4 > p {
   margin-right: .75rem;
   margin-left: .75rem;
 }
 
-.phototop5 .myths,.phototop5 .progress,.phototop5 .links,.phototop5 .testimonials,.phototop5 .introduction {
-  padding-top: 15%;
-}
-
-.phototop5 .list-element:hover {
+.list-element:hover {
   background-color: #BED8D5;
 }
 
-.phototop5 .introduction {
+.introduction {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6270,24 +6238,44 @@ body {
   background-color: rgba(189, 134, 216, 0.2);
 }
 
-.phototop5 .stastistics {
+.statistics {
   background-color: #F7F9F9;
 }
 
-.phototop5 .top5 {
+.top5 {
   background-color: rgba(94, 11, 117, 0.4);
 }
 
-.phototop5 .myths {
+.myths {
   background-color: #F7F9F9;
 }
 
-.phototop5 .testimonials {
+.testimonials {
   background-color: rgba(189, 134, 216, 0.2);
 }
 
-.phototop5 .links {
-  background-color: #F7F9F9;
+.links {
+  background-color: rgba(94, 11, 117, 0.4);
+}
+
+.card-title {
+  margin-bottom: 1.3em;
+  font-family: 'Crimson Text', serif;
+  font-weight: 600;
+  color: #218380;
+}
+
+.blockquote-footer {
+  font-family: 'Crimson Text', serif;
+  font-weight: 400;
+}
+
+.rounded-circle {
+  margin-bottom: 1em;
+}
+
+.white {
+  color: #5E0B75;
 }
 
 @media (min-width: 321px) and (max-width: 768px) {
@@ -7323,17 +7311,9 @@ body {
 }
 
 @media all and (min-width: 600px) {
-  .top5,.introduction,.stastistics,.myths,.testimonials,.links {
+  .introduction,.statistics,.top5,.myths,.testimonials,.links,.action-txt {
     padding-top: 10%;
     padding-bottom: 10%;
-  }
-
-  .myths,.links {
-    margin-top: 10%;
-  }
-
-  .phototop5 .myths,.phototop5 .progress,.phototop5 .links,.phototop5 .testimonials,.phototop5 .introduction {
-    padding-top: 10%;
   }
 }
 
@@ -8895,16 +8875,6 @@ body {
   }
 }
 
-@media all and (min-width: 1025px) {
-  .myths,.links {
-    margin-top: 3%;
-  }
-
-  .phototop5 .myths,.phototop5 .progress,.phototop5 .links,.phototop5 .testimonials,.phototop5 .introduction {
-    padding-top: 3%;
-  }
-}
-
 @media (min-width: 1200px) {
   .container {
     max-width: 1140px;
@@ -9678,7 +9648,7 @@ body {
 }
 
 @media all and (min-width: 1280px) {
-  .top5,.introduction,.stastistics,.myths,.testimonials,.links {
+  .introduction,.statistics,.top5,.myths,.testimonials,.links,.action-txt {
     padding-top: 3%;
     padding-bottom: 3%;
   }
