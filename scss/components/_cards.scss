@@ -1,10 +1,10 @@
 // CARD NEWS AND ANTI-NEWS
 .newspage {
-  background-color: #f1f2f3;
+  background-color: $colornews;
 }
 .header-news,
 .header-anti-news {
-  background-color: #555555;
+  background-color: $colortitles;
   padding: 15px 40px;
   margin: 80px auto 40px;
   color: $colorwhite;
