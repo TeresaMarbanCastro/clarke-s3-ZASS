@@ -14,9 +14,7 @@ main {
 	flex: 1;
 }
 
-.top5, .introduction, .stastistics, .myths, .testimonials, .links {
-	width: 100vw;
-	height: 100%;
+.introduction, .statistics, .top5, .myths, .testimonials, .links {
 	@include mrg-sections-mv;
 
 	@media all and (min-width:600px) {

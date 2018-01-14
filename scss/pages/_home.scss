@@ -1,7 +1,6 @@
 
 //Introduction
-.introduction,
-.statistics-title {
+.introduction {
 	// margin: 35px 0;
 	text-align: justify;
 }
@@ -138,36 +137,6 @@
 			}
 		}
 
-//False Myths
-
-// .marketing .col-lg-4 {
-// 	margin-bottom: 1.5rem;
-// 	text-align: center;
-// }
-//
-// .marketing h2 {
-// 	font-weight: 400;
-// 	padding: 3%;
-// }
-//
-// .marketing .col-lg-4 p {
-// 	margin-right: .75rem;
-// 	margin-left: .75rem;
-// }
-
-
-.myths,
-// .progress,
-.links {
-	margin-top: $mrg-top-sct-mv;
-	@media all and (min-width: 600px){
-		margin-top: $mrg-top-sct-tb;
-	}
-	@media all and (min-width: 1025px){
-		margin-top: $mrg-top-sct-dk;
-	}
-}
-
 // Top-5
 
 .edge {
@@ -198,30 +167,20 @@
   text-align: center;
 }
 
-.statistics h3{
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
+// .statistics h3{
+//   margin-bottom: 1.5rem;
+//   text-align: center;
+// }
 
-.col-lg-4 > h2 {
-  padding-top: 7%;
-}
+// .col-lg-4 > h2 {
+//   padding-top: 7%;
+// }
 
 .col-lg-4 > p {
   margin-right: .75rem;
   margin-left: .75rem;
 }
 
-
-.myths, .progress, .links, .testimonials, .introduction {
-  padding-top: $mrg-top-sct-mv;
-  @media all and (min-width: 600px){
-    padding-top: $mrg-top-sct-tb;
-  }
-  @media all and (min-width: 1025px){
-    padding-top: $mrg-top-sct-dk;
-  }
-}
 
 //Links Section
 .list-element:hover {
@@ -233,10 +192,9 @@
     display: flex;
     justify-content: flex-end;
 	background-color: rgba($lightsecondarycolour, 0.2);
-
 }
 
-.stastistics {
+.statistics {
 	background-color: $lightcolour;
 }
 
