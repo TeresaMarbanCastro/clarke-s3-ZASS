@@ -1,6 +1,7 @@
 *{
 	box-sizing: border-box;
 }
+//faq
 .faq{
 	margin: 20px;
 	text-align: justify;
@@ -14,11 +15,19 @@ body{
 	margin-left: 50px;
 	text-align: left;
 }
-
+//FAQ
+.card a{
+	color: $primaryColour;
+	display: block;
+	&:hover{
+		color: $lightsecondarycolour;
+		text-decoration: none;
+	}
+}
 //Formulario FAQ
 .contactForm{
 	background-color: lightgrey;
-	padding: 5px;
+	padding: 10px;
 	border-radius: 0.5em;
 }
 .contactForm textarea{
