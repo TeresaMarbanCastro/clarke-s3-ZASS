@@ -6131,6 +6131,7 @@ body {
   margin-bottom: 1.3em;
   font-family: 'Crimson Text', serif;
   font-weight: 600;
+  color: #218380;
 }
 
 .blockquote-footer {
@@ -6140,6 +6141,10 @@ body {
 
 .rounded-circle {
   margin-bottom: 1em;
+}
+
+.white {
+  color: #5E0B75;
 }
 
 @media all and (min-width: 500px) {

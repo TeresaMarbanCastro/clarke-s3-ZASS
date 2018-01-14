@@ -208,7 +208,6 @@
 
 .testimonials {
 	background-color: rgba($lightsecondarycolour, 0.2);
-
 }
 
 .links {
@@ -219,6 +218,7 @@
 	margin-bottom: 1.3em;
 	font-family: 'Crimson Text', serif;
 	font-weight: 600;
+	color: $intensecolour;
 }
 
 .blockquote-footer {
@@ -228,4 +228,8 @@
 
 .rounded-circle {
 	margin-bottom: 1em;
+}
+
+.white {
+	color: $primaryColour;
 }
