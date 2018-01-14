@@ -5404,6 +5404,12 @@ a {
   margin: 0;
 }
 
+.card-news.opacity5 {
+  opacity: 0.3;
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
+}
+
 .card-news .news-photo {
   background-size: cover;
   max-width: 100%;
@@ -5475,18 +5481,77 @@ a {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  position: relative;
 }
 
 .card-news .title-news,.card-news .title-antinews {
-  padding: 12px 20px;
+  padding: 12px 60px 12px 20px;
   color: #5E0B75;
   font-size: 20px;
+  line-height: 1.4;
   font-weight: bold;
-  text-align: justify;
+  margin: 0;
+}
+
+.card-news {
+  -webkit-perspective: 600px;
+  perspective: 600px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  z-index: 1;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.075);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.075);
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+  cursor: pointer;
+}
+
+.card-news.scale {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 .card-news .card-flap {
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.125);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.125);
   display: none;
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card-news.show-card {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  z-index: 2;
+}
+
+.card-news.show-card .btn-shownews {
+  background-color: #BA1B1D;
+}
+
+.card-news.show-card .btn-shownews .left {
+  position: absolute;
+  top: 14px;
+  left: 7px;
+  width: 15px;
+  height: 2px;
+  background-color: white;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.card-news.show-card .btn-shownews .right {
+  position: absolute;
+  top: 14px;
+  left: 7px;
+  width: 15px;
+  height: 2px;
+  background-color: white;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .card-news.show-card .card-flap {
@@ -5526,14 +5591,47 @@ a {
   font-size: 18px;
 }
 
+.btn-shownews {
+  position: absolute;
+  background-color: #218380;
+  right: 15px;
+  top: 15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.btn-shownews .left {
+  position: absolute;
+  top: 15px;
+  left: 7px;
+  width: 10px;
+  height: 2px;
+  background-color: white;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.btn-shownews .right {
+  position: absolute;
+  top: 15px;
+  left: 13px;
+  width: 10px;
+  height: 2px;
+  background-color: white;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
 .btn-read {
   background: #218380;
+  color: #fff;
   border-radius: 4px;
   -webkit-box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
   box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
-  color: #fff;
   padding: 6px 30px 8px;
   position: relative;
+  top: 0;
   -webkit-transition: all 0.1s 0s ease-out;
   transition: all 0.1s 0s ease-out;
   font-size: 18px;
@@ -5542,24 +5640,11 @@ a {
 .btn-read:hover {
   text-decoration: none;
   dispay: block;
+  background: #5DA4A2;
   color: #fff;
-  background: #248d8a;
-  -webkit-box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
-  box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
-  -webkit-transform: translateY(-2px);
-  transform: translateY(-2px);
-  -webkit-transition: all 0.25s 0s ease-out;
-  transition: all 0.25s 0s ease-out;
-}
-
-.btn-read:active {
-  background: #1e7976;
-  -webkit-box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.25);
-  box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.25);
-  -webkit-transform: translate3d(0, 1px, 0);
-  transform: translate3d(0, 1px, 0);
-  -webkit-transition: all 0.025s 0s ease-out;
-  transition: all 0.025s 0s ease-out;
+  -webkit-box-shadow: 5px 8px 17px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 8px 17px -5px rgba(0, 0, 0, 0.75);
+  top: -3px;
 }
 
 .top-5 {
@@ -5803,6 +5888,9 @@ hr {
 }
 
 .burger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 25px;
   width: 25px;
   -webkit-box-pack: center;

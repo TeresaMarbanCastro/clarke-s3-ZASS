@@ -2,12 +2,20 @@
 
 var cardNews = document.querySelectorAll('.card-news');
 function showNew() {
+
 	if (this.classList.contains('show-card')) {
 		this.classList.remove('show-card');
+		for (var i = 0; i < cardNews.length; i++) {
+			cardNews[i].classList.remove('opacity5');
+			cardNews[i].classList.remove('scale');
+		}
 	} else {
 		for (var i = 0; i < cardNews.length; i++) {
 			cardNews[i].classList.remove('show-card');
+			cardNews[i].classList.add('opacity5');
+			cardNews[i].classList.add('scale');
 		}
+		this.classList.toggle('opacity5');
 		this.classList.toggle('show-card');
 	}
 }
