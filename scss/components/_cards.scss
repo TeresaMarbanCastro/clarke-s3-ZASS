@@ -1,39 +1,222 @@
-.header-news,
-.header-anti-news {
-  margin: 30px auto 30px;
-}
-
 // CARD NEWS AND ANTI-NEWS
 
+.newspage {
+  background-color: $colornews;
+}
+.header-news,
+.header-anti-news {
+  background-color: $colortitles;
+  padding: 15px 40px;
+  margin: 80px auto 40px;
+  color: $colorwhite;
+  font-size: 30px;
+  box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.25);
+  @media (min-width: 321px) and (max-width: 768px) {
+    font-size: 35px;
+  }
+  @media (min-width: 769px) {
+    font-size: 45px;
+  }
+}
+.header-anti-news {
+  margin: 50px auto 40px;
+}
+.edge {
+  margin-bottom: 30px;
+  display: flex;
+}
 .card-news {
   position: relative;
   display: flex;
+  flex: 1;
   flex-direction: column;
-  // box-shadow: 0 0 5px #aaa;
+  background-color: $colorwhite;
+  margin: 0;
+  &.opacity5{
+    opacity: 0.3;
+    filter: blur(1px);
+  }
   .news-photo {
     background-size: cover;
+    max-width: 100%;
     @include aspect-ratio(16,9);
+    &.photo1 {
+      background-image: url('../images/noruega.jpg');
+    }
+    &.photo2 {
+      background-image: url('../images/lidiaoro.jpg');
+    }
+    &.photo3 {
+      background-image: url('../images/alhambra.jpg');
+    }
+    &.photo4 {
+      background-image: url('../images/retos.jpg');
+    }
+    &.photo5 {
+      background-image: url('../images/embarazada.jpg');
+    }
+    &.photo6 {
+      background-image: url('../images/paralimpicas.jpg');
+    }
+    &.photo7 {
+      background-image: url('../images/play-football.jpg');
+    }
+    &.photo8 {
+      background-image: url('../images/fucsia.jpg');
+    }
+    &.photo9 {
+      background-image: url('../images/cover-sexismo.jpg');
+    }
+    &.photo10 {
+      background-image: url('../images/Gala-Leon.jpg');
+    }
+    &.photo11 {
+      background-image: url('../images/stopviolencia.jpg');
+    }
+    &.photo12 {
+      background-image: url('../images/falda.jpg');
+    }
   }
-  .title-news,
-  .title-antinews {
+  .title-card {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 15px;
+    position: relative;
+  }
+  .title-news,
+  .title-antinews {
+    padding: 12px 60px 12px 20px;
     color: $primaryColour;
     font-size: 20px;
+    line-height: 1.4;
     font-weight: bold;
-    margin: 0;
+    margin:0;
   }
+}
+.card-news {
+  perspective: 600px;
+  transform: scale(1);
+  z-index: 1;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.075);
+  transition: transform .3s ease;
+  cursor: pointer;
+  &.scale{
+    transform: scale(.9);
+  }
+  .card-flap {
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.125);
+    display: none;
+    z-index: -1;
+    backface-visibility: hidden;
+
+  }
+  &.show-card {
+    transform: scale(1);
+    .btn-shownews {
+      background-color: $colorbtn;
+      .left{
+        position: absolute;
+        top: 14px;
+        left: 7px;
+        width: 15px;
+        height: 2px;
+        background-color: white;
+        @include rotate(-45deg);
+      }
+      .right{
+        position: absolute;
+        top: 14px;
+        left: 7px;
+        width: 15px;
+        height: 2px;
+        background-color: white;
+        @include rotate(45deg);
+      }
+    }
+    .card-flap {
+      display: flex;
+    }
+    z-index: 2;
+  }
+}
+.card-flap {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+  background-color: $colorwhite;
+  top: 100%;
+  height: auto;
+  z-index: 2;
+  .card-description {
+    padding: 0 20px 15px;
+    text-align: justify;
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+.btn-shownews{
+  position: absolute;
+  background-color: $intensecolour;
+  right:15px;
+  top: 15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  .left{
+    position:absolute;
+    top: 15px;
+    left: 7px;
+    width: 10px;
+    height: 2px;
+    background-color: white;
+    @include rotate(45deg);
+  }
+  .right{
+    position:absolute;
+    top: 15px;
+    left: 13px;
+    width: 10px;
+    height: 2px;
+    background-color: white;
+    @include rotate(-45deg);
+  }
+}
+
+.btn-read {
+  background: $intensecolour;
+  color: $colorwhite;
+  border-radius: 4px;
+  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
+  padding: 6px 30px 8px;
+  position: relative;
+  top:0;
+  transition: all 0.1s 0s ease-out;
+  font-size: 18px;
+  &:hover {
+    text-decoration: none;
+    dispay: block;
+    background: $intensecolourlight;
+    color: $colorwhite;
+    box-shadow: 5px 8px 17px -5px rgba(0,0,0,0.75);
+    top: -3px;
+   }
 }
 
 
 // TOP-5
-.top-5 {
-  margin-bottom: 40px;
-  margin-top: 40px;
-}
 
+// .top-5 {
+//   margin-bottom: 40px;
+//   margin-top: 40px;
+// }
+.gap-top {
+  margin-bottom: 30px;
+}
 .flipper {
   border: 5px solid $lightcolour;
   box-shadow: 0 0 5px $colorshadow;
@@ -49,8 +232,24 @@
   .top5-photo  {
     position: relative;
     background-size: cover;
+    max-width: 100%;
     @include aspect-ratio(4,3);
     width: 100%;
+    &.phototop1 {
+      background-image: url($pathImages + 'Mireia-belmonte.jpg');
+    }
+    &.phototop2 {
+      background-image: url($pathImages + 'Carmen-martin.jpg');
+    }
+    &.phototop3 {
+      background-image: url($pathImages + 'Carolina-marin.jpg');
+    }
+    &.phototop4 {
+      background-image: url($pathImages + 'Garbine-muguruza.jpg');
+    }
+    &.phototop5 {
+      background-image: url($pathImages + 'Lydia-valentin.jpg');
+    }
   }
   .front,
   .back {

@@ -78,19 +78,20 @@ z-index: 1;
 	align-content: center;
 	padding: 10px;
 	cursor: pointer;
+	a{
+		display: block;
+	}
 	@media all and (min-width: 500px){
 		justify-content: center;
 		align-content: center;
 	}
 }
 .burger{
+	display: flex;
 	height: 25px;
 	width: 25px;
 	justify-content: center;
 	align-self: center;
-	a{
-		display: block;
-	}
 }
 //Logo
 .logo{

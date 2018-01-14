@@ -1,7 +1,8 @@
 
 //Introduction
 .introduction {
-	margin-top: 35px;
+	// margin: 35px 0;
+	text-align: justify;
 }
 //FIRST STATISTIC
 
@@ -12,6 +13,7 @@
     background:white;
     margin: 0 auto;
     position: relative;
+	background-color: $lightcolour;
 }
 .progress > span{
     width: 50%;
@@ -21,51 +23,75 @@
     top: 0;
     z-index: 1;
 }
-.progress-bar{
+
+.progress-bar,
+.progress-bar2,
+.progress-bar3{
     width: 100%;
     height: 100%;
     background: none;
-    border-width: 7px;
+    border-width: 28px;
     border-style: solid;
     position: absolute;
     top: 0;
 }
-.progress-left .progress-bar{
-    left: 100%;
-    border-top-right-radius: 80px;
-    border-bottom-right-radius: 80px;
-    border-left: 0;
-    transform-origin: center left;
-    animation: izquierda 1.5s linear forwards 1.8s;
+.progress-left .progress-bar,
+.progress-left2 .progress-bar2,
+.progress-left3 .progress-bar3{
+	left: 100%;
+	border-top-right-radius: 80px;
+	border-bottom-right-radius: 80px;
+	border-left: 0;
+	transform-origin: center left;
 }
-.progress-right{
-    right: 0;
+.progress-right,
+.progress-right2,
+.progress-right3{
+	right: 0;
 }
-.progress-right .progress-bar{
-    left: -100%;
-    border-top-left-radius: 80px;
-    border-bottom-left-radius: 80px;
-    border-right: 0;
-    transform-origin: center right;
-    animation: derecha 1.8s linear forwards;
-
+.progress-right .progress-bar,
+.progress-right2 .progress-bar2,
+.progress-right3 .progress-bar3{
+	left: -100%;
+	border-top-left-radius: 80px;
+	border-bottom-left-radius: 80px;
+	border-right: 0;
+	transform-origin: center right;
+}
+.animacion1 {
+	animation: derecha 1.1s linear forwards .5s;
+}
+.animacion2 {
+	animation: derecha2 1.08s linear forwards .5s;
+}
+.animacion3 {
+	animation: izquierda2 .15s linear forwards 1.58s;
+}
+.animacion4 {
+	animation: derecha3 1.1s linear forwards .5s;
 }
 .progress-value{
-    width: 85%;
-    height: 85%;
-    border-radius: 50%;
-    border: 5px solid #ebebeb;
-    font-size: 36px;
-		font-weight: bold;
-    line-height: 125px;
-    text-align: center;
-    position: absolute;
-    top: 7.5%;
-    left: 7.5%;
-    color: grey;
+	width: 85%;
+	height: 85%;
+	border-radius: 50%;
+	border: 5px solid #ebebeb;
+	font-size: 32px;
+	font-weight: bold;
+	line-height: 125px;
+	text-align: center;
+	position: absolute;
+	top: 7.5%;
+	left: 7.5%;
+	color: grey;
 }
 .progress-bar{
-    border-color: #5E0B75;
+	border-color: #5E0B75;
+}
+.progress-bar2 {
+	border-color: #218380;
+}
+.progress-bar3 {
+	border-color: #424242;
 }
 .value-text{
 	font-weight:bold;
@@ -75,36 +101,76 @@
 
 }
 @keyframes derecha{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(180deg);
-    }
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(162deg);
+	}
 }
-@keyframes izquierda{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
+@keyframes izquierda2{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(18deg);
+	}
+}
+@keyframes derecha2{
+		0%{
+			transform: rotate(0deg);
+		}
+		100%{
+			transform: rotate(180deg);
+		}
+	}
+	@keyframes derecha3{
+			0%{
+				transform: rotate(0deg);
+			}
+			100%{
+				transform: rotate(122deg);
+			}
+		}
 
-        transform: rotate(90deg);
-    }
+// Top-5
+
+.edge {
+	margin-bottom: 30px;
 }
-//False Myths
+.phototop1 {
+	background-image: url($pathImages + 'Mireia-belmonte.jpg');
+	max-width: 100%;
+}
+.phototop2 {
+	background-image: url($pathImages + 'Carmen-martin.jpg');
+	max-width: 100%;
+}
+.phototop3 {
+	background-image: url($pathImages + 'Carolina-marin.jpg');
+	max-width: 100%;
+}
+.phototop4 {
+	background-image: url($pathImages + 'Garbine-muguruza.jpg');
+	max-width: 100%;
+}
+.phototop5 {
+	background-image: url($pathImages + 'Lydia-valentin.jpg');
+	max-width: 100%;
+}
 .col-lg-4 {
   margin-bottom: 1.5rem;
   text-align: center;
 }
 
-.statistics h3{
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
+// .statistics h3{
+//   margin-bottom: 1.5rem;
+//   text-align: center;
+// }
 
-.col-lg-4 > h2 {
-  padding-top: 7%;
-}
+// .col-lg-4 > h2 {
+//   padding-top: 7%;
+// }
 
 .col-lg-4 > p {
   margin-right: .75rem;
@@ -112,42 +178,54 @@
 }
 
 
-.myths, .progress, .links, .testimonials {
-  margin-top: $mrg-top-sct-mv;
-  @media all and (min-width: 600px){
-    margin-top: $mrg-top-sct-tb;
-  }
-  @media all and (min-width: 1025px){
-    margin-top: $mrg-top-sct-dk;
-  }
-}
-
 //Links Section
 .list-element:hover {
   background-color: $softcolour;
 }
-// Top-5
 
-.edge {
-  margin-bottom: 30px;
+//styles for each section
+.introduction {
+    display: flex;
+    justify-content: flex-end;
+	background-color: rgba($lightsecondarycolour, 0.2);
 }
-.phototop1 {
-  background-image: url($pathImages + 'Mireia-belmonte.jpg');
-  max-width: 100%;
+
+.statistics {
+	background-color: $lightcolour;
 }
-.phototop2 {
-  background-image: url($pathImages + 'Carmen-martin.jpg');
-  max-width: 100%;
+
+.top5 {
+	background-color: rgba($primaryColour, 0.4);
 }
-.phototop3 {
-  background-image: url($pathImages + 'Carolina-marin.jpg');
-  max-width: 100%;
+
+.myths {
+	background-color: $lightcolour;
 }
-.phototop4 {
-  background-image: url($pathImages + 'Garbine-muguruza.jpg');
-  max-width: 100%;
+
+.testimonials {
+	background-color: rgba($lightsecondarycolour, 0.2);
 }
-.phototop5 {
-  background-image: url($pathImages + 'Lydia-valentin.jpg');
-  max-width: 100%;
+
+.links {
+	background-color: rgba($primaryColour, 0.4);
+}
+
+.card-title {
+	margin-bottom: 1.3em;
+	font-family: 'Crimson Text', serif;
+	font-weight: 600;
+	color: $intensecolour;
+}
+
+.blockquote-footer {
+	font-family: 'Crimson Text', serif;
+	font-weight: 400;
+}
+
+.rounded-circle {
+	margin-bottom: 1em;
+}
+
+.white {
+	color: $primaryColour;
 }
