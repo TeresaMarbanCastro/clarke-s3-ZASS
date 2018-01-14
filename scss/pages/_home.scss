@@ -38,29 +38,26 @@
 .progress-left .progress-bar,
 .progress-left2 .progress-bar2,
 .progress-left3 .progress-bar3{
-    left: 100%;
-    border-top-right-radius: 80px;
-    border-bottom-right-radius: 80px;
-    border-left: 0;
-    transform-origin: center left;
-    // animation: izquierda 1.5s linear forwards 1.8s;
+	left: 100%;
+	border-top-right-radius: 80px;
+	border-bottom-right-radius: 80px;
+	border-left: 0;
+	transform-origin: center left;
 }
 .progress-right,
 .progress-right2,
 .progress-right3{
-    right: 0;
+	right: 0;
 }
 .progress-right .progress-bar,
 .progress-right2 .progress-bar2,
 .progress-right3 .progress-bar3{
-    left: -100%;
-    border-top-left-radius: 80px;
-    border-bottom-left-radius: 80px;
-    border-right: 0;
-    transform-origin: center right;
-    // animation: derecha 1.8s linear forwards;
+	left: -100%;
+	border-top-left-radius: 80px;
+	border-bottom-left-radius: 80px;
+	border-right: 0;
+	transform-origin: center right;
 }
-
 .animacion1 {
 	animation: derecha 1.1s linear forwards .5s;
 }
@@ -72,7 +69,6 @@
 }
 .animacion4 {
 	animation: derecha3 1.1s linear forwards .5s;
-
 }
 .progress-value{
 	width: 85%;

@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
   <link rel="shortcut icon" href="images/favicon.ico"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Noticias</title>
 </head>
 <body class="newspage">
@@ -260,21 +261,93 @@
         </div>
       </div>
     </section>
-    <section class="form">
-      <h3 class="send-news">Envíanos tu noticia</h3>
-      <p>Si quieres enviarnos alguna noticia interesante de mujeres en el deporte, ponte en contacto con nosotros a través del siguiente formulario.</p>
-      <p>¡Gracias por ayudarnos a dar visibilidad de la mujer en el deporte!</p>
-      <form class="form-news" action="#" method="post">
-        <label for="title">Título</label>
-        <input type="text" id="title" name="title" required>
-        <label for="description">Descripción de la noticia</label>
-        <textarea name="description" id="description" rows="6" cols="40"></textarea>
-        <label for="img">Imagen de la noticia</label>
-        <input type="file" id="img" name="img">
-        <label for="url">Fuente (URL externo)</label>
-        <input type="url" id="url" name="url">
-        <input type="submit" value="Enviar">
-      </form>
+    <section class="form-news">
+      <div class="container col-12 col-sm-10 col-md-9 d-flex flex-column align-items-center">
+        <div class="form-text">
+          <h3 class="send-news">Envíanos tu noticia</h3>
+          <p>Si quieres enviarnos alguna noticia interesante de mujeres en el deporte, ponte en contacto con nosotros a través del siguiente formulario.</p>
+          <p class="text-center"><strong>¡Gracias por ayudarnos a dar visibilidad de la mujer en el deporte!</strong></p>
+        </div>
+        <hr>
+        <form class="col-sm-10" id="needs-validation" novalidate>
+          <div class="form-group row">
+            <label class="col-form-label col-12" for="validationDefault01">Título de la noticia</label>
+            <div class="input-group col-12">
+              <span class="input-group-addon">
+                <i class="fa fa-text-height"></i>
+              </span>
+              <input type="text" class="form-control" id="validationDefault01" placeholder="Título de la noticia" required>
+            </div>
+            <div class="invalid-feedback">
+            Introduce un título para la noticia
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="control-label col-12" for="validationDefault02">Descripción de la noticia</label>
+            <div class="input-group col-12">
+              <span class="input-group-addon">
+                <i class="fa fa-pencil"></i>
+              </span>
+              <textarea class="form-control" rows="3" placeholder="Añade una descripción de la noticia" id="validationDefault02" required></textarea>
+            </div>
+            <div class="invalid-feedback">
+            Introduce una descripción
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="control-label col-12" for="image">Imagen de la noticia</label>
+            <div class="input-group col-12">
+              <span class="input-group-addon">
+                <i class="fa fa-file-image-o"></i>
+              </span>
+              <input type="file" class="form-control" id="image" placeholder="Sube una imagen" required>
+            </div>
+            <div class="invalid-feedback">
+            Selecciona una imagen para la noticia
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="control-label col-12" for="url">URL de la noticia</label>
+            <div class="input-group col-12">
+              <span class="input-group-addon">
+                <i class="fa fa-link"></i>
+              </span>
+              <input type="url" class="form-control" id="url" placeholder="Escribe la URL de la noticia aquí" required>
+            </div>
+            <div class="invalid-feedback">
+            Introduce la URL de la noticia
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-form-label col-12" for="name">Nombre completo</label>
+            <div class="input-group col-12">
+              <span class="input-group-addon">
+                <i class="fa fa-user"></i>
+              </span>
+              <input type="text" class="form-control" id="name" placeholder="Nombre completo" required>
+            </div>
+            <div class="invalid-feedback">
+            Por favor, introduce tu nombre
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="control-label col-12" for="email">E-mail</label>
+            <div class="input-group col-12">
+              <span class="input-group-addon">
+                <i class="fa fa-envelope"></i>
+              </span>
+              <input type="email" class="form-control" id="email" placeholder="E-mail" required>
+            </div>
+            <div class="invalid-feedback">
+            Por favor, introduce tu email
+            </div>
+          </div>
+          <button type="submit" class="btn btn-warning btn-block col-4 enviar">
+            Enviar
+            <i class="fa fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
     </section>
   </main>
 	<footer class="footer-common">
@@ -291,6 +364,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
-  <script type="text/javascript" href="js/news.js"></script>
+  <script type="text/javascript" src="js/news.js"></script>
 </body>
 </html>

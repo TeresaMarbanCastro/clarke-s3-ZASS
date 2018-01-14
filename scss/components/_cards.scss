@@ -1,7 +1,21 @@
 // CARD NEWS AND ANTI-NEWS
-
-.header-news {
+.newspage {
+  background-color: $colornews;
+}
+.header-news,
+.header-anti-news {
+  background-color: $colortitles;
+  padding: 15px 40px;
   margin: 80px auto 40px;
+  color: $colorwhite;
+  font-size: 30px;
+  box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.25);
+  @media (min-width: 321px) and (max-width: 768px) {
+    font-size: 35px;
+  }
+  @media (min-width: 769px) {
+    font-size: 45px;
+  }
 }
 .header-anti-news {
   margin: 50px auto 40px;
@@ -10,16 +24,13 @@
   margin-bottom: 30px;
   display: flex;
 }
-.news {
-  background-color: $softcolour;
-}
-
 .card-news {
   position: relative;
   display: flex;
   flex: 1;
   flex-direction: column;
   background-color: $colorwhite;
+  margin: 0;
   .news-photo {
     background-size: cover;
     max-width: 100%;
@@ -56,21 +67,23 @@
     }
     &.photo11 {
       background-image: url('../images/stopviolencia.jpg');
-
     }
     &.photo12 {
       background-image: url('../images/falda.jpg');
     }
   }
-  .title-news,
-  .title-antinews {
+  .title-card {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 25px 20px;
+  }
+  .title-news,
+  .title-antinews {
+    padding: 12px 20px;
     color: $primaryColour;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
+    text-align: justify;
   }
 }
 .card-news {
@@ -94,10 +107,12 @@
   top: 100%;
   height: auto;
   z-index: 2;
-
   .card-description {
     padding: 0 20px 15px;
     text-align: justify;
+    p {
+      font-size: 18px;
+    }
   }
 }
 
@@ -109,6 +124,7 @@
   padding: 6px 30px 8px;
   position: relative;
   transition: all 0.1s 0s ease-out;
+  font-size: 18px;
   &:hover{
     text-decoration: none;
     color: $colorwhite;
