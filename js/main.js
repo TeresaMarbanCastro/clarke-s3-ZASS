@@ -86,5 +86,5 @@ for (var i = 0; i < selectFlipper.length; i++) {
 //button up
 document.querySelector('.up-button').addEventListener('click', function(e) {
     e.preventDefault();
-    document.querySelector('.total-slider').scrollIntoView({ behavior: 'smooth' });
+    document.querySelector('.up').scrollIntoView({ behavior: 'smooth' });
 });
