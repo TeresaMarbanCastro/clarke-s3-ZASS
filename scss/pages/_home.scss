@@ -9,10 +9,18 @@ background-color: rgba($colorBlack, 0.6);
 bottom: 40px;
 border-radius: 45px;
 }
+
 .h2_slider {
 color: $colorwhite;
 font-size: 36;
 font-weight: bold!important;
+}
+.first {
+bottom: 220px;
+background-color:  rgba(0,0,0,0);
+}
+.h2_first {
+font-size: 80px;
 }
 
 .carousel-caption p {
