@@ -5782,6 +5782,15 @@ hr {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   width: 200px;
+  background-color: #5E0B75;
+  border: none;
+  color: #fff;
+}
+
+.enviar:hover {
+  background-color: #F7F9F9;
+  color: #000;
+  border: 2px solid #5E0B75;
 }
 
 .was-validated .invalid-feedback {
