@@ -6038,6 +6038,10 @@ main {
   text-align: justify;
 }
 
+.list-group-item:hover {
+  color: #5E0B75;
+}
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
