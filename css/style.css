@@ -1,4 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700,900);/*Bootstrap*//*!
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700,900);
+
+@import url("https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700");/*Bootstrap*//*!
  * Bootstrap v4.0.0-beta.2 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
  * Copyright 2011-2017 Twitter, Inc.
@@ -5306,6 +5308,7 @@ a.text-dark:focus,a.text-dark:hover {
   visibility: hidden !important;
 }/*# sourceMappingURL=bootstrap.min.css.map *//* Core *//* Components */button {
   cursor: pointer;
+  outline-style: none;
 }
 
 a {
@@ -6031,7 +6034,7 @@ main {
   margin-top: 30vh;
   padding-left: 10%;
   padding-right: 10%;
-  font-family: 'Crimson Text', serif;
+  font-family: "Oswald", serif;
   font-weight: 600;
 }
 
@@ -6334,13 +6337,13 @@ main {
 
 .card-title {
   margin-bottom: 1.3em;
-  font-family: 'Crimson Text', serif;
+  font-family: "Oswald", serif;
   font-weight: 600;
   color: #218380;
 }
 
 .blockquote-footer {
-  font-family: 'Crimson Text', serif;
+  font-family: "Oswald", serif;
   font-weight: 400;
 }
 

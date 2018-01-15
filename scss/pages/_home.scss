@@ -238,13 +238,13 @@ background-color: $colorbackground;
 
 .card-title {
 	margin-bottom: 1.3em;
-	font-family: 'Crimson Text', serif;
+	font-family: $font-title, serif;
 	font-weight: 600;
 	color: $intensecolour;
 }
 
 .blockquote-footer {
-	font-family: 'Crimson Text', serif;
+	font-family: $font-title, serif;
 	font-weight: 400;
 }
 
