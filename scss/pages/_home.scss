@@ -6,19 +6,20 @@
 }
 .carousel-caption{
 background-color: rgba($colorBlack, 0.6);
-bottom: 30px;
+bottom: 40px;
 border-radius: 45px;
 }
 .h2_slider {
-color: $intensecolourlight;
+color: $colorwhite;
 font-size: 36;
 font-weight: bold!important;
-// text-shadow: 2px 2px $softcolour;
 }
+
 .carousel-caption p {
 color: $lightcolour;
+font-style: italic;
 letter-spacing: .5pt;
-// text-shadow: 1px 2px $colorStatsNumber;
+margin-bottom: 0;
 }
 .carousel-indicators li {
 background-color: $colorbackground;
@@ -242,7 +243,16 @@ background-color: $colorbackground;
 	font-weight: 600;
 	color: $intensecolour;
 }
-
+.intro-title{
+	text-align: center;
+	color: $primaryColour;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 35px;
+	@media all and (min-width: 500px){
+		font-size: 42px;
+}
+}
 .blockquote-footer {
 	font-family: $font-title, serif;
 	font-weight: 400;

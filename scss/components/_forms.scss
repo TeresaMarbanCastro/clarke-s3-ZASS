@@ -1,7 +1,7 @@
 // FORM-NEWS
 
 .send-news {
-  background-color: $colortitles;
+  background-color: $intensecolour;
   text-align: center;
   padding: 15px 40px;
   margin: 35px auto;
@@ -46,4 +46,7 @@ hr {
     padding: 0 15px 0 60px;
     display: block;
   }
+}
+.input-group-addon{
+	background-color: rgba($intensecolour, 0.5);
 }

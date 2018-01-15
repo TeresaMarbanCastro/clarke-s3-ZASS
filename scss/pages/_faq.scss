@@ -40,17 +40,24 @@
 	background-color: lightgrey;
 	padding: 10px;
 	border-radius: 0.5em;
-	margin-top: 20px;
+	margin-top: 40px;
+	margin-bottom: 40px;
 	p{
 		margin-top: 30px;
 		padding: 10px;
 	}
 }
 .contactForm-title{
-	color: $lightcolour;
-	background-color: $primaryColour;
+	color: $primaryColour;
+	font-weight: bold;
+	font-size: 30px;
+	@media all and (min-width: 900px){
+		font-size: 40px;
+	}
+	border-bottom: 3px dotted white;
+	text-align: center;
 	padding: 10px;
-	margin-top: 30px;
+	margin-top: 10px;
 }
 .contactForm textarea{
 	padding: 10px;
@@ -60,9 +67,18 @@
 	border-radius: 0.5em;
 	text-align: center;
 	width: 100%;
+	@media all and (min-width: 900px){
+		width: 70%;
+		margin-left: 15%;
+	}
 }
 .emailSend{
 	display: grid;
+	width: 100%;
+	@media all and (min-width: 900px){
+		width: 70%;
+		margin-left: 15%;
+	}
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	#email{
 		grid-column: 1 / 5;
@@ -83,7 +99,6 @@
 		}
 	}
 	grid-gap: 0.5em;
-	margin: 0;
-	padding: 0px;
+	padding-bottom: 40px;
 	width: 100%;
 }
