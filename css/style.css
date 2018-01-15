@@ -6031,14 +6031,15 @@ main {
   box-sizing: border-box;
 }
 
+.faq-body {
+  min-height: 100vh;
+  font-family: inherit;
+  background-color: #F7F9F9;
+}
+
 .faq {
   margin: 20px;
   text-align: justify;
-}
-
-body {
-  min-height: 100vh;
-  font-family: inherit;
 }
 
 .faq-title {

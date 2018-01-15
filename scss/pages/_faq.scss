@@ -1,15 +1,17 @@
 *{
 	box-sizing: border-box;
 }
+.faq-body{
+	min-height: 100vh;
+	font-family: inherit;
+	background-color: $lightcolour;
+}
 //faq
 .faq{
 	margin: 20px;
 	text-align: justify;
 }
-body{
-	min-height: 100vh;
-	font-family: inherit;
-}
+
 .faq-title{
 	color: $primaryColour;
 	margin-bottom: 30px;
