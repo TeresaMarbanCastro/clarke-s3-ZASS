@@ -31,7 +31,16 @@ hr {
   left: 50%;
   transform: translateX(-50%);
   width: 200px;
+  background-color: $primaryColour;
+  border: 2px solid $primaryColour;
+  color: $colorwhite;
+  &:hover {
+    background-color: $lightcolour;
+    color: $colorBlack;
+    border: 2px solid $primaryColour;
+  }
 }
+
 .was-validated{
   .invalid-feedback {
     padding: 0 15px 0 60px;

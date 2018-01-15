@@ -5332,8 +5332,11 @@ a {
   width: 40px;
   height: 40px;
   border-radius: 5px;
-  margin-right: 2%;
   z-index: 100;
+  bottom: 0;
+  right: 0;
+  margin-right: 2%;
+  margin-bottom: 2%;
 }
 
 .arrow {
@@ -5782,6 +5785,15 @@ hr {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   width: 200px;
+  background-color: #5E0B75;
+  border: 2px solid #5E0B75;
+  color: #fff;
+}
+
+.enviar:hover {
+  background-color: #F7F9F9;
+  color: #000;
+  border: 2px solid #5E0B75;
 }
 
 .was-validated .invalid-feedback {

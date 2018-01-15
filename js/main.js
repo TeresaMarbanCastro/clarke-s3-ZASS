@@ -1,3 +1,4 @@
+'use strict';
 //Header
 var menu = document.querySelector('.showMenu');
 function showMenu (){
@@ -10,10 +11,7 @@ var showBtn = document.querySelector('.burger');
 var showMenu = document.querySelector('.navigation')
 var hideMenu = document.querySelector('.menu-close');
 var links = document.querySelectorAll('.dropdown-item');
-// Pinchar para que cierre el desplegable (sólo útil en misma página)
-// for (var i = 0; i < links.length; i++) {
-// 	links[i].addEventListener('click', closeMenu);
-// }
+
 function openMenu(){
 	showMenu.classList.add('show');
 }
@@ -72,5 +70,5 @@ for (var i = 0; i < selectFlipper.length; i++) {
 //button up
 document.querySelector('.up-button').addEventListener('click', function(e) {
     e.preventDefault();
-    document.querySelector('.total-slider').scrollIntoView({ behavior: 'smooth' });
+    document.querySelector('.up').scrollIntoView({ behavior: 'smooth' });
 });
