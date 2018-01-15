@@ -6093,7 +6093,8 @@ main {
   background-color: lightgrey;
   padding: 10px;
   border-radius: 0.5em;
-  margin-top: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .contactForm p {
@@ -6102,10 +6103,13 @@ main {
 }
 
 .contactForm-title {
-  color: #F7F9F9;
-  background-color: #5E0B75;
+  color: #5E0B75;
+  font-weight: bold;
+  font-size: 30px;
+  border-bottom: 3px dotted white;
+  text-align: center;
   padding: 10px;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .contactForm textarea {
@@ -6120,10 +6124,10 @@ main {
 
 .emailSend {
   display: grid;
+  width: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 0.5em;
-  margin: 0;
-  padding: 0px;
+  padding-bottom: 40px;
   width: 100%;
 }
 
@@ -8222,6 +8226,22 @@ main {
 @media all and (min-width: 800px) {
   .faq-title {
     margin-left: 5px;
+  }
+}
+
+@media all and (min-width: 900px) {
+  .contactForm-title {
+    font-size: 40px;
+  }
+
+  .contactForm textarea {
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  .emailSend {
+    width: 70%;
+    margin-left: 15%;
   }
 }
 
