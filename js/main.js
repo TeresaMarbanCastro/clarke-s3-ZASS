@@ -1,3 +1,4 @@
+'use strict';
 //Header
 var menu = document.querySelector('.showMenu');
 function showMenu (){
