@@ -6050,6 +6050,7 @@ body {
 .card a {
   color: #5E0B75;
   display: block;
+  text-align: left;
 }
 
 .card a:hover {
@@ -6061,6 +6062,11 @@ body {
   background-color: lightgrey;
   padding: 10px;
   border-radius: 0.5em;
+  margin-top: 20px;
+}
+
+.contactForm-title {
+  color: #218380;
 }
 
 .contactForm textarea {

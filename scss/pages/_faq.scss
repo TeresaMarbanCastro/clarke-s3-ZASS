@@ -19,6 +19,8 @@ body{
 .card a{
 	color: $primaryColour;
 	display: block;
+	text-align: left;
+
 	&:hover{
 		color: $lightsecondarycolour;
 		text-decoration: none;
@@ -29,6 +31,10 @@ body{
 	background-color: lightgrey;
 	padding: 10px;
 	border-radius: 0.5em;
+	margin-top: 20px;
+}
+.contactForm-title{
+	color: $intensecolour;
 }
 .contactForm textarea{
 	margin-top: 20px;
