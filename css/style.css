@@ -5380,6 +5380,10 @@ a {
   box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.25);
 }
 
+.header-news {
+  background-color: #5E0B75;
+}
+
 .header-anti-news {
   margin: 50px auto 40px;
 }
@@ -5494,6 +5498,11 @@ a {
   line-height: 1.4;
   font-weight: bold;
   margin: 0;
+}
+
+.anti-news-intro {
+  font-style: italic;
+  margin-bottom: 30px;
 }
 
 .card-news {
@@ -5756,7 +5765,7 @@ a {
 }
 
 .send-news {
-  background-color: #555555;
+  background-color: #218380;
   text-align: center;
   padding: 15px 40px;
   margin: 35px auto;
@@ -5799,6 +5808,10 @@ hr {
 .was-validated .invalid-feedback {
   padding: 0 15px 0 60px;
   display: block;
+}
+
+.input-group-addon {
+  background-color: rgba(33, 131, 128, 0.5);
 }
 
 .arrow-down {
@@ -6130,19 +6143,21 @@ main {
 
 .carousel-caption {
   background-color: rgba(0, 0, 0, 0.6);
-  bottom: 30px;
+  bottom: 40px;
   border-radius: 45px;
 }
 
 .h2_slider {
-  color: #5DA4A2;
+  color: #fff;
   font-size: 36;
   font-weight: bold !important;
 }
 
 .carousel-caption p {
   color: #F7F9F9;
+  font-style: italic;
   letter-spacing: .5pt;
+  margin-bottom: 0;
 }
 
 .carousel-indicators li {
@@ -6338,6 +6353,14 @@ main {
   color: #218380;
 }
 
+.intro-title {
+  text-align: center;
+  color: #5E0B75;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 35px;
+}
+
 .blockquote-footer {
   font-family: 'Crimson Text', serif;
   font-weight: 400;
@@ -6401,6 +6424,10 @@ main {
 
   .emailSend #submit {
     margin-left: 20px;
+  }
+
+  .intro-title {
+    font-size: 42px;
   }
 }
 

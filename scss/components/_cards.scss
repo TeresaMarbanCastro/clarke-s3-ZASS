@@ -3,6 +3,7 @@
 .newspage {
   background-color: $colornews;
 }
+
 .header-news,
 .header-anti-news {
   background-color: $colortitles;
@@ -17,6 +18,9 @@
   @media (min-width: 769px) {
     font-size: 45px;
   }
+}
+.header-news{
+	background-color: $primaryColour;
 }
 .header-anti-news {
   margin: 50px auto 40px;
@@ -92,6 +96,10 @@
     font-weight: bold;
     margin:0;
   }
+}
+.anti-news-intro{
+	font-style: italic;
+	margin-bottom: 30px;
 }
 .card-news {
   perspective: 600px;
