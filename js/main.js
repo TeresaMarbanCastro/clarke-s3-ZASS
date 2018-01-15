@@ -10,10 +10,10 @@ var showBtn = document.querySelector('.burger');
 var showMenu = document.querySelector('.navigation')
 var hideMenu = document.querySelector('.menu-close');
 var links = document.querySelectorAll('.dropdown-item');
-
-for (var i = 0; i < links.length; i++) {
-	links[i].addEventListener('click', closeMenu);
-}
+// Pinchar para que cierre el desplegable (sólo útil en misma página)
+// for (var i = 0; i < links.length; i++) {
+// 	links[i].addEventListener('click', closeMenu);
+// }
 function openMenu(){
 	showMenu.classList.add('show');
 }
@@ -69,19 +69,6 @@ function flipTop5() {
 for (var i = 0; i < selectFlipper.length; i++) {
 	selectFlipper[i].addEventListener('click', flipTop5);
 }
-
-// //Desplegables FAQ
-// var showFaq = document.querySelectorAll('.questions-listed button');
-//
-// var listFaq = document.querySelectorAll('.questions-listed-answer span');
-//
-// function showAnswer(){
-// 	listFaq.classList.toggle('show');
-// 	showFaq.event.currentTarget.innerHTML;
-// }
-//
-// showFaq.addEventListener('click', showAnswer);
-
 //button up
 document.querySelector('.up-button').addEventListener('click', function(e) {
     e.preventDefault();
