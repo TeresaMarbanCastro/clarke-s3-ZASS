@@ -12,7 +12,14 @@ body{
 }
 .faq-title{
 	color: $primaryColour;
+	margin-bottom: 30px;
 	margin-left: 50px;
+	@media all and (min-width: 576px){
+		margin-left: 20px;
+	}
+	@media all and (min-width: 800px){
+		margin-left: 5px;
+	}
 	text-align: left;
 }
 //FAQ
@@ -32,15 +39,21 @@ body{
 	padding: 10px;
 	border-radius: 0.5em;
 	margin-top: 20px;
+	p{
+		margin-top: 30px;
+		padding: 10px;
+	}
 }
 .contactForm-title{
 	color: $lightcolour;
 	background-color: $primaryColour;
 	padding: 10px;
+	margin-top: 30px;
 }
 .contactForm textarea{
-	padding-top: 10px;
+	padding: 10px;
 	margin-top: 20px;
+	margin-bottom: 20px;
 	border: solid  $primaryColour 1px;
 	border-radius: 0.5em;
 	text-align: center;
@@ -60,6 +73,12 @@ body{
 		background-color: $lightsecondarycolour;
 		color: white;
 		border: 0;
+		@media all and (min-width: 500px){
+			margin-left: 20px;
+		}
+		@media all and (min-width: 700px){
+			margin-left: 50px;
+		}
 	}
 	grid-gap: 0.5em;
 	margin: 0;

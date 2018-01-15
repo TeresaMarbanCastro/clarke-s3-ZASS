@@ -6043,6 +6043,7 @@ body {
 
 .faq-title {
   color: #5E0B75;
+  margin-bottom: 30px;
   margin-left: 50px;
   text-align: left;
 }
@@ -6065,15 +6066,22 @@ body {
   margin-top: 20px;
 }
 
+.contactForm p {
+  margin-top: 30px;
+  padding: 10px;
+}
+
 .contactForm-title {
   color: #F7F9F9;
   background-color: #5E0B75;
   padding: 10px;
+  margin-top: 30px;
 }
 
 .contactForm textarea {
-  padding-top: 10px;
+  padding: 10px;
   margin-top: 20px;
+  margin-bottom: 20px;
   border: solid #5E0B75 1px;
   border-radius: 0.5em;
   text-align: center;
@@ -6351,6 +6359,10 @@ body {
   .logo {
     height: 75px;
     width: 75px;
+  }
+
+  .emailSend #submit {
+    margin-left: 20px;
   }
 }
 
@@ -7337,6 +7349,12 @@ body {
   }
 }
 
+@media all and (min-width: 576px) {
+  .faq-title {
+    margin-left: 20px;
+  }
+}
+
 @media all and (min-width: 600px) {
   .introduction,.statistics,.top5,.myths,.testimonials,.links,.action-txt {
     padding-top: 10%;
@@ -7345,6 +7363,12 @@ body {
 
   .header-hero {
     font-size: 2.2em;
+  }
+}
+
+@media all and (min-width: 700px) {
+  .emailSend #submit {
+    margin-left: 50px;
   }
 }
 
@@ -8127,6 +8151,12 @@ body {
 
   .send-news {
     font-size: 45px;
+  }
+}
+
+@media all and (min-width: 800px) {
+  .faq-title {
+    margin-left: 5px;
   }
 }
 
