@@ -5,20 +5,20 @@
 }
 }
 .carousel-caption{
-background-color: rgba($colortitles, 0.4);
+background-color: rgba($colorBlack, 0.6);
 bottom: 30px;
 border-radius: 45px;
 }
 .h2_slider {
-color: $primaryColour;
+color: $intensecolourlight;
 font-size: 36;
 font-weight: bold!important;
-text-shadow: 2px 2px $softcolour;
+// text-shadow: 2px 2px $softcolour;
 }
 .carousel-caption p {
 color: $lightcolour;
 letter-spacing: .5pt;
-text-shadow: 1px 2px $colorStatsNumber;
+// text-shadow: 1px 2px $colorStatsNumber;
 }
 .carousel-indicators li {
 background-color: $colorbackground;
