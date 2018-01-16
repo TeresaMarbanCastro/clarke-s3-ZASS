@@ -6090,6 +6090,23 @@ main {
   margin-top: 30px;
 }
 
+.steps-image img {
+  height: 1000px;
+  padding-left: 70px;
+}
+
+.steps-video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-left: 50px;
+  margin: auto;
+}
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -6198,7 +6215,8 @@ main {
 }
 
 .h2_first {
-  font-size: 80px;
+  font-size: 90px;
+  text-shadow: 4px 4px #000;
 }
 
 .carousel-caption p {
