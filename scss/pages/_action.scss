@@ -40,3 +40,22 @@
 	color: $primaryColour;
 
 }
+
+.ellas {
+  text-align: center;
+  color: $primaryColour;
+  font-weight: 700;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.small {
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;
+}
+.video {
+  display: flex;
+  margin: auto;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}

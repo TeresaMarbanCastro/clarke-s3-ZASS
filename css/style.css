@@ -6059,6 +6059,29 @@ main {
   color: #5E0B75;
 }
 
+.ellas {
+  text-align: center;
+  color: #5E0B75;
+  font-weight: 700;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.small {
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;
+}
+
+.video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;

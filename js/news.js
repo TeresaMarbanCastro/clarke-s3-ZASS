@@ -1,6 +1,8 @@
+
 // DESPLEGAR NEWS
 
 var cardNews = document.querySelectorAll('.card-news');
+
 function showNew() {
 
 	if (this.classList.contains('show-card')) {
