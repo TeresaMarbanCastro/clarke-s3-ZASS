@@ -6184,6 +6184,15 @@ main {
   font-weight: bold !important;
 }
 
+.first {
+  bottom: 220px;
+  background-color: transparent;
+}
+
+.h2_first {
+  font-size: 80px;
+}
+
 .carousel-caption p {
   color: #F7F9F9;
   font-style: italic;
