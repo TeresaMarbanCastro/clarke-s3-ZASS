@@ -1,5 +1,6 @@
 'use strict';
 
+//Creo una clase = estructura de objeto
 function AnimatedIcons(selector, img1, img2) {
     this.element = document.querySelector(selector);
     this.img1 = img1;
@@ -7,6 +8,7 @@ function AnimatedIcons(selector, img1, img2) {
     this.state = 1;
 }
 
+//añado un método render
 AnimatedIcons.prototype.render = function(){
     if (this.state === 1) {
         this.element.src = this.img2;
@@ -17,6 +19,7 @@ AnimatedIcons.prototype.render = function(){
     }
 }
 
+//creo objetos dentro de un array
 var icons = [
     new AnimatedIcons('#arm', 'images/arm-icon.png','images/arm-icon-light.png'),
     new AnimatedIcons('#tampax', 'images/tampax-icon.png','images/tampax-icon-without.png'),
@@ -26,6 +29,7 @@ var icons = [
 ];
 
 setInterval(function() {
+	//metodo funcional de arrays forEach
     icons.forEach(function(icon) {
         icon.render();
     })
