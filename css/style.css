@@ -6088,22 +6088,23 @@ main {
   margin: auto;
   margin-bottom: 15px;
   margin-top: 30px;
+  width: 100vw;
 }
 
 .steps-image img {
-  height: 1000px;
-  padding-left: 70px;
+  height: 100vh;
+  padding-left: 10px;
+  width: 100vw;
 }
 
 .steps-video {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin-left: 50px;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin: auto;
 }
 
@@ -9080,6 +9081,15 @@ main {
 
   .text-lg-center {
     text-align: center !important;
+  }
+}
+
+@media all and (min-width: 1000px) {
+  .steps-video {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
 }
 
