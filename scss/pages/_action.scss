@@ -58,14 +58,20 @@
   margin: auto;
   margin-bottom: 15px;
   margin-top: 30px;
+	width: 100vw;
 }
 .steps-image img{
-	height: 1000px;
-	padding-left: 70px;
+	height: 100vh;
+	padding-left: 10px;
+	width: 100vw;
 }
 .steps-video{
 	display: flex;
-	flex-direction: row;
-margin-left: 50px;
+	flex-direction: column;
+	@media all and (min-width: 1000px){
+		flex-direction: row;
+	}
+
 	margin: auto;
+
 }
