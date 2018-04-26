@@ -18,20 +18,20 @@
   "homepage": "https://github.com/Adalab/clarke-s3-ZASS#readme",
   "dependencies": {},
   "devDependencies": {
-    "browser-sync": "*",
-    "gulp": "*",
-    "gulp-autoprefixer": "*",
-    "gulp-clean-css": "*",
+    "browser-sync": "^2.23.7",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^3.9.3",
     "gulp-combine-mq": "*",
     "gulp-concat": "*",
     "gulp-notify": "*",
     "gulp-plumber": "*",
     "gulp-rename": "*",
-    "gulp-sass": "*",
-    "gulp-sourcemaps": "*",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "*",
     "gulp-util": "*",
-    "run-sequence": "*",
-    "gulp-zip": "*"
+    "gulp-zip": "*",
+    "run-sequence": "*"
   }
 }
